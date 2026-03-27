@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미적분 완벽 정리 - 극한, 미분, 적분 | StudyHub 수학</title>
+  <meta name="description" content="고등 수학 미적분. 극한의 개념, 미분의 정의와 미분 공식, 부정적분과 정적분, 넓이 계산을 단계별로 설명합니다.">
+  <meta name="keywords" content="미적분, 극한, 미분, 적분, 도함수, 정적분, 부정적분, 고등수학, 수학2">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="미적분 완벽 정리 - 극한, 미분, 적분 | StudyHub 수학">
+  <meta property="og:description" content="고등 수학 미적분. 극한, 미분 공식, 부정·정적분을 단계별로 설명합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/calculus.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/calculus.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "미적분 완벽 정리 - 극한, 미분, 적분",
+    "description": "고등 수학 미적분. 극한의 개념, 미분의 정의와 미분 공식, 부정적분과 정적분, 넓이 계산을 단계별로 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/calculus.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "고등",
+    "teaches": "미적분",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>미적분</span>
+    </nav>
+
+    <h1>∫ 미적분 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 고등 수학</span>
+      <span>🎯 핵심 개념: 극한, 미분, 적분</span>
+    </div>
+
+    <h2>1. 극한(Limit)</h2>
+    <p>함수 \(f(x)\)에서 \(x\)가 어떤 값 \(a\)에 한없이 가까워질 때, \(f(x)\)가 가까워지는 값을 <strong>극한값</strong>이라 합니다.</p>
+
+    <div class="formula">
+      \[ \lim_{x \to a} f(x) = L \]
+      <p style="font-family: inherit; font-size: 0.95rem;">"x가 a에 한없이 가까워질 때, f(x)는 L에 한없이 가까워진다"</p>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\displaystyle\lim_{x \to 2} (3x + 1)\) 계산하기</strong>
+      <div class="formula">
+        \(\displaystyle\lim_{x \to 2} (3x + 1) = 3(2) + 1 = 7\)
+      </div>
+    </div>
+
+    <h3>극한의 성질</h3>
+    <div class="concept-box">
+      \(\displaystyle\lim_{x \to a} f(x) = L\), \(\displaystyle\lim_{x \to a} g(x) = M\)이면:
+      \[ \lim_{x \to a} [f(x) \pm g(x)] = L \pm M \]
+      \[ \lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M \]
+      \[ \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M} \quad (M \neq 0) \]
+    </div>
+
+    <h3>무한대 극한</h3>
+    <div class="formula">
+      \[ \lim_{x \to \infty} \frac{1}{x} = 0, \qquad \lim_{x \to \infty} \frac{1}{x^n} = 0 \quad (n > 0) \]
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\displaystyle\lim_{x \to \infty} \frac{2x+3}{x+1}\) 계산하기 (분자·분모를 x로 나누기)</strong>
+      <div class="formula">
+        \(\displaystyle\lim_{x \to \infty} \frac{2x+3}{x+1} = \lim_{x \to \infty} \frac{2 + \frac{3}{x}}{1 + \frac{1}{x}} = \frac{2 + 0}{1 + 0} = 2\)
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\displaystyle\lim_{x \to 0} \frac{\sin x}{x} = 1\) (중요 극한)</strong>
+      <div class="formula">
+        이 극한값은 \(1\)로 삼각함수의 미분에서 핵심적으로 사용됩니다.
+      </div>
+    </div>
+
+    <h2>2. 미분(Differentiation)</h2>
+    <p><strong>미분</strong>은 함수의 순간 변화율(기울기)을 구하는 연산입니다.</p>
+
+    <h3>도함수의 정의</h3>
+    <div class="formula">
+      \[ f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+    </div>
+
+    <div class="concept-box">
+      <strong>미분 표기법</strong>
+      \[ f'(x) = \frac{dy}{dx} = \frac{d}{dx}f(x) \]
+    </div>
+
+    <h3>기본 미분 공식</h3>
+    <div class="formula">
+      \begin{align}
+      &(c)' = 0 \quad \text{(상수)}\\ \\
+      &(x^n)' = nx^{n-1} \quad \text{(거듭제곱)}\\ \\
+      &(\sin x)' = \cos x\\ \\
+      &(\cos x)' = -\sin x\\ \\
+      &(\tan x)' = \sec^2 x = \frac{1}{\cos^2 x}\\ \\
+      &(e^x)' = e^x\\ \\
+      &(\ln x)' = \frac{1}{x} \quad (x > 0)\\ \\
+      &(a^x)' = a^x \ln a \quad (a > 0,\ a \neq 1)
+      \end{align}
+    </div>
+
+    <div class="example">
+      <strong>예제: \(f(x) = 3x^4 - 2x^2 + 5x - 7\) 미분하기</strong>
+      <div class="formula">
+        \(f'(x) = 3 \cdot 4x^3 - 2 \cdot 2x + 5 \cdot 1 - 0\)<br>
+        <strong>\(f'(x) = 12x^3 - 4x + 5\)</strong>
+      </div>
+    </div>
+
+    <h3>곱의 미분법</h3>
+    <div class="formula">
+      \[ (fg)' = f'g + fg' \]
+    </div>
+    <div class="example">
+      <strong>예제: \(h(x) = x^2 \sin x\) 미분</strong>
+      <div class="formula">
+        \(h'(x) = (x^2)' \sin x + x^2 (\sin x)' = 2x \sin x + x^2 \cos x\)
+      </div>
+    </div>
+
+    <h3>몫의 미분법</h3>
+    <div class="formula">
+      \[ \left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2} \quad (g \neq 0) \]
+    </div>
+
+    <h3>연쇄 법칙 (Chain Rule)</h3>
+    <div class="formula">
+      \[ [f(g(x))]' = f'(g(x)) \cdot g'(x) \]
+    </div>
+    <div class="example">
+      <strong>예제: \(h(x) = (3x^2 + 1)^5\) 미분</strong>
+      <div class="formula">
+        \(f(u) = u^5\), \(g(x) = 3x^2 + 1\)로 놓으면<br>
+        \(h'(x) = 5(3x^2+1)^4 \cdot 6x = 30x(3x^2+1)^4\)
+      </div>
+    </div>
+
+    <h2>3. 미분의 활용</h2>
+
+    <h3>증가·감소 구간과 극값</h3>
+    <div class="concept-box">
+      <ul>
+        <li>\(f'(x) > 0\)인 구간: 함수가 증가</li>
+        <li>\(f'(x) < 0\)인 구간: 함수가 감소</li>
+        <li>\(f'(x) = 0\)에서 부호가 + → −로 바뀌면 <strong>극대</strong></li>
+        <li>\(f'(x) = 0\)에서 부호가 − → +로 바뀌면 <strong>극소</strong></li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(f(x) = x^3 - 3x\)의 극값 구하기</strong>
+      <div class="formula">
+        \(f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x+1)(x-1)\)<br>
+        \(f'(x) = 0\): \(x = -1\) 또는 \(x = 1\)<br><br>
+        \(x = -1\): 부호 + → − (극대), 극댓값 \(= f(-1) = -1 + 3 = 2\)<br>
+        \(x = 1\): 부호 − → + (극소), 극솟값 \(= f(1) = 1 - 3 = -2\)
+      </div>
+    </div>
+
+    <h2>4. 적분(Integration)</h2>
+
+    <h3>부정적분</h3>
+    <p>\(F'(x) = f(x)\)일 때, \(F(x)\)를 \(f(x)\)의 <strong>부정적분(원시함수)</strong>라 합니다.</p>
+
+    <div class="formula">
+      \[ \int f(x)\,dx = F(x) + C \quad \text{(C: 적분상수)} \]
+    </div>
+
+    <h3>기본 적분 공식</h3>
+    <div class="formula">
+      \begin{align}
+      &\int x^n\,dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)\\ \\
+      &\int \frac{1}{x}\,dx = \ln|x| + C\\ \\
+      &\int e^x\,dx = e^x + C\\ \\
+      &\int \sin x\,dx = -\cos x + C\\ \\
+      &\int \cos x\,dx = \sin x + C
+      \end{align}
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\displaystyle\int (4x^3 - 6x + 2)\,dx\) 계산하기</strong>
+      <div class="formula">
+        \(\displaystyle\int (4x^3 - 6x + 2)\,dx = 4 \cdot \frac{x^4}{4} - 6 \cdot \frac{x^2}{2} + 2x + C\)<br>
+        <strong>\(= x^4 - 3x^2 + 2x + C\)</strong>
+      </div>
+    </div>
+
+    <h3>정적분</h3>
+    <div class="formula">
+      \[ \int_a^b f(x)\,dx = \Big[F(x)\Big]_a^b = F(b) - F(a) \]
+      <p style="font-family: inherit; font-size: 0.95rem;">미적분학의 기본 정리(뉴턴-라이프니츠 공식)</p>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\displaystyle\int_1^3 (2x + 1)\,dx\) 계산하기</strong>
+      <div class="formula">
+        \(\displaystyle\int_1^3 (2x+1)\,dx = \Big[x^2 + x\Big]_1^3\)<br>
+        \(= (3^2 + 3) - (1^2 + 1)\)<br>
+        \(= 12 - 2 = \mathbf{10}\)
+      </div>
+    </div>
+
+    <h2>5. 정적분의 활용 — 넓이 계산</h2>
+
+    <h3>x축과 곡선 사이의 넓이</h3>
+    <div class="formula">
+      \[ S = \int_a^b |f(x)|\,dx \]
+      <p style="font-family: inherit; font-size: 0.95rem;">\(f(x) \geq 0\)이면 \(S = \displaystyle\int_a^b f(x)\,dx\)</p>
+    </div>
+
+    <h3>두 곡선 사이의 넓이</h3>
+    <div class="formula">
+      \[ S = \int_a^b |f(x) - g(x)|\,dx \]
+    </div>
+
+    <div class="example">
+      <strong>예제: \(y = x^2\)와 \(y = x\) 사이의 넓이 (0 ≤ x ≤ 1)</strong>
+      <div class="formula">
+        교점: \(x^2 = x\) → \(x(x-1) = 0\) → \(x = 0, 1\)<br>
+        구간 [0,1]에서 \(x \geq x^2\)이므로:<br>
+        \(S = \displaystyle\int_0^1 (x - x^2)\,dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1\)<br>
+        \(= \left(\dfrac{1}{2} - \dfrac{1}{3}\right) - 0 = \dfrac{3-2}{6} = \dfrac{1}{6}\)
+      </div>
+    </div>
+
+    <h2>6. 연습 문제</h2>
+    <ol>
+      <li>\(\displaystyle\lim_{x \to 3} (x^2 - 2x + 1)\)을 구하시오.</li>
+      <li>\(f(x) = x^5 - 4x^3 + 2x\)를 미분하시오.</li>
+      <li>\(f(x) = e^{2x}\)를 미분하시오. (연쇄 법칙 이용)</li>
+      <li>\(\displaystyle\int_0^2 (3x^2 - 2)\,dx\)를 계산하시오.</li>
+      <li>\(f(x) = x^3 - 3x^2\)의 극댓값과 극솟값을 구하시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>\((3)^2 - 2(3) + 1 = 9 - 6 + 1 = \mathbf{4}\)</li>
+        <li>\(f'(x) = 5x^4 - 12x^2 + 2\)</li>
+        <li>\(f'(x) = e^{2x} \cdot 2 = 2e^{2x}\)</li>
+        <li>\(\Big[x^3 - 2x\Big]_0^2 = (8-4) - 0 = \mathbf{4}\)</li>
+        <li>\(f'(x) = 3x^2 - 6x = 3x(x-2)\)&nbsp;, \(x=0\)에서 극대 → 극댓값 \(f(0)=0\)&nbsp;, \(x=2\)에서 극소 → 극솟값 \(f(2)=8-12=-4\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

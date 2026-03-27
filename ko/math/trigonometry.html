@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼각함수 완벽 정리 - sin, cos, tan, 삼각함수 공식 | StudyHub 수학</title>
+  <meta name="description" content="고등 수학 삼각함수. sin·cos·tan의 정의, 삼각함수표, 덧셈정리, 삼각함수 그래프와 주요 공식을 완벽하게 설명합니다.">
+  <meta name="keywords" content="삼각함수, sin, cos, tan, 단위원, 사인법칙, 코사인법칙, 덧셈정리, 배각공식, 고등수학">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="삼각함수 완벽 정리 - sin, cos, tan, 삼각함수 공식 | StudyHub 수학">
+  <meta property="og:description" content="고등 수학 삼각함수. sin·cos·tan의 정의, 단위원, 덧셈정리, 사인·코사인 법칙을 완벽 설명합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/trigonometry.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/trigonometry.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "삼각함수 완벽 정리 - sin, cos, tan, 삼각함수 공식",
+    "description": "고등 수학 삼각함수. sin·cos·tan의 정의, 삼각함수표, 덧셈정리, 삼각함수 그래프와 주요 공식을 완벽하게 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/trigonometry.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "고등",
+    "teaches": "삼각함수",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>삼각함수</span>
+    </nav>
+
+    <h1>📐 삼각함수 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 고등 수학</span>
+      <span>🎯 핵심 개념: sin·cos·tan, 덧셈정리, 사인·코사인 법칙</span>
+    </div>
+
+    <h2>1. 삼각함수의 정의 (직각삼각형)</h2>
+    <p>직각삼각형에서 각 \(\theta\)에 대해 삼각비를 정의합니다.</p>
+
+    <div class="concept-box">
+      <strong>삼각비 정의</strong>
+      \[ \sin\theta = \frac{\text{대변(맞은편 변)}}{\text{빗변}} \]
+      \[ \cos\theta = \frac{\text{밑변(인접한 변)}}{\text{빗변}} \]
+      \[ \tan\theta = \frac{\text{대변}}{\text{밑변}} = \frac{\sin\theta}{\cos\theta} \]
+    </div>
+
+    <h3>주요 각도의 삼각함수 값</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>각도 \(\theta\)</th>
+            <th>라디안</th>
+            <th>\(\sin\theta\)</th>
+            <th>\(\cos\theta\)</th>
+            <th>\(\tan\theta\)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0°</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td>\(\dfrac{\pi}{6}\)</td>
+            <td>\(\dfrac{1}{2}\)</td>
+            <td>\(\dfrac{\sqrt{3}}{2}\)</td>
+            <td>\(\dfrac{1}{\sqrt{3}} = \dfrac{\sqrt{3}}{3}\)</td>
+          </tr>
+          <tr>
+            <td>45°</td>
+            <td>\(\dfrac{\pi}{4}\)</td>
+            <td>\(\dfrac{\sqrt{2}}{2}\)</td>
+            <td>\(\dfrac{\sqrt{2}}{2}\)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>60°</td>
+            <td>\(\dfrac{\pi}{3}\)</td>
+            <td>\(\dfrac{\sqrt{3}}{2}\)</td>
+            <td>\(\dfrac{1}{2}\)</td>
+            <td>\(\sqrt{3}\)</td>
+          </tr>
+          <tr>
+            <td>90°</td>
+            <td>\(\dfrac{\pi}{2}\)</td>
+            <td>1</td>
+            <td>0</td>
+            <td>정의 안됨</td>
+          </tr>
+          <tr>
+            <td>180°</td>
+            <td>\(\pi\)</td>
+            <td>0</td>
+            <td>−1</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip">
+      <strong>암기법:</strong> sin 0°~90°: \(0, \dfrac{1}{2}, \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{3}}{2}, 1\) 순서로 증가합니다. cos는 반대 순서입니다.
+    </div>
+
+    <h2>2. 단위원과 삼각함수</h2>
+    <p>반지름이 1인 원(단위원)을 이용해 삼각함수를 모든 각도로 확장할 수 있습니다.</p>
+
+    <div class="concept-box">
+      <strong>단위원에서의 정의</strong>
+      <p>단위원 위의 점 \(P(x, y)\)와 x축 사이의 각이 \(\theta\)일 때:</p>
+      \[ \cos\theta = x, \quad \sin\theta = y, \quad \tan\theta = \frac{y}{x} \]
+    </div>
+
+    <h3>피타고라스 항등식</h3>
+    <div class="formula">
+      \[ \sin^2\theta + \cos^2\theta = 1 \]
+    </div>
+    <p>이로부터 다음을 유도할 수 있습니다:</p>
+    <div class="formula">
+      \[ \tan^2\theta + 1 = \sec^2\theta \qquad (1 + \cot^2\theta = \csc^2\theta) \]
+    </div>
+
+    <h3>사분면에서의 부호</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>사분면</th><th>sin</th><th>cos</th><th>tan</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>제1사분면 (0° ~ 90°)</td><td>+</td><td>+</td><td>+</td></tr>
+          <tr><td>제2사분면 (90° ~ 180°)</td><td>+</td><td>−</td><td>−</td></tr>
+          <tr><td>제3사분면 (180° ~ 270°)</td><td>−</td><td>−</td><td>+</td></tr>
+          <tr><td>제4사분면 (270° ~ 360°)</td><td>−</td><td>+</td><td>−</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>3. 삼각함수의 그래프</h2>
+
+    <h3>\(y = \sin x\)</h3>
+    <div class="concept-box">
+      <ul>
+        <li>주기: \(2\pi\) (360°)</li>
+        <li>최댓값: 1, 최솟값: −1 (진폭: 1)</li>
+        <li>원점 대칭 (기함수): \(\sin(-x) = -\sin x\)</li>
+        <li>영점(0이 되는 x값): \(x = n\pi\) (\(n\)은 정수)</li>
+      </ul>
+    </div>
+
+    <h3>\(y = \cos x\)</h3>
+    <div class="concept-box">
+      <ul>
+        <li>주기: \(2\pi\)</li>
+        <li>최댓값: 1, 최솟값: −1</li>
+        <li>y축 대칭 (우함수): \(\cos(-x) = \cos x\)</li>
+        <li>\(y = \sin x\)를 \(\dfrac{\pi}{2}\)만큼 왼쪽으로 이동한 것</li>
+      </ul>
+    </div>
+
+    <h3>\(y = \tan x\)</h3>
+    <div class="concept-box">
+      <ul>
+        <li>주기: \(\pi\) (180°)</li>
+        <li>점근선: \(x = \dfrac{\pi}{2} + n\pi\) (\(n\)은 정수)</li>
+        <li>범위: 실수 전체 (값의 범위에 제한 없음)</li>
+      </ul>
+    </div>
+
+    <h3>일반적인 삼각함수 \(y = A\sin(Bx + C) + D\)</h3>
+    <div class="formula">
+      <ul style="font-family: inherit; font-size: 0.95rem; list-style: none; padding: 0;">
+        <li><strong>진폭(Amplitude)</strong> = \(|A|\)</li>
+        <li><strong>주기(Period)</strong> = \(\dfrac{2\pi}{|B|}\)</li>
+        <li><strong>위상(Phase shift)</strong> = \(-\dfrac{C}{B}\)</li>
+        <li><strong>수직 이동</strong> = \(D\)</li>
+      </ul>
+    </div>
+
+    <h2>4. 삼각함수의 주요 공식</h2>
+
+    <h3>피타고라스 항등식 (재확인)</h3>
+    <div class="formula">
+      \[ \sin^2\theta + \cos^2\theta = 1 \]
+    </div>
+
+    <h3>덧셈정리</h3>
+    <div class="formula">
+      \begin{align}
+      \sin(\alpha \pm \beta) &= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta \\[0.5em]
+      \cos(\alpha \pm \beta) &= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta \\[0.5em]
+      \tan(\alpha + \beta) &= \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\tan\beta}
+      \end{align}
+    </div>
+
+    <div class="example">
+      <strong>예제: \(\sin 75°\) 계산하기</strong>
+      <div class="formula">
+        \(\sin 75° = \sin(45° + 30°)\)<br>
+        \(= \sin 45°\cos 30° + \cos 45°\sin 30°\)<br>
+        \(= \dfrac{\sqrt{2}}{2} \cdot \dfrac{\sqrt{3}}{2} + \dfrac{\sqrt{2}}{2} \cdot \dfrac{1}{2}\)<br>
+        \(= \dfrac{\sqrt{6}}{4} + \dfrac{\sqrt{2}}{4} = \dfrac{\sqrt{6}+\sqrt{2}}{4}\)
+      </div>
+    </div>
+
+    <h3>배각 공식</h3>
+    <div class="formula">
+      \begin{align}
+      \sin 2\theta &= 2\sin\theta\cos\theta \\[0.5em]
+      \cos 2\theta &= \cos^2\theta - \sin^2\theta = 2\cos^2\theta - 1 = 1 - 2\sin^2\theta \\[0.5em]
+      \tan 2\theta &= \frac{2\tan\theta}{1 - \tan^2\theta}
+      \end{align}
+    </div>
+
+    <h3>반각 공식</h3>
+    <div class="formula">
+      \begin{align}
+      \sin^2\frac{\theta}{2} &= \frac{1 - \cos\theta}{2} \\[0.5em]
+      \cos^2\frac{\theta}{2} &= \frac{1 + \cos\theta}{2}
+      \end{align}
+    </div>
+
+    <h2>5. 사인 법칙과 코사인 법칙</h2>
+    <p>삼각형 ABC에서 변 a, b, c는 각 A, B, C의 대변(맞은편 변)이고, R은 외접원의 반지름입니다.</p>
+
+    <h3>사인 법칙</h3>
+    <div class="formula">
+      \[ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R \]
+    </div>
+    <p>두 각과 한 변을 알 때, 또는 외접원의 반지름을 구할 때 사용합니다.</p>
+
+    <div class="example">
+      <strong>예제: A = 30°, B = 45°, c = 6일 때 a 구하기</strong>
+      <div class="formula">
+        C = 180° − 30° − 45° = 105°<br>
+        사인법칙: \(\dfrac{a}{\sin 30°} = \dfrac{6}{\sin 105°}\)<br>
+        \(a = \dfrac{6\sin 30°}{\sin 105°} = \dfrac{6 \times \frac{1}{2}}{\frac{\sqrt{6}+\sqrt{2}}{4}} = \dfrac{3 \times 4}{\sqrt{6}+\sqrt{2}} = \dfrac{12}{\sqrt{6}+\sqrt{2}}\)
+      </div>
+    </div>
+
+    <h3>코사인 법칙</h3>
+    <div class="formula">
+      \begin{align}
+      a^2 &= b^2 + c^2 - 2bc\cos A \\[0.5em]
+      b^2 &= a^2 + c^2 - 2ac\cos B \\[0.5em]
+      c^2 &= a^2 + b^2 - 2ab\cos C
+      \end{align}
+    </div>
+    <p>두 변과 끼인각, 또는 세 변을 알 때 사용합니다.</p>
+
+    <div class="example">
+      <strong>예제: a = 5, b = 7, C = 60°일 때 c 구하기</strong>
+      <div class="formula">
+        \(c^2 = 5^2 + 7^2 - 2 \cdot 5 \cdot 7 \cdot \cos 60°\)<br>
+        \(= 25 + 49 - 70 \times \dfrac{1}{2}\)<br>
+        \(= 74 - 35 = 39\)<br>
+        <strong>\(c = \sqrt{39}\)</strong>
+      </div>
+    </div>
+
+    <h2>6. 연습 문제</h2>
+    <ol>
+      <li>\(\sin 30° \times \cos 60° + \cos 30° \times \sin 60°\)를 계산하시오. (값으로 정리)</li>
+      <li>\(\sin\theta = \dfrac{3}{5}\) (단, \(0° < \theta < 90°\))일 때, \(\cos\theta\)와 \(\tan\theta\)의 값을 구하시오.</li>
+      <li>배각 공식을 이용하여 \(\cos 2\theta\)를 \(\sin\theta\)만으로 나타내시오.</li>
+      <li>삼각형 ABC에서 a = 8, b = 6, C = 90°일 때, c와 \(\cos A\)를 구하시오.</li>
+      <li>\(\cos 120°\)의 값을 덧셈정리를 이용하여 구하시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>\(\sin(30°+60°) = \sin 90° = 1\)</li>
+        <li>\(\cos\theta = \dfrac{4}{5}\) (피타고라스 항등식: \(\cos^2\theta = 1 - \dfrac{9}{25} = \dfrac{16}{25}\)), \(\tan\theta = \dfrac{3/5}{4/5} = \dfrac{3}{4}\)</li>
+        <li>\(\cos 2\theta = 1 - 2\sin^2\theta\)</li>
+        <li>피타고라스 정리: \(c^2 = 8^2 + 6^2 = 100\), \(c = 10\)&nbsp;;&nbsp; 코사인 법칙: \(\cos A = \dfrac{b^2+c^2-a^2}{2bc} = \dfrac{36+100-64}{120} = \dfrac{72}{120} = \dfrac{3}{5}\)</li>
+        <li>\(\cos(90°+30°) = \cos 90°\cos 30° - \sin 90°\sin 30° = 0 - 1 \times \dfrac{1}{2} = -\dfrac{1}{2}\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

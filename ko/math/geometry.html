@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도형 완벽 정리 - 삼각형, 사각형, 원, 피타고라스 정리 | StudyHub 수학</title>
+  <meta name="description" content="평면도형과 입체도형의 성질. 삼각형의 넓이, 피타고라스 정리, 원의 넓이와 둘레, 삼각형 합동 조건을 설명합니다.">
+  <meta name="keywords" content="도형, 삼각형, 사각형, 원, 피타고라스 정리, 넓이, 입체도형, 합동, 초등수학, 중등수학">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="도형 완벽 정리 - 삼각형, 사각형, 원, 피타고라스 정리 | StudyHub 수학">
+  <meta property="og:description" content="평면도형과 입체도형의 성질. 삼각형, 사각형, 원, 피타고라스 정리, 입체도형 부피와 겉넓이를 완벽 정리합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/geometry.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/geometry.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "도형 완벽 정리 - 삼각형, 사각형, 원, 피타고라스 정리",
+    "description": "평면도형과 입체도형의 성질. 삼각형의 넓이, 피타고라스 정리, 원의 넓이와 둘레, 삼각형 합동 조건을 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/geometry.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "초등/중등",
+    "teaches": "도형",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>도형</span>
+    </nav>
+
+    <h1>📐 도형 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 초등·중등 수학</span>
+      <span>🎯 핵심 개념: 삼각형·사각형·원·입체도형 넓이와 부피</span>
+    </div>
+
+    <h2>1. 기본 도형</h2>
+    <p>도형은 점, 선, 면으로 이루어집니다. 각도의 종류를 알아두는 것이 중요합니다.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>각도 종류</th><th>범위</th><th>특징</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>예각(鋭角)</td><td>\(0° < \theta < 90°\)</td><td>직각보다 작음</td></tr>
+          <tr><td>직각(直角)</td><td>\(\theta = 90°\)</td><td>수직을 이룸</td></tr>
+          <tr><td>둔각(鈍角)</td><td>\(90° < \theta < 180°\)</td><td>직각보다 크고 평각보다 작음</td></tr>
+          <tr><td>평각(平角)</td><td>\(\theta = 180°\)</td><td>직선 모양</td></tr>
+          <tr><td>우각(優角)</td><td>\(180° < \theta < 360°\)</td><td>평각보다 큰 각</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. 삼각형</h2>
+
+    <h3>삼각형의 넓이</h3>
+    <div class="formula">
+      \[ S = \frac{1}{2} \times \text{밑변} \times \text{높이} \]
+    </div>
+
+    <div class="concept-box">
+      <strong>삼각형의 성질</strong>
+      <ul>
+        <li>세 내각의 합 = \(180°\)</li>
+        <li>한 외각 = 나머지 두 내각의 합</li>
+        <li>두 변의 합 &gt; 나머지 한 변 (삼각형 성립 조건)</li>
+      </ul>
+    </div>
+
+    <h3>삼각형의 종류</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>이름</th><th>조건</th><th>특징</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>정삼각형</td><td>세 변의 길이가 모두 같음</td><td>세 내각 모두 60°</td></tr>
+          <tr><td>이등변삼각형</td><td>두 변의 길이가 같음</td><td>두 밑각이 서로 같음</td></tr>
+          <tr><td>직각삼각형</td><td>한 내각이 90°</td><td>피타고라스 정리 적용</td></tr>
+          <tr><td>예각삼각형</td><td>세 내각 모두 90° 미만</td><td>—</td></tr>
+          <tr><td>둔각삼각형</td><td>한 내각이 90° 초과</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>삼각형의 합동 조건</h3>
+    <div class="concept-box">
+      <strong>두 삼각형이 합동인 조건 (4가지)</strong>
+      <ul>
+        <li><strong>SSS 합동</strong>: 세 변의 길이가 각각 같을 때</li>
+        <li><strong>SAS 합동</strong>: 두 변의 길이와 끼인각이 각각 같을 때</li>
+        <li><strong>ASA 합동</strong>: 한 변의 길이와 양 끝 각이 각각 같을 때</li>
+        <li><strong>AAS 합동</strong>: 두 각의 크기와 한 변의 길이가 각각 같을 때</li>
+      </ul>
+    </div>
+
+    <h3>피타고라스 정리</h3>
+    <div class="formula">
+      \[ a^2 + b^2 = c^2 \]
+      <p style="font-family: inherit; font-size: 0.95rem;">단, \(c\)는 빗변(가장 긴 변), \(a\)와 \(b\)는 직각을 이루는 두 변</p>
+    </div>
+
+    <div class="example">
+      <strong>예제: 두 변의 길이가 3과 4인 직각삼각형의 빗변 구하기</strong>
+      <div class="formula">
+        \(c^2 = 3^2 + 4^2 = 9 + 16 = 25\)<br>
+        \(c = \sqrt{25} = 5\)<br>
+        <strong>∴ 빗변 = 5</strong>
+      </div>
+      <p>유명한 피타고라스 수 조합: (3, 4, 5), (5, 12, 13), (8, 15, 17)</p>
+    </div>
+
+    <h2>3. 사각형</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>도형</th><th>넓이 공식</th><th>특징</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>직사각형</td>
+            <td>\(S = \text{가로} \times \text{세로}\)</td>
+            <td>네 각이 모두 직각</td>
+          </tr>
+          <tr>
+            <td>정사각형</td>
+            <td>\(S = a^2\) (a: 한 변)</td>
+            <td>네 변과 네 각이 모두 같음</td>
+          </tr>
+          <tr>
+            <td>평행사변형</td>
+            <td>\(S = \text{밑변} \times \text{높이}\)</td>
+            <td>마주보는 두 쌍의 변이 평행</td>
+          </tr>
+          <tr>
+            <td>사다리꼴</td>
+            <td>\(S = \dfrac{(\text{윗변}+\text{아랫변}) \times \text{높이}}{2}\)</td>
+            <td>한 쌍의 변이 평행</td>
+          </tr>
+          <tr>
+            <td>마름모</td>
+            <td>\(S = \dfrac{\text{대각선}_1 \times \text{대각선}_2}{2}\)</td>
+            <td>네 변의 길이가 같음</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example">
+      <strong>예제: 윗변 4cm, 아랫변 8cm, 높이 5cm인 사다리꼴의 넓이</strong>
+      <div class="formula">
+        \(S = \dfrac{(4+8) \times 5}{2} = \dfrac{12 \times 5}{2} = \dfrac{60}{2} = 30 \text{ cm}^2\)
+      </div>
+    </div>
+
+    <h2>4. 원</h2>
+    <p>원(圓)은 한 점(중심)에서 같은 거리에 있는 점들의 집합입니다.</p>
+
+    <div class="concept-box">
+      <strong>원주율 \(\pi\)</strong>
+      \[ \pi \approx 3.14159\ldots \]
+      <p>원의 지름에 대한 둘레의 비율로, 모든 원에서 일정합니다.</p>
+    </div>
+
+    <div class="formula">
+      \[ \text{넓이} = \pi r^2 \]
+      \[ \text{둘레(원주)} = 2\pi r \]
+      <p style="font-family: inherit; font-size: 0.95rem;">\(r\): 반지름</p>
+    </div>
+
+    <div class="example">
+      <strong>예제: 반지름 5cm인 원의 넓이와 둘레</strong>
+      <div class="formula">
+        넓이: \(\pi \times 5^2 = 25\pi \approx 78.5 \text{ cm}^2\)<br>
+        둘레: \(2\pi \times 5 = 10\pi \approx 31.4 \text{ cm}\)
+      </div>
+    </div>
+
+    <h3>부채꼴</h3>
+    <div class="formula">
+      \[ \text{호의 길이} = 2\pi r \times \frac{\theta}{360°}, \qquad \text{넓이} = \pi r^2 \times \frac{\theta}{360°} \]
+      <p style="font-family: inherit; font-size: 0.95rem;">\(\theta\): 중심각</p>
+    </div>
+
+    <h2>5. 입체도형</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>도형</th><th>부피</th><th>겉넓이</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>직육면체</td>
+            <td>\(V = abc\) <br><small>(a: 가로, b: 세로, c: 높이)</small></td>
+            <td>\(S = 2(ab + bc + ca)\)</td>
+          </tr>
+          <tr>
+            <td>정육면체</td>
+            <td>\(V = a^3\)</td>
+            <td>\(S = 6a^2\)</td>
+          </tr>
+          <tr>
+            <td>원기둥</td>
+            <td>\(V = \pi r^2 h\)</td>
+            <td>\(S = 2\pi r^2 + 2\pi r h\)</td>
+          </tr>
+          <tr>
+            <td>원뿔</td>
+            <td>\(V = \dfrac{1}{3}\pi r^2 h\)</td>
+            <td>\(S = \pi r^2 + \pi r l\) <br><small>(\(l\): 모선)</small></td>
+          </tr>
+          <tr>
+            <td>구</td>
+            <td>\(V = \dfrac{4}{3}\pi r^3\)</td>
+            <td>\(S = 4\pi r^2\)</td>
+          </tr>
+          <tr>
+            <td>각뿔</td>
+            <td>\(V = \dfrac{1}{3} \times \text{밑넓이} \times h\)</td>
+            <td>밑면 + 옆면의 합</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example">
+      <strong>예제: 밑면 반지름 3cm, 높이 10cm인 원기둥의 부피와 겉넓이</strong>
+      <div class="formula">
+        부피: \(V = \pi \times 3^2 \times 10 = 90\pi \approx 282.7 \text{ cm}^3\)<br>
+        겉넓이: \(S = 2\pi \times 3^2 + 2\pi \times 3 \times 10 = 18\pi + 60\pi = 78\pi \approx 245.0 \text{ cm}^2\)
+      </div>
+    </div>
+
+    <h2>6. 연습 문제</h2>
+    <ol>
+      <li>밑변 6cm, 높이 4cm인 삼각형의 넓이를 구하시오.</li>
+      <li>직각삼각형에서 두 변의 길이가 각각 5cm와 12cm일 때, 빗변의 길이를 구하시오.</li>
+      <li>반지름 7cm인 원의 넓이를 구하시오. (π ≈ 3.14)</li>
+      <li>반지름 6cm, 높이 4cm인 원뿔의 부피를 구하시오.</li>
+      <li>가로 8cm, 세로 5cm, 높이 3cm인 직육면체의 겉넓이를 구하시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>\(S = \dfrac{1}{2} \times 6 \times 4 = 12 \text{ cm}^2\)</li>
+        <li>\(c^2 = 5^2 + 12^2 = 25 + 144 = 169\), \(c = 13 \text{ cm}\)</li>
+        <li>\(S = 3.14 \times 7^2 = 3.14 \times 49 = 153.86 \text{ cm}^2\)</li>
+        <li>\(V = \dfrac{1}{3}\pi \times 6^2 \times 4 = \dfrac{1}{3} \times 36\pi \times 4 = 48\pi \approx 150.8 \text{ cm}^3\)</li>
+        <li>\(S = 2(8 \times 5 + 5 \times 3 + 8 \times 3) = 2(40 + 15 + 24) = 2 \times 79 = 158 \text{ cm}^2\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

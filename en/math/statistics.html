@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics &amp; Probability Study Guide | StudyHub Math</title>
+  <meta name="description" content="Statistics and probability study guide: mean, median, mode, standard deviation, probability rules, combinations, permutations, and distributions.">
+  <meta name="keywords" content="statistics, probability, mean, median, mode, standard deviation, normal distribution, combinations, permutations, AP Statistics">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="Statistics &amp; Probability Study Guide | StudyHub Math">
+  <meta property="og:description" content="Complete statistics and probability guide with descriptive stats, probability rules, and distributions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/en/math/statistics.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/en/math/statistics.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Statistics & Probability Study Guide",
+    "url": "https://criel2019.github.io/studyhub/en/math/statistics.html",
+    "inLanguage": "en",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "High School",
+    "teaches": "Statistics, Probability",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">Math</a>
+      <a href="../english/">English</a>
+      <a href="../science/">Science</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/">🇰🇷</a>
+      <a href="../../ja/">🇯🇵</a>
+      <a href="../../zh/">🇨🇳</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../">English (US)</a>
+      <span class="sep">›</span>
+      <a href="../math/">Math</a>
+      <span class="sep">›</span>
+      <span>Statistics &amp; Probability</span>
+    </nav>
+
+    <h1>📊 Statistics &amp; Probability</h1>
+    <div class="article-meta">
+      <span>📚 High School / AP Statistics</span>
+      <span>🎯 Key Concepts: Descriptive Stats, Probability Rules, Distributions</span>
+    </div>
+
+    <h2>1. Descriptive Statistics</h2>
+    <p>Descriptive statistics summarize and describe a data set. The key measures are <strong>measures of center</strong> and <strong>measures of spread</strong>.</p>
+
+    <h3>Measures of Center</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>Mean (average):</strong> \(\bar{x} = \dfrac{\sum x_i}{n}\) — sum of all values divided by the count</li>
+        <li><strong>Median:</strong> the middle value when data is sorted. If n is even, average the two middle values.</li>
+        <li><strong>Mode:</strong> the value that appears most often. A data set can have no mode, one mode, or multiple modes.</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>Data set:</strong> 4, 7, 7, 9, 11, 13, 15
+      <div class="formula">
+        Mean = \(\dfrac{4+7+7+9+11+13+15}{7} = \dfrac{66}{7} \approx 9.43\)<br>
+        Median = 9 (4th value in sorted list)<br>
+        Mode = 7 (appears twice)
+      </div>
+    </div>
+
+    <h3>Measures of Spread</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>Range:</strong> maximum − minimum</li>
+        <li><strong>Variance (\(\sigma^2\) or \(s^2\)):</strong> average of squared deviations from the mean</li>
+        <li><strong>Standard deviation (\(\sigma\) or \(s\)):</strong> square root of variance — typical distance from the mean</li>
+        <li><strong>IQR (Interquartile Range):</strong> Q3 − Q1 — spread of the middle 50% of data</li>
+      </ul>
+    </div>
+
+    <div class="formula">
+      <strong>Population Standard Deviation:</strong>
+      \[ \sigma = \sqrt{\frac{\sum(x_i - \mu)^2}{N}} \]
+      <strong>Sample Standard Deviation:</strong>
+      \[ s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}} \]
+    </div>
+
+    <h3>Five-Number Summary and Box Plots</h3>
+    <p>The five-number summary consists of: <strong>Minimum, Q1, Median (Q2), Q3, Maximum</strong>. A box plot displays these five values graphically.</p>
+
+    <div class="tip">
+      <strong>Outlier Rule:</strong> A data point is an outlier if it falls below \(Q1 - 1.5 \times IQR\) or above \(Q3 + 1.5 \times IQR\).
+    </div>
+
+    <h2>2. Probability Fundamentals</h2>
+    <p>Probability measures how likely an event is to occur. It ranges from 0 (impossible) to 1 (certain).</p>
+
+    <div class="formula">
+      \[ P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}} \]
+    </div>
+
+    <h3>Complement Rule</h3>
+    <div class="formula">
+      \[ P(A^c) = 1 - P(A) \]
+    </div>
+
+    <h3>Addition Rule</h3>
+    <div class="formula">
+      \[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
+    </div>
+    <p>If A and B are <strong>mutually exclusive</strong> (cannot both occur): \(P(A \cup B) = P(A) + P(B)\)</p>
+
+    <h3>Multiplication Rule</h3>
+    <div class="formula">
+      \[ P(A \cap B) = P(A) \times P(B|A) \]
+    </div>
+    <p>If A and B are <strong>independent</strong>: \(P(A \cap B) = P(A) \times P(B)\)</p>
+
+    <div class="example">
+      <strong>Example:</strong> A bag has 4 red and 6 blue marbles. Probability of drawing 2 reds in a row (without replacement)?<br>
+      \(P = \dfrac{4}{10} \times \dfrac{3}{9} = \dfrac{12}{90} = \dfrac{2}{15}\)
+    </div>
+
+    <h3>Conditional Probability</h3>
+    <div class="formula">
+      \[ P(B|A) = \frac{P(A \cap B)}{P(A)} \]
+    </div>
+
+    <h2>3. Counting Principles</h2>
+
+    <h3>Permutations — Order Matters</h3>
+    <div class="formula">
+      \[ P(n, r) = \frac{n!}{(n-r)!} \]
+    </div>
+    <div class="example">
+      How many ways can 3 people finish 1st, 2nd, 3rd out of 8?<br>
+      \(P(8,3) = \dfrac{8!}{5!} = 8 \times 7 \times 6 = 336\)
+    </div>
+
+    <h3>Combinations — Order Does Not Matter</h3>
+    <div class="formula">
+      \[ C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} \]
+    </div>
+    <div class="example">
+      How many ways to choose a 3-person committee from 8 people?<br>
+      \(C(8,3) = \dfrac{8!}{3! \cdot 5!} = \dfrac{8 \times 7 \times 6}{6} = 56\)
+    </div>
+
+    <h2>4. Probability Distributions</h2>
+
+    <h3>Normal Distribution</h3>
+    <p>The normal distribution is bell-shaped and symmetric about the mean. Described by mean (\(\mu\)) and standard deviation (\(\sigma\)).</p>
+
+    <div class="concept-box">
+      <strong>Empirical Rule (68-95-99.7 Rule)</strong>
+      <ul>
+        <li>About <strong>68%</strong> of data falls within 1σ of the mean</li>
+        <li>About <strong>95%</strong> of data falls within 2σ of the mean</li>
+        <li>About <strong>99.7%</strong> of data falls within 3σ of the mean</li>
+      </ul>
+    </div>
+
+    <h3>Z-Score (Standardized Score)</h3>
+    <div class="formula">
+      \[ z = \frac{x - \mu}{\sigma} \]
+    </div>
+    <div class="example">
+      A test has mean 70 and standard deviation 10. A student scored 85. Find the z-score.<br>
+      \(z = \dfrac{85 - 70}{10} = 1.5\) — the student is 1.5 standard deviations above the mean.
+    </div>
+
+    <h2>5. Practice Problems</h2>
+    <ol>
+      <li>Data: 3, 5, 5, 8, 10, 12. Find mean, median, and mode.</li>
+      <li>A fair die is rolled. What is the probability of rolling an even number?</li>
+      <li>A card is drawn from a standard 52-card deck. Find P(King or Heart).</li>
+      <li>How many 4-digit PIN codes are possible using digits 0–9 with no repetition?</li>
+      <li>A class has 10 students. How many ways can a team of 4 be selected?</li>
+      <li>IQ scores are normally distributed with μ = 100, σ = 15. What percent of scores fall between 85 and 115?</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>Answers</strong>
+      <ol>
+        <li>Mean = \(\dfrac{43}{6} \approx 7.17\); Median = \(\dfrac{5+8}{2} = 6.5\); Mode = 5</li>
+        <li>\(P = \dfrac{3}{6} = \dfrac{1}{2}\)</li>
+        <li>\(P(\text{K or H}) = \dfrac{4}{52} + \dfrac{13}{52} - \dfrac{1}{52} = \dfrac{16}{52} = \dfrac{4}{13}\)</li>
+        <li>\(P(10,4) = 10 \times 9 \times 8 \times 7 = 5{,}040\)</li>
+        <li>\(C(10,4) = 210\)</li>
+        <li>85 to 115 is within 1σ → approximately <strong>68%</strong></li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · Free Educational Resources</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">Content based on US Common Core Standards. Free for all students.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>方程式の完全解説 - 一次方程式・連立方程式・二次方程式 | StudyHub 数学</title>
+  <meta name="description" content="中学数学の方程式を完全解説。一次方程式、連立方程式、二次方程式と解の公式を例題とともにわかりやすく説明します。">
+  <meta name="keywords" content="方程式, 一次方程式, 連立方程式, 二次方程式, 解の公式, 中学数学">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ja/math/equations.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">数学</a>
+      <a href="../japanese/">国語</a>
+      <a href="../english/">英語</a>
+      <a href="../science/">理科</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/math/">KO</a>
+      <a href="../../en/math/">EN</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ja/">日本語</a>
+      <span class="sep">›</span>
+      <a href="../math/">数学</a>
+      <span class="sep">›</span>
+      <span>方程式</span>
+    </nav>
+
+    <h1>🔤 方程式の完全解説</h1>
+    <div class="article-meta">
+      <span>📚 中学数学</span>
+      <span>🎯 重要概念：一次方程式、連立方程式、二次方程式</span>
+    </div>
+
+    <h2>1. 方程式とは</h2>
+    <p>方程式は文字（変数）を含む等式で、特定の値のときだけ成り立ちます。その値を方程式の<strong>解（かい）</strong>といい、解を求めることを<strong>解く</strong>といいます。</p>
+
+    <h2>2. 一次方程式</h2>
+    <p>文字が1乗の方程式です。等式の性質を使って文字を一方に集めて解きます。</p>
+
+    <div class="concept-box">
+      <strong>等式の性質</strong>
+      <ul>
+        <li>両辺に同じ数をたしても等式は成り立つ</li>
+        <li>両辺から同じ数をひいても等式は成り立つ</li>
+        <li>両辺に同じ数をかけても等式は成り立つ</li>
+        <li>両辺を同じ数（0以外）でわっても等式は成り立つ</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>例題：3x ＋ 7 ＝ 16 を解く</strong>
+      <div class="formula">
+        3x ＝ 16 ー 7 ＝ 9<br>
+        x ＝ 9 ÷ 3 ＝ <strong>3</strong><br>
+        確認：3 × 3 ＋ 7 ＝ 9 ＋ 7 ＝ 16 ✓
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>例題：5(x ー 2) ＝ 3x ＋ 4 を解く</strong>
+      <div class="formula">
+        5x ー 10 ＝ 3x ＋ 4<br>
+        5x ー 3x ＝ 4 ＋ 10<br>
+        2x ＝ 14<br>
+        x ＝ <strong>7</strong>
+      </div>
+    </div>
+
+    <h2>3. 連立方程式</h2>
+    <p>2つ以上の方程式を同時に満たす値を求める問題です。<strong>代入法</strong>と<strong>加減法</strong>があります。</p>
+
+    <h3>加減法（加法・減法）</h3>
+    <div class="example">
+      <strong>例題：</strong> \(\begin{cases}2x + y = 7 \\ x - y = 2\end{cases}\) を解く
+      <div class="formula">
+        2つの式を足す：\((2x + y) + (x - y) = 7 + 2\)<br>
+        \(3x = 9 \Rightarrow x = 3\)<br>
+        x = 3 を代入：\(3 - y = 2 \Rightarrow y = 1\)<br>
+        解：\(x = 3, \; y = 1\)
+      </div>
+    </div>
+
+    <h3>代入法</h3>
+    <div class="example">
+      <strong>例題：</strong> \(\begin{cases}y = 2x - 1 \\ 3x + 2y = 13\end{cases}\) を解く
+      <div class="formula">
+        1式を2式に代入：\(3x + 2(2x - 1) = 13\)<br>
+        \(3x + 4x - 2 = 13\)<br>
+        \(7x = 15 \Rightarrow x = \dfrac{15}{7}\)... ← 計算例として<br>
+        実際：\(3x + 4x = 15 \Rightarrow 7x = 15\)、\(x = \dfrac{15}{7}\) ← 別の例を使います<br><br>
+        <strong>別の例：</strong> \(\begin{cases}y = x + 1 \\ 2x + y = 7\end{cases}\)<br>
+        代入：\(2x + (x+1) = 7 \Rightarrow 3x = 6 \Rightarrow x = 2\)<br>
+        \(y = 2 + 1 = 3\)
+      </div>
+    </div>
+
+    <h2>4. 二次方程式</h2>
+    <p>文字の最高次数が2の方程式 \(ax^2 + bx + c = 0\) です。</p>
+
+    <h3>因数分解による解法</h3>
+    <div class="example">
+      <strong>例：\(x^2 - 5x + 6 = 0\)</strong>
+      <div class="formula">
+        \((x - 2)(x - 3) = 0\)<br>
+        \(x = 2\) または \(x = 3\)
+      </div>
+    </div>
+
+    <h3>解の公式</h3>
+    <div class="formula">
+      \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+    </div>
+    <div class="example">
+      <strong>例：\(2x^2 - 3x - 2 = 0\)</strong>（a=2, b=-3, c=-2）
+      <div class="formula">
+        \(x = \dfrac{3 \pm \sqrt{9 + 16}}{4} = \dfrac{3 \pm 5}{4}\)<br>
+        \(x = 2\) または \(x = -\dfrac{1}{2}\)
+      </div>
+    </div>
+
+    <div class="concept-box">
+      <strong>判別式 D = b² - 4ac</strong>
+      <ul>
+        <li>D &gt; 0 → 異なる2つの実数解</li>
+        <li>D = 0 → 1つの実数解（重解）</li>
+        <li>D &lt; 0 → 実数解なし（虚数解）</li>
+      </ul>
+    </div>
+
+    <h2>5. 練習問題</h2>
+    <ol>
+      <li>\(4x - 3 = 13\) を解きなさい。</li>
+      <li>\(\begin{cases}x + 2y = 8 \\ x - y = 2\end{cases}\) を解きなさい。</li>
+      <li>\(x^2 - 7x + 12 = 0\) を解きなさい。</li>
+      <li>解の公式を使って \(x^2 + 4x - 5 = 0\) を解きなさい。</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答え</strong>
+      <ol>
+        <li>\(x = 4\)</li>
+        <li>\(x = 4, y = 2\)</li>
+        <li>\((x-3)(x-4) = 0 \Rightarrow x = 3\) または \(x = 4\)</li>
+        <li>\(x = \dfrac{-4 \pm \sqrt{16+20}}{2} = \dfrac{-4 \pm 6}{2} \Rightarrow x = 1\) または \(x = -5\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 無料学習ノート</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本資料は文部科学省の学習指導要領に基づく無料教育資料です。</p>
+  </footer>
+</body>
+</html>

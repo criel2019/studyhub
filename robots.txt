@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://criel2019.github.io/studyhub/sitemap.xml

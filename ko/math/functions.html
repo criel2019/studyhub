@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 완벽 정리 - 일차함수, 이차함수, 그래프 | StudyHub 수학</title>
+  <meta name="description" content="중등·고등 수학 함수. 함수의 정의, 일차함수 y=ax+b, 이차함수 y=ax², 함수의 그래프와 성질을 설명합니다.">
+  <meta name="keywords" content="함수, 일차함수, 이차함수, 역함수, 합성함수, 기울기, 꼭짓점, 중등수학, 고등수학">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="함수 완벽 정리 - 일차함수, 이차함수, 그래프 | StudyHub 수학">
+  <meta property="og:description" content="함수의 정의, 일차함수, 이차함수, 역함수, 합성함수를 그래프와 함께 완벽 설명합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/functions.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/functions.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "함수 완벽 정리 - 일차함수, 이차함수, 그래프",
+    "description": "중등·고등 수학 함수. 함수의 정의, 일차함수 y=ax+b, 이차함수 y=ax², 함수의 그래프와 성질을 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/functions.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "중등/고등",
+    "teaches": "함수",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>함수</span>
+    </nav>
+
+    <h1>📈 함수 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 중등·고등 수학</span>
+      <span>🎯 핵심 개념: 일차함수, 이차함수, 역함수, 합성함수</span>
+    </div>
+
+    <h2>1. 함수의 정의</h2>
+    <p><strong>함수(函數, function)</strong>는 집합 X의 각 원소에 집합 Y의 원소를 정확히 하나씩 대응시키는 규칙입니다.</p>
+
+    <div class="concept-box">
+      <strong>함수의 구성요소</strong>
+      \[ y = f(x) \]
+      <ul>
+        <li><strong>정의역(Domain, X)</strong>: 입력값의 집합</li>
+        <li><strong>공역(Codomain, Y)</strong>: 출력값이 될 수 있는 집합</li>
+        <li><strong>치역(Range)</strong>: 실제 출력값들의 집합 (공역의 부분집합)</li>
+        <li><strong>f(x)</strong>: x에 대응하는 y의 값 (함수값)</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <strong>핵심 조건:</strong> 함수는 정의역의 한 원소에 공역의 원소가 <strong>정확히 하나</strong>만 대응해야 합니다. 한 x값에 두 개 이상의 y값이 대응되면 함수가 아닙니다.
+    </div>
+
+    <h2>2. 일차함수</h2>
+    <p>일차함수는 \(x\)에 대한 일차식으로 표현되는 함수입니다.</p>
+
+    <div class="formula">
+      \[ y = ax + b \quad (a \neq 0) \]
+      <ul style="font-family: inherit; font-size: 0.95rem;">
+        <li><strong>\(a\)</strong>: 기울기(slope) — x가 1 증가할 때 y의 변화량</li>
+        <li><strong>\(b\)</strong>: y절편(y-intercept) — 그래프가 y축과 만나는 점의 y좌표</li>
+      </ul>
+    </div>
+
+    <h3>일차함수의 그래프: 직선</h3>
+    <div class="concept-box">
+      <ul>
+        <li>\(a > 0\): 우상향(오른쪽 위 방향) 직선</li>
+        <li>\(a < 0\): 우하향(오른쪽 아래 방향) 직선</li>
+        <li>\(|a|\)가 클수록 기울기가 가파릅니다.</li>
+      </ul>
+    </div>
+
+    <h3>기울기 계산</h3>
+    <div class="formula">
+      \[ \text{기울기} = \frac{y_2 - y_1}{x_2 - x_1} \quad (x_1 \neq x_2) \]
+    </div>
+
+    <h3>절편</h3>
+    <div class="example">
+      <strong>x절편과 y절편 구하기 (\(y = 2x - 4\))</strong>
+      <div class="formula">
+        x절편: \(y = 0\) 대입 → \(0 = 2x - 4\) → \(x = 2\) → x절편: 2<br>
+        y절편: \(x = 0\) 대입 → \(y = 2(0) - 4 = -4\) → y절편: −4
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>두 점 (1, 3)과 (3, 7)을 지나는 일차함수 구하기</strong>
+      <div class="formula">
+        기울기: \(a = \dfrac{7-3}{3-1} = \dfrac{4}{2} = 2\)<br>
+        \(y = 2x + b\)에 (1, 3) 대입: \(3 = 2(1) + b\) → \(b = 1\)<br>
+        <strong>∴ \(y = 2x + 1\)</strong>
+      </div>
+    </div>
+
+    <h2>3. 이차함수</h2>
+    <p>이차함수는 \(x\)의 최고 차수가 2인 함수로, 그래프가 포물선 모양입니다.</p>
+
+    <div class="formula">
+      \[ y = ax^2 + bx + c \quad (a \neq 0) \]
+    </div>
+
+    <h3>표준형 (꼭짓점형)</h3>
+    <div class="formula">
+      \[ y = a(x-p)^2 + q \]
+      <p style="font-family: inherit; font-size: 0.95rem;">꼭짓점: \((p, q)\), &nbsp; 대칭축: \(x = p\)</p>
+    </div>
+
+    <div class="concept-box">
+      <strong>이차함수의 그래프 특성</strong>
+      <ul>
+        <li>\(a > 0\): 아래로 볼록(위로 열림) — 꼭짓점에서 최솟값</li>
+        <li>\(a < 0\): 위로 볼록(아래로 열림) — 꼭짓점에서 최댓값</li>
+        <li>\(|a|\)가 클수록 포물선이 좁아짐</li>
+        <li>대칭축: \(x = -\dfrac{b}{2a}\)</li>
+        <li>꼭짓점 x좌표: \(x = -\dfrac{b}{2a}\)</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(y = 2x^2 - 8x + 6\)의 꼭짓점과 대칭축 구하기</strong>
+      <div class="formula">
+        대칭축: \(x = -\dfrac{-8}{2 \cdot 2} = \dfrac{8}{4} = 2\)<br>
+        꼭짓점 y좌표: \(y = 2(2)^2 - 8(2) + 6 = 8 - 16 + 6 = -2\)<br>
+        <strong>∴ 꼭짓점: (2, −2), 대칭축: x = 2</strong><br><br>
+        표준형으로 변환: \(y = 2(x-2)^2 - 2\)
+      </div>
+    </div>
+
+    <h3>이차함수의 최대·최솟값</h3>
+    <div class="example">
+      <strong>예제: \(y = -x^2 + 4x - 3\)의 최댓값 구하기</strong>
+      <div class="formula">
+        완전제곱식으로 변환:<br>
+        \(y = -(x^2 - 4x) - 3\)<br>
+        \(y = -(x^2 - 4x + 4 - 4) - 3\)<br>
+        \(y = -(x-2)^2 + 4 - 3 = -(x-2)^2 + 1\)<br>
+        \(a = -1 < 0\)이므로 최댓값 존재<br>
+        <strong>최댓값: 1 (x = 2일 때)</strong>
+      </div>
+    </div>
+
+    <h2>4. 역함수</h2>
+    <p>함수 \(f\)가 일대일 대응일 때, \(f(x) = y\)의 x와 y를 맞바꾼 함수를 <strong>역함수 \(f^{-1}\)</strong>라 합니다.</p>
+
+    <div class="concept-box">
+      <strong>역함수 구하는 방법</strong>
+      <ol>
+        <li>\(y = f(x)\)로 놓는다.</li>
+        <li>\(x\)에 대해 풀어 \(x = g(y)\) 형태로 만든다.</li>
+        <li>\(x\)와 \(y\)를 교환: \(y = g(x)\)</li>
+        <li>\(f^{-1}(x) = g(x)\)</li>
+      </ol>
+    </div>
+
+    <div class="example">
+      <strong>예제: \(f(x) = 3x - 2\)의 역함수 구하기</strong>
+      <div class="formula">
+        \(y = 3x - 2\)<br>
+        \(3x = y + 2\)<br>
+        \(x = \dfrac{y+2}{3}\)<br>
+        x와 y 교환:<br>
+        <strong>\(f^{-1}(x) = \dfrac{x+2}{3}\)</strong>
+      </div>
+    </div>
+
+    <p>참고: \(f(f^{-1}(x)) = x\) 이고 \(f^{-1}(f(x)) = x\)입니다.</p>
+
+    <h2>5. 합성함수</h2>
+    <p>두 함수 \(f\)와 \(g\)가 있을 때, \(g\)의 출력을 \(f\)의 입력으로 사용하는 새로운 함수를 <strong>합성함수</strong>라 합니다.</p>
+
+    <div class="formula">
+      \[ (f \circ g)(x) = f(g(x)) \]
+    </div>
+
+    <div class="example">
+      <strong>예제: \(f(x) = 2x + 1\), \(g(x) = x^2\)일 때 \((f \circ g)(3)\) 구하기</strong>
+      <div class="formula">
+        \(g(3) = 3^2 = 9\)<br>
+        \(f(g(3)) = f(9) = 2(9) + 1 = 19\)<br>
+        <strong>\((f \circ g)(3) = 19\)</strong>
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>주의:</strong> 합성함수는 교환법칙이 성립하지 않습니다. 일반적으로 \(f \circ g \neq g \circ f\)입니다.
+    </div>
+
+    <h2>6. 연습 문제</h2>
+    <ol>
+      <li>두 점 (2, 1)과 (4, 7)을 지나는 일차함수를 구하시오.</li>
+      <li>\(y = x^2 - 6x + 11\)을 표준형으로 변환하고, 꼭짓점을 구하시오.</li>
+      <li>\(f(x) = 4x - 3\)의 역함수 \(f^{-1}(x)\)를 구하시오.</li>
+      <li>\(f(x) = x + 2\), \(g(x) = 3x - 1\)일 때, \((g \circ f)(2)\)를 구하시오.</li>
+      <li>\(y = -2x^2 + 8x - 5\)의 최댓값을 구하시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>기울기 = (7−1)/(4−2) = 3, \(y = 3x + b\)에 (2,1) 대입: \(b = -5\), <strong>\(y = 3x - 5\)</strong></li>
+        <li>\(y = (x-3)^2 + 2\), 꼭짓점: <strong>(3, 2)</strong></li>
+        <li>\(y = 4x-3\) → \(x = \dfrac{y+3}{4}\) → <strong>\(f^{-1}(x) = \dfrac{x+3}{4}\)</strong></li>
+        <li>\(f(2) = 4\), \(g(4) = 11\) → <strong>11</strong></li>
+        <li>\(y = -2(x-2)^2 + 3\) → 최댓값: <strong>3</strong> (x = 2일 때)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

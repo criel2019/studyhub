@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微積分の完全解説 - 極限・微分・積分 | StudyHub 数学</title>
+  <meta name="description" content="高校数学の微積分を完全解説。極限の概念、微分の定義と公式（積・商・合成関数の微分）、不定積分・定積分を例題とともに説明します。">
+  <meta name="keywords" content="微積分, 極限, 微分, 積分, 微分の公式, 定積分, 不定積分, 高校数学">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ja/math/calculus.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">数学</a>
+      <a href="../japanese/">国語</a>
+      <a href="../english/">英語</a>
+      <a href="../science/">理科</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/math/">KO</a>
+      <a href="../../en/math/">EN</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ja/">日本語</a>
+      <span class="sep">›</span>
+      <a href="../math/">数学</a>
+      <span class="sep">›</span>
+      <span>微積分</span>
+    </nav>
+
+    <h1>∫ 微積分の完全解説</h1>
+    <div class="article-meta">
+      <span>📚 高校数学Ⅱ・Ⅲ</span>
+      <span>🎯 重要概念：極限、微分、積分</span>
+    </div>
+
+    <h2>1. 極限</h2>
+    <p>関数 \(f(x)\) においてxをaに近づけたときのfの値が近づく値を<strong>極限値</strong>といいます。</p>
+
+    <div class="formula">
+      \[ \lim_{x \to a} f(x) = L \]
+    </div>
+
+    <div class="example">
+      <strong>例：\(\displaystyle\lim_{x \to 2} (3x + 1)\)</strong><br>
+      直接代入できる場合：\(3 \times 2 + 1 = 7\)<br><br>
+      <strong>例（不定形）：\(\displaystyle\lim_{x \to 2} \dfrac{x^2 - 4}{x - 2}\)</strong>
+      <div class="formula">
+        \(\dfrac{(x+2)(x-2)}{x-2} = x+2 \to 4\)（x=2を代入）
+      </div>
+    </div>
+
+    <h2>2. 微分</h2>
+    <p>微分は関数の変化の割合（瞬間の速さ）を表します。幾何学的には接線の傾きです。</p>
+
+    <div class="formula">
+      \[ f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+    </div>
+
+    <h3>微分の公式</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>定数：</strong> \((c)' = 0\)</li>
+        <li><strong>べき乗則：</strong> \((x^n)' = nx^{n-1}\)</li>
+        <li><strong>和・差：</strong> \((f \pm g)' = f' \pm g'\)</li>
+        <li><strong>積の微分：</strong> \((fg)' = f'g + fg'\)</li>
+        <li><strong>商の微分：</strong> \(\left(\dfrac{f}{g}\right)' = \dfrac{f'g - fg'}{g^2}\)</li>
+        <li><strong>合成関数の微分（連鎖律）：</strong> \(\{f(g(x))\}' = f'(g(x)) \cdot g'(x)\)</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>例：\(f(x) = 3x^4 - 2x^2 + 5x - 1\) の微分</strong>
+      <div class="formula">
+        \(f'(x) = 12x^3 - 4x + 5\)
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>例（合成関数）：\(y = (2x+1)^5\) の微分</strong>
+      <div class="formula">
+        \(y' = 5(2x+1)^4 \cdot 2 = 10(2x+1)^4\)
+      </div>
+    </div>
+
+    <h2>3. 積分</h2>
+    <p>積分は微分の逆演算です。<strong>不定積分</strong>は \(F'(x) = f(x)\) を満たす \(F(x)+C\)（Cは積分定数）です。</p>
+
+    <h3>積分の基本公式</h3>
+    <div class="concept-box">
+      <ul>
+        <li>\(\displaystyle\int x^n dx = \dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)\)</li>
+        <li>\(\displaystyle\int e^x dx = e^x + C\)</li>
+        <li>\(\displaystyle\int \cos x\, dx = \sin x + C\)</li>
+        <li>\(\displaystyle\int \sin x\, dx = -\cos x + C\)</li>
+      </ul>
+    </div>
+
+    <h3>定積分</h3>
+    <div class="formula">
+      \[ \int_a^b f(x)\, dx = [F(x)]_a^b = F(b) - F(a) \]
+    </div>
+    <p>定積分はグラフとx軸の間の面積を表します。</p>
+
+    <div class="example">
+      <strong>例：\(\displaystyle\int_1^3 (2x + 1)\, dx\)</strong>
+      <div class="formula">
+        \(F(x) = x^2 + x\)<br>
+        \([x^2 + x]_1^3 = (9+3) - (1+1) = 12 - 2 = 10\)
+      </div>
+    </div>
+
+    <h2>4. 練習問題</h2>
+    <ol>
+      <li>\(f(x) = 5x^3 - 4x^2 + 3x\) を微分しなさい。</li>
+      <li>\(g(x) = (3x-1)^4\) を微分しなさい。</li>
+      <li>\(\displaystyle\int (4x^3 - 6x + 2)\, dx\) を求めなさい。</li>
+      <li>\(\displaystyle\int_0^2 (3x^2 - 2x)\, dx\) を求めなさい。</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答え</strong>
+      <ol>
+        <li>\(f'(x) = 15x^2 - 8x + 3\)</li>
+        <li>\(g'(x) = 4(3x-1)^3 \times 3 = 12(3x-1)^3\)</li>
+        <li>\(x^4 - 3x^2 + 2x + C\)</li>
+        <li>\([x^3 - x^2]_0^2 = (8-4) - 0 = 4\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 無料学習ノート</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本資料は文部科学省の学習指導要領に基づく無料教育資料です。</p>
+  </footer>
+</body>
+</html>

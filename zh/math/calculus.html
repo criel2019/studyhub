@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微积分完全讲解 - 极限・导数・积分 | StudyHub 数学</title>
+  <meta name="description" content="高中数学微积分完全讲解。极限的概念、导数定义与求导法则、不定积分与定积分，配有例题与练习。">
+  <meta name="keywords" content="微积分, 极限, 导数, 求导法则, 不定积分, 定积分, 高中数学">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/zh/math/calculus.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">数学</a>
+      <a href="../chinese/">语文</a>
+      <a href="../science/">科学</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/math/calculus.html">KO</a>
+      <a href="../../en/math/calculus.html">EN</a>
+      <a href="../../ja/math/calculus.html">JA</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../zh/">中文</a>
+      <span class="sep">›</span>
+      <a href="../math/">数学</a>
+      <span class="sep">›</span>
+      <span>微积分</span>
+    </nav>
+
+    <h1>∫ 微积分完全讲解</h1>
+    <div class="article-meta">
+      <span>📚 高中数学</span>
+      <span>🎯 重要概念：极限、导数、积分</span>
+    </div>
+
+    <h2>1. 极限</h2>
+    <div class="concept-box">
+      <p>极限描述函数在某点附近的趋势，而不一定等于该点的函数值。</p>
+      <div class="formula">\[ \lim_{x \to a} f(x) = L \]</div>
+      <p>表示当x趋近于a时，f(x)趋近于L。</p>
+      <div class="example">
+        <strong>例：</strong>\(\lim_{x \to 2}(3x - 1) = 3(2) - 1 = 5\)
+      </div>
+    </div>
+
+    <h2>2. 导数</h2>
+    <div class="concept-box">
+      <p>导数表示函数在某点处的瞬时变化率（切线斜率）。</p>
+      <div class="formula">
+        \[ f'(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} \]
+      </div>
+    </div>
+
+    <h3>基本求导法则</h3>
+    <div class="concept-box">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>函数</th><th>导数</th></tr></thead>
+          <tbody>
+            <tr><td>\(f(x) = c\)（常数）</td><td>\(f'(x) = 0\)</td></tr>
+            <tr><td>\(f(x) = x^n\)</td><td>\(f'(x) = nx^{n-1}\)</td></tr>
+            <tr><td>\(f(x) = e^x\)</td><td>\(f'(x) = e^x\)</td></tr>
+            <tr><td>\(f(x) = \ln x\)</td><td>\(f'(x) = 1/x\)</td></tr>
+            <tr><td>\(f(x) = \sin x\)</td><td>\(f'(x) = \cos x\)</td></tr>
+            <tr><td>\(f(x) = \cos x\)</td><td>\(f'(x) = -\sin x\)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul style="margin-top:0.75rem;">
+        <li><strong>积的导数：</strong>\((uv)' = u'v + uv'\)</li>
+        <li><strong>商的导数：</strong>\(\left(\dfrac{u}{v}\right)' = \dfrac{u'v - uv'}{v^2}\)</li>
+        <li><strong>链式法则：</strong>\([f(g(x))]' = f'(g(x)) \cdot g'(x)\)</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>例题：求 f(x) = 3x² - 5x + 2 的导数</strong>
+      <p>f'(x) = 6x - 5</p>
+      <p><strong>在 x = 2 处的斜率：f'(2) = 12 - 5 = 7</strong></p>
+    </div>
+
+    <h2>3. 积分</h2>
+    <div class="concept-box">
+      <strong>不定积分（原函数）：</strong>
+      <div class="formula">
+        \[\int f(x)\,dx = F(x) + C \quad \text{其中 } F'(x) = f(x)\]
+      </div>
+      <strong>常用积分公式：</strong>
+      <ul>
+        <li>\(\int x^n\,dx = \dfrac{x^{n+1}}{n+1} + C \quad (n \neq -1)\)</li>
+        <li>\(\int e^x\,dx = e^x + C\)</li>
+        <li>\(\int \sin x\,dx = -\cos x + C\)</li>
+        <li>\(\int \cos x\,dx = \sin x + C\)</li>
+      </ul>
+    </div>
+
+    <div class="concept-box">
+      <strong>定积分（微积分基本定理）：</strong>
+      <div class="formula">
+        \[\int_a^b f(x)\,dx = F(b) - F(a)\]
+      </div>
+      <p>定积分的几何意义：函数 f(x) 在 [a, b] 上与x轴围成的有向面积。</p>
+    </div>
+
+    <div class="example">
+      <strong>例题：计算 \(\int_0^2 (2x + 1)\,dx\)</strong>
+      <p>原函数：\(F(x) = x^2 + x\)</p>
+      <p>\(F(2) - F(0) = (4 + 2) - 0 = 6\)</p>
+      <p><strong>答：积分值 = 6</strong></p>
+    </div>
+
+    <h2>4. 练习题</h2>
+    <ol>
+      <li>求 f(x) = x³ - 2x² + 5 的导函数</li>
+      <li>求 \(\int (3x^2 - 4x)\,dx\)</li>
+      <li>计算 \(\int_1^3 2x\,dx\)</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答案</strong>
+      <ol>
+        <li>f'(x) = 3x² - 4x</li>
+        <li>\(x^3 - 2x^2 + C\)</li>
+        <li>\([x^2]_1^3 = 9 - 1 = 8\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 免费学习笔记</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本资料依据人教版课程标准编写，供免费教育使用。</p>
+  </footer>
+</body>
+</html>

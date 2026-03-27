@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>確率と統計の完全解説 - 平均・分散・標準偏差・確率 | StudyHub 数学</title>
+  <meta name="description" content="中学数学の確率と統計を完全解説。平均、中央値、最頻値、分散、標準偏差、確率の基本、組み合わせ・順列を例題とともに説明します。">
+  <meta name="keywords" content="確率, 統計, 平均, 中央値, 最頻値, 分散, 標準偏差, 組み合わせ, 順列, 中学数学">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ja/math/statistics.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">数学</a>
+      <a href="../japanese/">国語</a>
+      <a href="../english/">英語</a>
+      <a href="../science/">理科</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/math/">KO</a>
+      <a href="../../en/math/">EN</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ja/">日本語</a>
+      <span class="sep">›</span>
+      <a href="../math/">数学</a>
+      <span class="sep">›</span>
+      <span>確率と統計</span>
+    </nav>
+
+    <h1>📊 確率と統計の完全解説</h1>
+    <div class="article-meta">
+      <span>📚 中学数学</span>
+      <span>🎯 重要概念：代表値、散布度、確率の法則</span>
+    </div>
+
+    <h2>1. データの代表値</h2>
+
+    <div class="concept-box">
+      <ul>
+        <li><strong>平均値（mean）</strong>：すべての値の合計をデータの個数で割った値。\(\bar{x} = \dfrac{\sum x_i}{n}\)</li>
+        <li><strong>中央値（median）</strong>：データを小さい順に並べたときの真ん中の値。偶数個の場合は中央の2つの平均。</li>
+        <li><strong>最頻値（mode）</strong>：最も多く出現する値。</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>データ：4, 7, 7, 9, 11, 13, 15</strong>
+      <div class="formula">
+        平均値 = \(\dfrac{4+7+7+9+11+13+15}{7} = \dfrac{66}{7} \approx 9.4\)<br>
+        中央値 = 9（4番目の値）<br>
+        最頻値 = 7（2回出現）
+      </div>
+    </div>
+
+    <h2>2. データの散布度</h2>
+
+    <div class="concept-box">
+      <ul>
+        <li><strong>範囲（range）</strong>：最大値 ー 最小値</li>
+        <li><strong>分散（variance）</strong>：各データと平均値の差の2乗の平均</li>
+        <li><strong>標準偏差（standard deviation）</strong>：分散の正の平方根。データのばらつきの指標。</li>
+      </ul>
+      <div class="formula" style="margin-top:0.5rem;">
+        \[ s^2 = \frac{\sum(x_i - \bar{x})^2}{n}, \qquad s = \sqrt{s^2} \]
+      </div>
+    </div>
+
+    <h2>3. 確率の基本</h2>
+    <p>確率は事象の起こりやすさを0以上1以下の数で表したものです。</p>
+
+    <div class="formula">
+      \[ P(A) = \frac{\text{事象Aが起こる場合の数}}{\text{全事象の場合の数}} \]
+    </div>
+
+    <div class="concept-box">
+      <strong>確率の性質</strong>
+      <ul>
+        <li>\(0 \leq P(A) \leq 1\)</li>
+        <li>全事象の確率：\(P(\Omega) = 1\)</li>
+        <li>余事象の確率：\(P(\bar{A}) = 1 - P(A)\)</li>
+        <li>和事象：\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</li>
+        <li>互いに排反なとき：\(P(A \cup B) = P(A) + P(B)\)</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>例：サイコロを1回投げる</strong>
+      <ul>
+        <li>偶数が出る確率：\(P = \dfrac{3}{6} = \dfrac{1}{2}\)</li>
+        <li>3以上が出る確率：\(P = \dfrac{4}{6} = \dfrac{2}{3}\)</li>
+        <li>1が出ない確率：\(P = 1 - \dfrac{1}{6} = \dfrac{5}{6}\)</li>
+      </ul>
+    </div>
+
+    <h2>4. 組み合わせと順列</h2>
+
+    <h3>順列（Permutation）：順番あり</h3>
+    <div class="formula">\[ _nP_r = \frac{n!}{(n-r)!} \]</div>
+    <div class="example">
+      5人の中から3人を選んで1位・2位・3位を決める方法の数：<br>
+      \(_5P_3 = 5 \times 4 \times 3 = 60\)
+    </div>
+
+    <h3>組み合わせ（Combination）：順番なし</h3>
+    <div class="formula">\[ _nC_r = \binom{n}{r} = \frac{n!}{r!(n-r)!} \]</div>
+    <div class="example">
+      5人の中から3人を選ぶ方法の数：<br>
+      \(_5C_3 = \dfrac{5!}{3!2!} = 10\)
+    </div>
+
+    <h2>5. 練習問題</h2>
+    <ol>
+      <li>データ：2, 5, 5, 8, 10 の平均値・中央値・最頻値を求めなさい。</li>
+      <li>コインを2枚同時に投げるとき、2枚とも表が出る確率を求めなさい。</li>
+      <li>10人の中から委員4人を選ぶ方法は何通りですか？</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答え</strong>
+      <ol>
+        <li>平均=6、中央値=5、最頻値=5</li>
+        <li>\(P = \dfrac{1}{2} \times \dfrac{1}{2} = \dfrac{1}{4}\)</li>
+        <li>\(_{10}C_4 = \dfrac{10!}{4!6!} = 210\)通り</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 無料学習ノート</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本資料は文部科学省の学習指導要領に基づく無料教育資料です。</p>
+  </footer>
+</body>
+</html>

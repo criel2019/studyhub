@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>분수 완벽 정리 - 진분수, 가분수, 분수의 연산 | StudyHub 수학</title>
+  <meta name="description" content="분수의 뜻, 진분수·가분수·대분수 구분, 동치분수, 약분·통분, 분수의 덧셈·뺄셈·곱셈·나눗셈을 완벽하게 설명합니다.">
+  <meta name="keywords" content="분수, 진분수, 가분수, 대분수, 약분, 통분, 동치분수, 분수연산, 초등수학, 중등수학">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="분수 완벽 정리 - 진분수, 가분수, 분수의 연산 | StudyHub 수학">
+  <meta property="og:description" content="분수의 뜻, 진분수·가분수·대분수 구분, 약분·통분, 분수의 사칙연산을 완벽하게 설명합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/fractions.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/fractions.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "분수 완벽 정리 - 진분수, 가분수, 분수의 연산",
+    "description": "분수의 뜻, 진분수·가분수·대분수 구분, 동치분수, 약분·통분, 분수의 덧셈·뺄셈·곱셈·나눗셈을 완벽하게 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/fractions.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "초등/중등",
+    "teaches": "분수",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>분수</span>
+    </nav>
+
+    <h1>🔢 분수 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 초등·중등 수학</span>
+      <span>🎯 핵심 개념: 약분, 통분, 분수의 사칙연산</span>
+    </div>
+
+    <h2>1. 분수의 뜻</h2>
+    <p>분수는 전체를 똑같이 몇 등분한 것 중의 일부를 나타내는 수입니다.</p>
+
+    <div class="concept-box">
+      <strong>분수의 구성</strong>
+      \[ \frac{a}{b} \]
+      <ul>
+        <li><strong>분모(b)</strong>: 전체를 나눈 등분의 수 (아래쪽)</li>
+        <li><strong>분자(a)</strong>: 그 중 택한 부분의 수 (위쪽)</li>
+        <li>읽는 방법: \(\dfrac{3}{5}\) → "5분의 3"</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>예시:</strong> 피자 한 판을 8조각으로 나누었을 때, 3조각을 먹으면 \(\dfrac{3}{8}\)을 먹은 것입니다.
+    </div>
+
+    <h2>2. 분수의 종류</h2>
+
+    <h3>진분수 (Proper Fraction)</h3>
+    <div class="concept-box">
+      <strong>분자 &lt; 분모</strong>인 분수. 1보다 작습니다.
+      <div class="formula">
+        예: \(\dfrac{1}{2},\quad \dfrac{3}{5},\quad \dfrac{7}{10}\)
+      </div>
+    </div>
+
+    <h3>가분수 (Improper Fraction)</h3>
+    <div class="concept-box">
+      <strong>분자 ≥ 분모</strong>인 분수. 1 이상입니다.
+      <div class="formula">
+        예: \(\dfrac{5}{3},\quad \dfrac{7}{4},\quad \dfrac{8}{8}\)
+      </div>
+    </div>
+
+    <h3>대분수 (Mixed Number)</h3>
+    <div class="concept-box">
+      <strong>자연수와 진분수의 합</strong>으로 이루어진 분수입니다.
+      <div class="formula">
+        예: \(1\dfrac{3}{4} = 1 + \dfrac{3}{4} = \dfrac{7}{4}\)
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>대분수 ↔ 가분수 변환</strong>
+      <div class="formula">
+        대분수 → 가분수: \(2\dfrac{3}{5} = \dfrac{2 \times 5 + 3}{5} = \dfrac{13}{5}\)<br><br>
+        가분수 → 대분수: \(\dfrac{11}{4} = \dfrac{8+3}{4} = 2\dfrac{3}{4}\)
+        &nbsp;&nbsp;(11 ÷ 4 = 몫 2, 나머지 3)
+      </div>
+    </div>
+
+    <h2>3. 동치분수와 약분</h2>
+
+    <h3>동치분수 (Equivalent Fractions)</h3>
+    <p>분자와 분모에 같은 수를 곱하거나 나누어도 분수의 값은 변하지 않습니다.</p>
+    <div class="formula">
+      \[ \frac{a}{b} = \frac{a \times k}{b \times k} \quad (k \neq 0) \]
+    </div>
+    <div class="example">
+      \(\dfrac{1}{2} = \dfrac{2}{4} = \dfrac{3}{6} = \dfrac{4}{8}\) (모두 같은 값)
+    </div>
+
+    <h3>약분 (Simplification)</h3>
+    <p>분자와 분모를 그들의 <strong>최대공약수(GCD)</strong>로 나누어 더 간단한 분수로 만드는 것입니다. 더 이상 약분이 안 되면 <strong>기약분수</strong>라고 합니다.</p>
+    <div class="formula">
+      \[ \frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3} \]
+      GCD(12, 18) = 6
+    </div>
+
+    <h2>4. 통분</h2>
+    <p>분모가 다른 분수들을 같은 분모를 가지도록 변환하는 것을 <strong>통분</strong>이라고 합니다. 두 분모의 <strong>최소공배수(LCM)</strong>를 공통분모로 사용합니다.</p>
+
+    <div class="example">
+      <strong>예: \(\dfrac{1}{4}\)와 \(\dfrac{1}{6}\) 통분하기</strong>
+      <div class="formula">
+        LCM(4, 6) = 12<br>
+        \(\dfrac{1}{4} = \dfrac{1 \times 3}{4 \times 3} = \dfrac{3}{12}\)<br>
+        \(\dfrac{1}{6} = \dfrac{1 \times 2}{6 \times 2} = \dfrac{2}{12}\)
+      </div>
+    </div>
+
+    <h2>5. 분수의 덧셈과 뺄셈</h2>
+
+    <h3>분모가 같을 때 (동분모)</h3>
+    <div class="formula">
+      \[ \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}, \qquad \frac{a}{c} - \frac{b}{c} = \frac{a-b}{c} \]
+    </div>
+    <div class="example">
+      \(\dfrac{3}{8} + \dfrac{2}{8} = \dfrac{5}{8}\), &nbsp;&nbsp; \(\dfrac{5}{7} - \dfrac{2}{7} = \dfrac{3}{7}\)
+    </div>
+
+    <h3>분모가 다를 때 (이분모)</h3>
+    <p>먼저 통분한 후 계산합니다.</p>
+    <div class="example">
+      <strong>예: \(\dfrac{1}{3} + \dfrac{1}{4}\) 계산하기</strong>
+      <div class="formula">
+        LCM(3, 4) = 12로 통분:<br>
+        \(\dfrac{1}{3} + \dfrac{1}{4} = \dfrac{4}{12} + \dfrac{3}{12} = \dfrac{7}{12}\)
+      </div>
+    </div>
+    <div class="example">
+      <strong>예: \(\dfrac{5}{6} - \dfrac{1}{4}\) 계산하기</strong>
+      <div class="formula">
+        LCM(6, 4) = 12로 통분:<br>
+        \(\dfrac{5}{6} - \dfrac{1}{4} = \dfrac{10}{12} - \dfrac{3}{12} = \dfrac{7}{12}\)
+      </div>
+    </div>
+
+    <h2>6. 분수의 곱셈</h2>
+    <p>분수의 곱셈은 분자는 분자끼리, 분모는 분모끼리 곱합니다.</p>
+    <div class="formula">
+      \[ \frac{a}{b} \times \frac{c}{d} = \frac{a \times c}{b \times d} = \frac{ac}{bd} \]
+    </div>
+    <div class="example">
+      <strong>예: \(\dfrac{2}{3} \times \dfrac{3}{5}\) 계산하기</strong>
+      <div class="formula">
+        \(\dfrac{2}{3} \times \dfrac{3}{5} = \dfrac{2 \times 3}{3 \times 5} = \dfrac{6}{15} = \dfrac{2}{5}\) (약분)
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 약분 팁:</strong> 곱셈에서는 계산 전에 분자와 분모를 미리 약분(대각선 약분)하면 계산이 쉬워집니다.
+    </div>
+
+    <h2>7. 분수의 나눗셈</h2>
+    <p>분수를 분수로 나눌 때는 나누는 분수의 <strong>역수</strong>를 곱합니다. 역수란 분자와 분모를 뒤집은 것입니다.</p>
+    <div class="formula">
+      \[ \frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} = \frac{ad}{bc} \]
+    </div>
+    <div class="example">
+      <strong>예: \(\dfrac{3}{4} \div \dfrac{2}{5}\) 계산하기</strong>
+      <div class="formula">
+        \(\dfrac{3}{4} \div \dfrac{2}{5} = \dfrac{3}{4} \times \dfrac{5}{2} = \dfrac{15}{8} = 1\dfrac{7}{8}\)
+      </div>
+    </div>
+    <div class="example">
+      <strong>예: \(\dfrac{2}{3} \div \dfrac{4}{9}\) 계산하기</strong>
+      <div class="formula">
+        \(\dfrac{2}{3} \div \dfrac{4}{9} = \dfrac{2}{3} \times \dfrac{9}{4} = \dfrac{18}{12} = \dfrac{3}{2} = 1\dfrac{1}{2}\)
+      </div>
+    </div>
+
+    <h2>8. 연습 문제</h2>
+    <ol>
+      <li>\(\dfrac{2}{7} + \dfrac{3}{7} = ?\)</li>
+      <li>\(\dfrac{3}{4} - \dfrac{1}{6} = ?\)</li>
+      <li>\(\dfrac{4}{9} \times \dfrac{3}{8} = ?\)</li>
+      <li>\(\dfrac{5}{6} \div \dfrac{10}{3} = ?\)</li>
+      <li>\(\dfrac{24}{36}\)을 기약분수로 나타내시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>\(\dfrac{2}{7} + \dfrac{3}{7} = \dfrac{5}{7}\)</li>
+        <li>\(\dfrac{3}{4} - \dfrac{1}{6} = \dfrac{9}{12} - \dfrac{2}{12} = \dfrac{7}{12}\)</li>
+        <li>\(\dfrac{4}{9} \times \dfrac{3}{8} = \dfrac{12}{72} = \dfrac{1}{6}\)</li>
+        <li>\(\dfrac{5}{6} \div \dfrac{10}{3} = \dfrac{5}{6} \times \dfrac{3}{10} = \dfrac{15}{60} = \dfrac{1}{4}\)</li>
+        <li>GCD(24, 36) = 12 → \(\dfrac{24}{36} = \dfrac{2}{3}\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

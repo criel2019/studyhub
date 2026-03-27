@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소수 완벽 정리 - 소수점, 소수의 연산 | StudyHub 수학</title>
+  <meta name="description" content="소수의 뜻, 소수점 읽기, 소수의 덧셈·뺄셈·곱셈·나눗셈, 분수와 소수의 관계를 완벽하게 설명합니다.">
+  <meta name="keywords" content="소수, 소수점, 소수의 덧셈, 소수의 곱셈, 소수의 나눗셈, 분수와 소수, 순환소수, 초등수학">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="소수 완벽 정리 - 소수점, 소수의 연산 | StudyHub 수학">
+  <meta property="og:description" content="소수의 뜻, 소수의 사칙연산, 분수와 소수의 관계를 완벽하게 설명합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/ko/math/decimals.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ko/math/decimals.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "소수 완벽 정리 - 소수점, 소수의 연산",
+    "description": "소수의 뜻, 소수점 읽기, 소수의 덧셈·뺄셈·곱셈·나눗셈, 분수와 소수의 관계를 완벽하게 설명합니다.",
+    "url": "https://criel2019.github.io/studyhub/ko/math/decimals.html",
+    "inLanguage": "ko",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "초등",
+    "teaches": "소수",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">수학</a>
+      <a href="../korean/">국어</a>
+      <a href="../english/">영어</a>
+      <a href="../science/">과학</a>
+      <span class="nav-sep">|</span>
+      <a href="../../en/math/">EN</a>
+      <a href="../../ja/math/">日</a>
+      <a href="../../zh/math/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ko/">한국어</a>
+      <span class="sep">›</span>
+      <a href="../math/">수학</a>
+      <span class="sep">›</span>
+      <span>소수</span>
+    </nav>
+
+    <h1>🔣 소수 완벽 정리</h1>
+    <div class="article-meta">
+      <span>📚 초등 수학</span>
+      <span>🎯 핵심 개념: 소수점, 자릿값, 소수의 사칙연산</span>
+    </div>
+
+    <h2>1. 소수의 뜻</h2>
+    <p>소수(小數, decimal)는 1보다 작은 수 또는 정수가 아닌 수를 표현하는 방법입니다. <strong>소수점(.)</strong>을 사용해 정수 부분과 소수 부분을 구분합니다.</p>
+
+    <div class="concept-box">
+      <strong>소수의 기본 관계</strong>
+      \[ 0.1 = \frac{1}{10}, \quad 0.01 = \frac{1}{100}, \quad 0.001 = \frac{1}{1000} \]
+      <p>소수점 아래 숫자 하나는 전체의 \(\dfrac{1}{10}\)을 나타냅니다.</p>
+    </div>
+
+    <div class="example">
+      <strong>소수 읽기:</strong>
+      <ul>
+        <li>\(0.3\): "영 점 삼" 또는 "영 점 삼" (3/10)</li>
+        <li>\(1.25\): "일 점 이오" (1과 25/100)</li>
+        <li>\(3.047\): "삼 점 공사칠"</li>
+      </ul>
+    </div>
+
+    <h2>2. 자릿값</h2>
+    <p>소수에서 각 자리의 값은 다음과 같습니다.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>자리 이름</th>
+            <th>소수점 기준</th>
+            <th>값</th>
+            <th>예 (3.456)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>일의 자리</td><td>소수점 왼쪽 첫째</td><td>1</td><td>3</td></tr>
+          <tr><td>소수 첫째 자리</td><td>소수점 오른쪽 첫째</td><td>0.1 = 1/10</td><td>4</td></tr>
+          <tr><td>소수 둘째 자리</td><td>소수점 오른쪽 둘째</td><td>0.01 = 1/100</td><td>5</td></tr>
+          <tr><td>소수 셋째 자리</td><td>소수점 오른쪽 셋째</td><td>0.001 = 1/1000</td><td>6</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="example">
+      <strong>3.456의 자릿값 분석</strong>
+      <div class="formula">
+        3.456 = 3 × 1 + 4 × 0.1 + 5 × 0.01 + 6 × 0.001<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 3 + 0.4 + 0.05 + 0.006
+      </div>
+    </div>
+
+    <h2>3. 소수의 덧셈과 뺄셈</h2>
+    <p>소수의 덧셈과 뺄셈은 반드시 <strong>소수점 자리를 맞추어</strong> 계산합니다. 자리 수가 다를 때는 빈 자리에 0을 채워 맞춥니다.</p>
+
+    <div class="example">
+      <strong>예제: 3.25 + 1.4 계산하기</strong>
+      <div class="formula">
+        1.4를 1.40으로 표현하여 자리 맞춤:<br>
+        &nbsp;&nbsp;3.2 5<br>
+        + 1.4 0<br>
+        ──────<br>
+        &nbsp;&nbsp;4.6 5<br>
+        <strong>∴ 3.25 + 1.4 = 4.65</strong>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>예제: 5.73 − 2.8 계산하기</strong>
+      <div class="formula">
+        2.8을 2.80으로 표현:<br>
+        &nbsp;&nbsp;5.7 3<br>
+        − 2.8 0<br>
+        ──────<br>
+        &nbsp;&nbsp;2.9 3<br>
+        <strong>∴ 5.73 − 2.8 = 2.93</strong>
+      </div>
+    </div>
+
+    <h2>4. 소수의 곱셈</h2>
+    <p>소수끼리 곱할 때는 소수점을 무시하고 정수처럼 곱한 후, 원래 두 수의 소수점 아래 자릿수를 합친 만큼 소수점을 왼쪽으로 이동합니다.</p>
+
+    <div class="concept-box">
+      <strong>소수 곱셈의 소수점 위치 결정</strong>
+      <p>소수 첫째 자리 수 × 소수 첫째 자리 수 → 결과는 소수 둘째 자리까지<br>
+      (소수점 아래 자릿수의 합 = 결과의 소수점 아래 자릿수)</p>
+    </div>
+
+    <div class="example">
+      <strong>예제: 2.3 × 1.4 계산하기</strong>
+      <div class="formula">
+        23 × 14 = 322 (소수점 무시하고 계산)<br>
+        2.3은 소수점 아래 1자리, 1.4도 소수점 아래 1자리<br>
+        → 합계 2자리 → 322에서 소수점을 왼쪽으로 2칸<br>
+        <strong>∴ 2.3 × 1.4 = 3.22</strong>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>예제: 0.15 × 0.4 계산하기</strong>
+      <div class="formula">
+        15 × 4 = 60<br>
+        0.15는 소수 2자리, 0.4는 소수 1자리 → 합계 3자리<br>
+        60 → 0.060 = 0.06<br>
+        <strong>∴ 0.15 × 0.4 = 0.06</strong>
+      </div>
+    </div>
+
+    <h2>5. 소수의 나눗셈</h2>
+    <p>소수를 나눌 때는 나누는 수(제수)가 자연수가 되도록 분자와 분모에 같은 수를 곱합니다 (소수점을 이동합니다).</p>
+
+    <div class="example">
+      <strong>예제: 4.8 ÷ 0.6 계산하기</strong>
+      <div class="formula">
+        나누는 수 0.6 → 자연수 6이 되도록 10을 곱함<br>
+        4.8 × 10 = 48, 0.6 × 10 = 6<br>
+        48 ÷ 6 = 8<br>
+        <strong>∴ 4.8 ÷ 0.6 = 8</strong>
+      </div>
+    </div>
+
+    <div class="example">
+      <strong>예제: 3.6 ÷ 0.12 계산하기</strong>
+      <div class="formula">
+        0.12 → 자연수 12가 되도록 100을 곱함<br>
+        3.6 × 100 = 360, 0.12 × 100 = 12<br>
+        360 ÷ 12 = 30<br>
+        <strong>∴ 3.6 ÷ 0.12 = 30</strong>
+      </div>
+    </div>
+
+    <h2>6. 분수와 소수의 변환</h2>
+
+    <h3>분수 → 소수</h3>
+    <p>분자를 분모로 나누면 소수로 변환됩니다.</p>
+    <div class="formula">
+      \[ \frac{1}{4} = 1 \div 4 = 0.25 \]
+      \[ \frac{3}{8} = 3 \div 8 = 0.375 \]
+      \[ \frac{1}{3} = 1 \div 3 = 0.333\ldots = 0.\overline{3} \quad \text{(순환소수)} \]
+    </div>
+
+    <h3>소수 → 분수</h3>
+    <div class="formula">
+      \[ 0.25 = \frac{25}{100} = \frac{1}{4} \]
+      \[ 0.6 = \frac{6}{10} = \frac{3}{5} \]
+    </div>
+
+    <div class="concept-box">
+      <strong>자주 쓰는 분수 ↔ 소수 변환표</strong>
+      <table>
+        <thead>
+          <tr><th>분수</th><th>소수</th><th>분수</th><th>소수</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>\(\dfrac{1}{2}\)</td><td>0.5</td><td>\(\dfrac{1}{8}\)</td><td>0.125</td></tr>
+          <tr><td>\(\dfrac{1}{4}\)</td><td>0.25</td><td>\(\dfrac{3}{8}\)</td><td>0.375</td></tr>
+          <tr><td>\(\dfrac{3}{4}\)</td><td>0.75</td><td>\(\dfrac{5}{8}\)</td><td>0.625</td></tr>
+          <tr><td>\(\dfrac{1}{5}\)</td><td>0.2</td><td>\(\dfrac{1}{3}\)</td><td>0.333...</td></tr>
+          <tr><td>\(\dfrac{2}{5}\)</td><td>0.4</td><td>\(\dfrac{2}{3}\)</td><td>0.666...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip">
+      <strong>💡 순환소수:</strong> \(\dfrac{1}{3} = 0.333\ldots\)처럼 소수점 아래의 숫자가 무한히 반복되는 소수를 순환소수라고 합니다. \(0.\overline{3}\)으로 표기합니다.
+    </div>
+
+    <h2>7. 연습 문제</h2>
+    <ol>
+      <li>\(4.37 + 2.8 = ?\)</li>
+      <li>\(7.05 - 3.47 = ?\)</li>
+      <li>\(1.6 \times 2.5 = ?\)</li>
+      <li>\(7.2 \div 0.9 = ?\)</li>
+      <li>\(\dfrac{7}{20}\)을 소수로 나타내시오.</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>정답</strong>
+      <ol>
+        <li>\(4.37 + 2.80 = 7.17\)</li>
+        <li>\(7.05 - 3.47 = 3.58\)</li>
+        <li>\(16 \times 25 = 400\), 소수 2자리 → \(1.6 \times 2.5 = 4.00 = 4\)</li>
+        <li>\(72 \div 9 = 8\) → \(7.2 \div 0.9 = 8\)</li>
+        <li>\(\dfrac{7}{20} = 7 \div 20 = 0.35\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 무료 교육 자료</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">본 자료는 교육 목적으로 제공되는 무료 학습 자료입니다. 한국 교육부 교육과정을 기반으로 합니다.</p>
+  </footer>
+</body>
+</html>

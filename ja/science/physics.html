@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物理の完全解説 - 力・運動・エネルギー・波動 | StudyHub 理科</title>
+  <meta name="description" content="中高物理の重要概念を完全解説。ニュートンの運動法則、エネルギー保存則、波動と音・光、電気と磁気を公式と例題で説明します。">
+  <meta name="keywords" content="物理, ニュートンの法則, 運動, エネルギー, 波動, 電気, 磁気, オームの法則, 中学物理, 高校物理">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/ja/science/physics.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/">数学</a>
+      <a href="../japanese/">国語</a>
+      <a href="../english/">英語</a>
+      <a href="../science/" class="active">理科</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/science/">KO</a>
+      <a href="../../en/science/">EN</a>
+      <a href="../../zh/science/">中</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../ja/">日本語</a>
+      <span class="sep">›</span>
+      <a href="../science/">理科</a>
+      <span class="sep">›</span>
+      <span>物理</span>
+    </nav>
+
+    <h1>⚡ 物理の完全解説</h1>
+    <div class="article-meta">
+      <span>📚 中・高校物理</span>
+      <span>🎯 重要概念：力、運動、エネルギー、波動、電気</span>
+    </div>
+
+    <h2>1. 力（Force）</h2>
+    <p>力は物体の形や運動状態を変化させる原因です。力は大きさと方向を持つ<strong>ベクトル</strong>です。</p>
+
+    <div class="concept-box">
+      <strong>力の単位：ニュートン（N）</strong>
+      <ul>
+        <li>1 N = 質量1 kgの物体に加速度1 m/s²を生じさせる力</li>
+        <li>地球上での重力：\(F_g = mg\)（g = 9.8 m/s²）</li>
+      </ul>
+      <strong>力の種類</strong>
+      <ul>
+        <li><strong>重力</strong>：地球が物体を引く力。\(W = mg\)</li>
+        <li><strong>弾性力</strong>：変形した物体が元に戻ろうとする力。フックの法則：\(F = kx\)</li>
+        <li><strong>摩擦力</strong>：接触面間で運動を妨げる力。\(f = \mu N\)</li>
+        <li><strong>垂直抗力</strong>：面から物体を垂直に押す力</li>
+      </ul>
+    </div>
+
+    <h2>2. ニュートンの運動法則</h2>
+
+    <h3>第1法則 — 慣性の法則</h3>
+    <div class="concept-box">
+      <strong>外部から合力が働かなければ、静止した物体は静止し続け、運動している物体は等速直線運動を続ける。</strong>
+      <ul>
+        <li><strong>慣性</strong>：物体が現在の運動状態を保持しようとする性質</li>
+        <li>慣性は質量に比例：質量が大きいほど慣性が大きい</li>
+        <li>例：バスが急発進すると乗客が後ろに倒れる</li>
+      </ul>
+    </div>
+
+    <h3>第2法則 — 加速度の法則</h3>
+    <div class="formula">
+      \[ F = ma \]
+      <p style="font-family:inherit; font-size:0.95rem;">F：合力(N)、m：質量(kg)、a：加速度(m/s²)</p>
+    </div>
+    <div class="example">
+      <strong>例題：質量5 kgの物体に20 Nの力が作用するとき加速度は？</strong>
+      <div class="formula">
+        \(a = \dfrac{F}{m} = \dfrac{20}{5} = 4 \text{ m/s}^2\)
+      </div>
+    </div>
+
+    <h3>第3法則 — 作用・反作用の法則</h3>
+    <div class="concept-box">
+      <strong>物体AがBに力（作用）を加えると、BもAに大きさが等しく方向が反対の力（反作用）を加える。</strong>
+      <ul>
+        <li>作用と反作用は同時に発生し、異なる物体に作用する</li>
+        <li>例：ロケットが気体を後ろに噴射（作用）→ ロケットが前進（反作用）</li>
+      </ul>
+    </div>
+
+    <h2>3. 運動の表し方</h2>
+
+    <h3>等加速度運動の公式</h3>
+    <div class="formula">
+      \[ v = v_0 + at \]
+      \[ s = v_0 t + \frac{1}{2}at^2 \]
+      \[ v^2 = v_0^2 + 2as \]
+    </div>
+
+    <h3>自由落下</h3>
+    <div class="concept-box">
+      空気抵抗を無視すると、地球表面付近ではすべての物体が同じ加速度で落下する。
+      \[ g = 9.8 \text{ m/s}^2 \]
+    </div>
+
+    <h2>4. エネルギー</h2>
+
+    <div class="formula">
+      <strong>運動エネルギー：</strong> \(E_k = \dfrac{1}{2}mv^2\)<br><br>
+      <strong>重力による位置エネルギー：</strong> \(E_p = mgh\)
+    </div>
+
+    <div class="concept-box">
+      <strong>力学的エネルギー保存の法則</strong>
+      \[ E_k + E_p = \text{一定} \]
+      摩擦がなければ、運動エネルギーと位置エネルギーの和は常に一定。
+    </div>
+
+    <h2>5. 波動</h2>
+    <div class="formula">
+      \[ v = f\lambda \]
+      <p style="font-family:inherit; font-size:0.95rem;">v：波の速度(m/s)、f：振動数(Hz)、λ：波長(m)</p>
+    </div>
+
+    <div class="concept-box">
+      <ul>
+        <li><strong>横波</strong>：振動方向と進行方向が垂直。例：光、水面波</li>
+        <li><strong>縦波</strong>：振動方向と進行方向が平行。例：音</li>
+        <li><strong>音速</strong>：空気中約340 m/s（15°C）</li>
+        <li><strong>光速</strong>：真空中 \(c = 3 \times 10^8\) m/s</li>
+      </ul>
+    </div>
+
+    <h2>6. 電気</h2>
+    <h3>オームの法則</h3>
+    <div class="formula">
+      \[ V = IR \]
+      <p style="font-family:inherit; font-size:0.95rem;">V：電圧(V)、I：電流(A)、R：抵抗(Ω)</p>
+    </div>
+
+    <div class="concept-box">
+      <strong>直列接続：</strong> \(R_{合} = R_1 + R_2 + \cdots\)<br>
+      <strong>並列接続：</strong> \(\dfrac{1}{R_{合}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots\)<br>
+      <strong>電力：</strong> \(P = VI = I^2 R = \dfrac{V^2}{R}\)
+    </div>
+
+    <h2>7. 練習問題</h2>
+    <ol>
+      <li>質量3 kgの物体に18 Nの力が作用するとき、加速度は何 m/s² か。</li>
+      <li>初速度0から5秒後に速度25 m/sになった。加速度と5秒間の移動距離は？</li>
+      <li>電圧12 V、抵抗4 Ωの回路の電流と消費電力は？</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答え</strong>
+      <ol>
+        <li>\(a = 18/3 = 6 \text{ m/s}^2\)</li>
+        <li>\(a = 5 \text{ m/s}^2\)、\(s = \dfrac{1}{2} \times 5 \times 25 = 62.5 \text{ m}\)</li>
+        <li>\(I = 3 \text{ A}\)、\(P = 12 \times 3 = 36 \text{ W}\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 無料学習ノート</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本資料は文部科学省の学習指導要領に基づく無料教育資料です。</p>
+  </footer>
+</body>
+</html>

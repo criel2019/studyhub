@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculus Study Guide - Limits, Derivatives, Integrals | StudyHub Math</title>
+  <meta name="description" content="AP Calculus AB/BC study guide: limits, derivatives (chain rule, product rule, quotient rule), integration techniques, and applications. With worked examples.">
+  <meta name="keywords" content="calculus, limits, derivatives, integration, chain rule, product rule, AP Calculus AB BC, differentiation, antiderivative">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <meta property="og:title" content="Calculus Study Guide | StudyHub Math">
+  <meta property="og:description" content="AP Calculus study guide covering limits, derivatives, and integration with worked examples.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://criel2019.github.io/studyhub/en/math/calculus.html">
+  <meta property="og:site_name" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/en/math/calculus.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Calculus Study Guide - Limits, Derivatives, Integrals",
+    "url": "https://criel2019.github.io/studyhub/en/math/calculus.html",
+    "inLanguage": "en",
+    "publisher": {"@type": "Organization", "name": "StudyHub", "url": "https://criel2019.github.io/studyhub/"},
+    "educationalLevel": "High School, AP",
+    "teaches": "Calculus",
+    "learningResourceType": "Study Guide",
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">Math</a>
+      <a href="../english/">English</a>
+      <a href="../science/">Science</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/">🇰🇷</a>
+      <a href="../../ja/">🇯🇵</a>
+      <a href="../../zh/">🇨🇳</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../">English (US)</a>
+      <span class="sep">›</span>
+      <a href="../math/">Math</a>
+      <span class="sep">›</span>
+      <span>Calculus</span>
+    </nav>
+
+    <h1>∫ Calculus Study Guide</h1>
+    <div class="article-meta">
+      <span>📚 High School / AP Calculus AB &amp; BC</span>
+      <span>🎯 Key Concepts: Limits, Derivatives, Integration, Applications</span>
+    </div>
+
+    <h2>1. Limits</h2>
+    <p>A <strong>limit</strong> describes the value a function approaches as the input approaches some value. Limits are the foundation of all of calculus.</p>
+
+    <div class="formula">
+      \[ \lim_{x \to a} f(x) = L \]
+      <p style="font-family:inherit; font-size:0.95rem;">Read: "the limit of f(x) as x approaches a equals L"</p>
+    </div>
+
+    <div class="concept-box">
+      <strong>Limit Laws (a and b are real numbers):</strong>
+      <ul>
+        <li>Sum: \(\lim[f(x) + g(x)] = \lim f(x) + \lim g(x)\)</li>
+        <li>Product: \(\lim[f(x) \cdot g(x)] = \lim f(x) \cdot \lim g(x)\)</li>
+        <li>Quotient: \(\lim\dfrac{f(x)}{g(x)} = \dfrac{\lim f(x)}{\lim g(x)}\) (if denominator ≠ 0)</li>
+      </ul>
+    </div>
+
+    <h3>Indeterminate Forms — L'Hôpital's Rule</h3>
+    <p>When direct substitution gives \(\dfrac{0}{0}\) or \(\dfrac{\infty}{\infty}\):</p>
+    <div class="formula">
+      \[ \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)} \]
+    </div>
+
+    <h3>Important Limits</h3>
+    <div class="formula">
+      \[ \lim_{x \to 0} \frac{\sin x}{x} = 1, \qquad \lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e \]
+    </div>
+
+    <h2>2. Derivatives</h2>
+    <p>The derivative measures the instantaneous rate of change of a function. Geometrically, it is the slope of the tangent line.</p>
+
+    <div class="formula">
+      \[ f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+    </div>
+
+    <h3>Differentiation Rules</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>Constant:</strong> \(\dfrac{d}{dx}[c] = 0\)</li>
+        <li><strong>Power Rule:</strong> \(\dfrac{d}{dx}[x^n] = nx^{n-1}\)</li>
+        <li><strong>Constant Multiple:</strong> \(\dfrac{d}{dx}[cf] = cf'\)</li>
+        <li><strong>Sum/Difference:</strong> \(\dfrac{d}{dx}[f \pm g] = f' \pm g'\)</li>
+        <li><strong>Product Rule:</strong> \(\dfrac{d}{dx}[fg] = f'g + fg'\)</li>
+        <li><strong>Quotient Rule:</strong> \(\dfrac{d}{dx}\!\left[\dfrac{f}{g}\right] = \dfrac{f'g - fg'}{g^2}\)</li>
+        <li><strong>Chain Rule:</strong> \(\dfrac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)\)</li>
+      </ul>
+    </div>
+
+    <h3>Derivatives of Common Functions</h3>
+    <div class="concept-box">
+      <ul>
+        <li>\(\dfrac{d}{dx}[\sin x] = \cos x\), &nbsp; \(\dfrac{d}{dx}[\cos x] = -\sin x\), &nbsp; \(\dfrac{d}{dx}[\tan x] = \sec^2 x\)</li>
+        <li>\(\dfrac{d}{dx}[e^x] = e^x\), &nbsp; \(\dfrac{d}{dx}[\ln x] = \dfrac{1}{x}\)</li>
+        <li>\(\dfrac{d}{dx}[a^x] = a^x \ln a\)</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>Example — Chain Rule:</strong> Find \(f'(x)\) for \(f(x) = (3x^2 + 1)^5\)
+      <div class="formula">
+        \(f'(x) = 5(3x^2+1)^4 \cdot 6x = 30x(3x^2+1)^4\)
+      </div>
+    </div>
+
+    <h3>Applications of Derivatives</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>Critical points:</strong> where \(f'(x) = 0\) or \(f'(x)\) is undefined</li>
+        <li><strong>Increasing:</strong> where \(f'(x) > 0\)</li>
+        <li><strong>Decreasing:</strong> where \(f'(x) < 0\)</li>
+        <li><strong>Concave up:</strong> where \(f''(x) > 0\)</li>
+        <li><strong>Concave down:</strong> where \(f''(x) < 0\)</li>
+        <li><strong>Inflection point:</strong> where concavity changes (\(f''(x) = 0\) and sign changes)</li>
+      </ul>
+    </div>
+
+    <h2>3. Integration</h2>
+    <p>Integration is the reverse of differentiation. The <strong>indefinite integral</strong> (antiderivative) of \(f(x)\) is \(F(x)\) where \(F'(x) = f(x)\).</p>
+
+    <h3>Basic Integration Rules</h3>
+    <div class="concept-box">
+      <ul>
+        <li><strong>Power Rule:</strong> \(\displaystyle\int x^n\, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)\)</li>
+        <li><strong>Constant:</strong> \(\displaystyle\int c\, dx = cx + C\)</li>
+        <li>\(\displaystyle\int e^x\, dx = e^x + C\), &nbsp; \(\displaystyle\int \frac{1}{x}\, dx = \ln|x| + C\)</li>
+        <li>\(\displaystyle\int \sin x\, dx = -\cos x + C\), &nbsp; \(\displaystyle\int \cos x\, dx = \sin x + C\)</li>
+      </ul>
+    </div>
+
+    <h3>The Fundamental Theorem of Calculus</h3>
+    <div class="formula">
+      \[ \int_a^b f(x)\, dx = F(b) - F(a) \]
+      <p style="font-family:inherit; font-size:0.95rem;">where F is any antiderivative of f. The definite integral gives the net area under the curve from x = a to x = b.</p>
+    </div>
+
+    <div class="example">
+      <strong>Example:</strong> Evaluate \(\displaystyle\int_1^3 (2x + 1)\, dx\)
+      <div class="formula">
+        \(F(x) = x^2 + x\)<br>
+        \(F(3) - F(1) = (9+3) - (1+1) = 12 - 2 = \mathbf{10}\)
+      </div>
+    </div>
+
+    <h3>U-Substitution</h3>
+    <p>When the integrand contains a composite function, let \(u = g(x)\), so \(du = g'(x)\, dx\).</p>
+    <div class="example">
+      <strong>Example:</strong> \(\displaystyle\int 2x(x^2+1)^3\, dx\)
+      <div class="formula">
+        Let \(u = x^2 + 1\), \(du = 2x\, dx\)<br>
+        \(= \displaystyle\int u^3\, du = \dfrac{u^4}{4} + C = \dfrac{(x^2+1)^4}{4} + C\)
+      </div>
+    </div>
+
+    <h2>4. Practice Problems</h2>
+    <ol>
+      <li>Find \(\displaystyle\lim_{x \to 2} \frac{x^2 - 4}{x - 2}\).</li>
+      <li>Differentiate \(f(x) = 4x^3 - 3x^2 + 7x - 2\).</li>
+      <li>Differentiate \(g(x) = x^2 \sin x\) (use product rule).</li>
+      <li>Find all critical points of \(f(x) = x^3 - 3x + 2\).</li>
+      <li>Evaluate \(\displaystyle\int (6x^2 - 4x + 3)\, dx\).</li>
+      <li>Evaluate \(\displaystyle\int_0^2 (3x^2 + 1)\, dx\).</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>Answers</strong>
+      <ol>
+        <li>Factor: \(\dfrac{(x+2)(x-2)}{x-2} \to x+2 \to \mathbf{4}\)</li>
+        <li>\(f'(x) = 12x^2 - 6x + 7\)</li>
+        <li>\(g'(x) = 2x\sin x + x^2\cos x\)</li>
+        <li>\(f'(x) = 3x^2 - 3 = 0 \Rightarrow x^2 = 1 \Rightarrow x = \pm 1\)</li>
+        <li>\(2x^3 - 2x^2 + 3x + C\)</li>
+        <li>\([x^3 + x]_0^2 = (8+2) - 0 = \mathbf{10}\)</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · Free Educational Resources</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">Content based on US Common Core Standards. Free for all students.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>方程完全讲解 - 一元一次方程・二元一次方程组・一元二次方程 | StudyHub 数学</title>
+  <meta name="description" content="初中数学方程完全讲解。一元一次方程、二元一次方程组（代入消元法/加减消元法）、一元二次方程求根公式，配有例题与练习。">
+  <meta name="keywords" content="方程, 一元一次方程, 方程组, 二元一次, 一元二次方程, 求根公式, 初中数学">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StudyHub">
+  <link rel="canonical" href="https://criel2019.github.io/studyhub/zh/math/equations.html">
+  <script>MathJax = {tex: {inlineMath: [['\\(','\\)'], ['$','$']], displayMath: [['\\[','\\]'], ['$$','$$']]}};</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../../" class="nav-logo">📚 StudyHub</a>
+      <a href="../math/" class="active">数学</a>
+      <a href="../chinese/">语文</a>
+      <a href="../science/">科学</a>
+      <span class="nav-sep">|</span>
+      <a href="../../ko/math/equations.html">KO</a>
+      <a href="../../en/math/arithmetic.html">EN</a>
+      <a href="../../ja/math/equations.html">JA</a>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="../../">StudyHub</a>
+      <span class="sep">›</span>
+      <a href="../../zh/">中文</a>
+      <span class="sep">›</span>
+      <a href="../math/">数学</a>
+      <span class="sep">›</span>
+      <span>方程</span>
+    </nav>
+
+    <h1>🔡 方程完全讲解</h1>
+    <div class="article-meta">
+      <span>📚 初中数学</span>
+      <span>🎯 重要概念：一元一次方程、方程组、一元二次方程</span>
+    </div>
+
+    <h2>1. 一元一次方程</h2>
+    <div class="concept-box">
+      <p>含有一个未知数，且未知数的最高次数为1的方程。</p>
+      <strong>解方程步骤：</strong>
+      <ol>
+        <li>去分母（方程两边同乘以各分母的最小公倍数）</li>
+        <li>去括号（按分配律展开）</li>
+        <li>移项（把含x的项移到左边，常数项移到右边）</li>
+        <li>合并同类项</li>
+        <li>系数化为1（两边除以x的系数）</li>
+      </ol>
+    </div>
+
+    <div class="example">
+      <strong>例题：解方程 3x - 7 = 2x + 5</strong>
+      <p>移项：3x - 2x = 5 + 7</p>
+      <p>合并：x = 12</p>
+      <p><strong>答：x = 12</strong></p>
+    </div>
+
+    <h2>2. 二元一次方程组</h2>
+    <div class="concept-box">
+      <strong>代入消元法：</strong>
+      <p>从一个方程中用一个未知数表示另一个未知数，代入另一方程求解。</p>
+      <strong>加减消元法：</strong>
+      <p>两个方程相加或相减，消去一个未知数。</p>
+    </div>
+
+    <div class="example">
+      <strong>例题（加减法）：解方程组</strong>
+      <div class="formula">
+        \[\begin{cases} 2x + 3y = 16 \\ 2x - y = 4 \end{cases}\]
+      </div>
+      <p>两式相减：4y = 12，y = 3</p>
+      <p>代入第二式：2x - 3 = 4，2x = 7，x = 3.5</p>
+      <p><strong>答：x = 3.5，y = 3</strong></p>
+    </div>
+
+    <h2>3. 一元二次方程</h2>
+    <div class="concept-box">
+      <p>含有一个未知数，且未知数的最高次数为2的方程：ax² + bx + c = 0（a ≠ 0）</p>
+      <strong>解法：</strong>
+      <ul>
+        <li><strong>因式分解法：</strong>将方程左边分解为两个因式的积</li>
+        <li><strong>求根公式：</strong></li>
+      </ul>
+      <div class="formula">
+        \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+      </div>
+      <ul>
+        <li><strong>判别式 Δ = b² - 4ac：</strong><br>
+          Δ > 0：两个不相等实数根<br>
+          Δ = 0：两个相等实数根（重根）<br>
+          Δ &lt; 0：无实数根</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <strong>例题：解方程 x² - 5x + 6 = 0</strong>
+      <p>因式分解：(x - 2)(x - 3) = 0</p>
+      <p>x - 2 = 0 或 x - 3 = 0</p>
+      <p><strong>答：x = 2 或 x = 3</strong></p>
+    </div>
+
+    <h2>4. 练习题</h2>
+    <ol>
+      <li>解一元一次方程：5x + 3 = 2x - 9</li>
+      <li>解方程组：{ 3x + y = 10 ; x - y = 2 }</li>
+      <li>解一元二次方程：x² + 2x - 8 = 0</li>
+    </ol>
+
+    <div class="concept-box">
+      <strong>答案</strong>
+      <ol>
+        <li>3x = -12，x = -4</li>
+        <li>两式相加：4x = 12，x = 3；y = 10 - 9 = 1</li>
+        <li>(x + 4)(x - 2) = 0，x = -4 或 x = 2</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StudyHub · 免费学习笔记</p>
+    <p><a href="../../ko/">한국어</a> · <a href="../../en/">English</a> · <a href="../../ja/">日本語</a> · <a href="../../zh/">中文</a></p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;color:#64748b;">本资料依据人教版课程标准编写，供免费教育使用。</p>
+  </footer>
+</body>
+</html>
