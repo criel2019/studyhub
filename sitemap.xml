@@ -556,4 +556,64 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://criel2019.github.io/studyhub/ja/science/energy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/ja/science/atoms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/ja/science/cells.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/ja/science/ecology.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/zh/science/energy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/zh/science/atoms.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/zh/science/cells.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/zh/science/ecology.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/ja/japanese/reading.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://criel2019.github.io/studyhub/zh/chinese/reading.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
