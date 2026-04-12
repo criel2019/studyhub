@@ -1,39 +1,73 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | StudyHub</title>
+  <meta name="description" content="The page you requested is not available. Use the language and subject links below to get back to StudyHub study notes.">
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    // Redirect to home after 3 seconds
-    setTimeout(function(){ window.location.href = '/studyhub/'; }, 3000);
+    <meta name="theme-color" content="#2255d8">
+<link rel="stylesheet" href="css/style.css">
+  <script id="studyhub-page-data">
+  window.__STUDYHUB_PAGE = {"path":"404.html","type":"404","lang":"en"};
   </script>
+  <script id="studyhub-app" src="js/app.js" defer></script>
 </head>
-<body>
+<body class="page-404">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header>
     <nav>
-      <a href="/studyhub/" class="nav-logo">📚 StudyHub</a>
-      <a href="/studyhub/ko/">한국어</a>
-      <a href="/studyhub/en/">English</a>
-      <a href="/studyhub/ja/">日本語</a>
-      <a href="/studyhub/zh/">中文</a>
+      <a href="./" class="nav-logo">📚 StudyHub</a>
+      <a href="./ko/">한국어</a>
+      <a href="./en/">English</a>
+      <a href="./ja/">日本語</a>
+      <a href="./zh/">中文</a>
     </nav>
   </header>
-  <main style="text-align:center;padding:4rem 1.5rem;">
-    <h1 style="font-size:5rem;color:#e2e8f0;">404</h1>
-    <h2>Page Not Found</h2>
-    <p style="color:#64748b;">This page doesn't exist. Redirecting to home in 3 seconds...</p>
-    <div class="lang-switcher" style="margin-top:2rem;">
-      <a href="/studyhub/ko/" class="lang-btn">🇰🇷 한국어</a>
-      <a href="/studyhub/en/" class="lang-btn">🇺🇸 English</a>
-      <a href="/studyhub/ja/" class="lang-btn">🇯🇵 日本語</a>
-      <a href="/studyhub/zh/" class="lang-btn">🇨🇳 中文</a>
-    </div>
+
+  <main id="main-content" tabindex="-1">
+    <section class="error-panel">
+      <span class="error-kicker">404</span>
+      <h1>Page not found</h1>
+      <p>The link may be outdated, or the page may have moved. Choose a language below and continue from the matching subject hub.</p>
+      <div class="page-actions">
+        <a href="./" class="page-action-link">StudyHub Home</a>
+        <a href="./en/" class="page-action-link">English Hub</a>
+        <a href="./ko/" class="page-action-link">한국어 허브</a>
+      </div>
+    </section>
+
+    <section class="continue-section">
+      <h2>Popular paths</h2>
+      <div class="continue-grid">
+        <a href="./en/math/" class="continue-card">
+          <span class="continue-label">English</span>
+          <strong>Math</strong>
+          <span>Arithmetic, algebra, geometry, calculus, and statistics</span>
+        </a>
+        <a href="./en/english/" class="continue-card">
+          <span class="continue-label">English</span>
+          <strong>English Language Arts</strong>
+          <span>Grammar, writing, literature, and reading review</span>
+        </a>
+        <a href="./ko/math/" class="continue-card">
+          <span class="continue-label">한국어</span>
+          <strong>수학</strong>
+          <span>초등부터 고등까지 주요 개념과 예제 정리</span>
+        </a>
+        <a href="./ja/science/" class="continue-card">
+          <span class="continue-label">日本語</span>
+          <strong>理科</strong>
+          <span>物理・化学・生物の学習ノート</span>
+        </a>
+      </div>
+    </section>
   </main>
+
   <footer>
-    <p>© 2025 StudyHub</p>
+    <p>© 2026 StudyHub</p>
+    <p><a href="./ko/">한국어</a> · <a href="./en/">English</a> · <a href="./ja/">日本語</a> · <a href="./zh/">中文</a></p>
+    <p>Free study notes for fast review across multiple curricula.</p>
   </footer>
 </body>
 </html>

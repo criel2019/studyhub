@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-04-13T00:00:00Z",
+  "loop": 1,
+  "totalFiles": 87,
+  "pagesAudited": 87,
+  "findings": [
+    {
+      "id": "F001",
+      "severity": "critical",
+      "category": "SEO/Viral",
+      "title": "og:image 전무",
+      "description": "87개 HTML 파일 전체에 og:image 태그 없음 — SNS 공유 시 이미지 미표시",
+      "affectedCount": 83,
+      "status": "fixed",
+      "fix": "images/og/{global,ko,en,ja,zh}.svg 생성, 83개 파일에 og:image+width+height 추가"
+    },
+    {
+      "id": "F002",
+      "severity": "critical",
+      "category": "Assets",
+      "title": "favicon 없음",
+      "description": "rel=\"icon\" 링크 및 favicon 파일 전무 — 브라우저 탭 아이콘 없음",
+      "affectedCount": 83,
+      "status": "fixed",
+      "fix": "favicon.svg 생성, 83개 파일에 link rel=\"icon\" 추가"
+    },
+    {
+      "id": "F003",
+      "severity": "high",
+      "category": "Dark Mode",
+      "title": "다크 모드 CSS 없음",
+      "description": "@media (prefers-color-scheme: dark) 스타일 전무",
+      "affectedCount": 1,
+      "status": "fixed",
+      "fix": "css/style.css에 완전한 다크 모드 스타일 블록 추가 (~120줄)"
+    },
+    {
+      "id": "F004",
+      "severity": "high",
+      "category": "Accessibility",
+      "title": "footer 텍스트 낮은 대비",
+      "description": "어두운 footer 배경(#16233f)에 인라인 color:#64748b 사용 — 대비 비율 3.2:1 (WCAG AA 미달)",
+      "affectedCount": 83,
+      "status": "fixed",
+      "fix": "83개 파일 footer 인라인 색상을 rgba(200,215,240,0.62)로 수정"
+    },
+    {
+      "id": "F005",
+      "severity": "high",
+      "category": "SEO",
+      "title": "ja/zh 아티클 페이지 og: 태그 전체 누락",
+      "description": "ja/, zh/ 아티클 페이지 36개에 og:title, og:description, og:type, og:url 전체 없음",
+      "affectedCount": 36,
+      "status": "fixed",
+      "fix": "36개 파일에 og: 태그 전체 추가"
+    },
+    {
+      "id": "F006",
+      "severity": "medium",
+      "category": "Viral",
+      "title": "SNS 공유 버튼 없음",
+      "description": "링크 복사만 있고 SNS 공유 버튼 없음 (Twitter/X, 모바일 Web Share API)",
+      "affectedCount": 1,
+      "status": "fixed",
+      "fix": "app.js에 shareCurrentPage() 함수 추가, 아티클 페이지에 공유 버튼 표시"
+    },
+    {
+      "id": "F007",
+      "severity": "medium",
+      "category": "SEO",
+      "title": "아티클 페이지 hreflang alternate 없음",
+      "description": "ko/en 아티클 페이지에 hreflang alternate 링크 없음",
+      "affectedCount": 50,
+      "status": "manual",
+      "note": "각 아티클 페이지에 언어별 URL 쌍이 1:1 매핑되지 않아 수동 매핑 필요"
+    }
+  ],
+  "summary": {
+    "found": 7,
+    "fixed": 6,
+    "manual": 1
+  }
+}

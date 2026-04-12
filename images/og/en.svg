@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1100" cy="80" r="320" fill="rgba(59,130,246,0.06)"/>
+  <circle cx="60" cy="590" r="260" fill="rgba(16,185,129,0.05)"/>
+  <rect x="0" y="0" width="10" height="630" fill="#3b82f6"/>
+  <rect x="80" y="115" width="90" height="90" rx="20" fill="rgba(59,130,246,0.2)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
+  <rect x="96" y="130" width="36" height="44" rx="4" fill="white"/>
+  <rect x="100" y="135" width="28" height="4" rx="2" fill="#2255d8" opacity="0.7"/>
+  <rect x="100" y="143" width="28" height="4" rx="2" fill="#2255d8" opacity="0.5"/>
+  <rect x="100" y="151" width="20" height="4" rx="2" fill="#2255d8" opacity="0.4"/>
+  <rect x="133" y="131" width="6" height="40" rx="3" fill="rgba(255,255,255,0.5)"/>
+  <rect x="140" y="133" width="12" height="36" rx="3" fill="#60a5fa"/>
+  <text x="196" y="176" font-size="72" font-weight="800" font-family="Segoe UI,Helvetica Neue,Arial,sans-serif" fill="white" letter-spacing="-2">StudyHub</text>
+  <rect x="80" y="232" width="780" height="2" fill="rgba(59,130,246,0.4)"/>
+  <text x="80" y="290" font-size="32" font-family="Segoe UI,Helvetica Neue,Arial,sans-serif" fill="rgba(148,163,184,1)">US Common Core · Free Study Notes</text>
+  <rect x="80" y="336" width="175" height="50" rx="25" fill="rgba(59,130,246,0.18)" stroke="rgba(59,130,246,0.38)" stroke-width="1.5"/>
+  <text x="167" y="368" font-size="20" font-family="Segoe UI,Arial,sans-serif" fill="#93c5fd" text-anchor="middle">🔢 Mathematics</text>
+  <rect x="275" y="336" width="160" height="50" rx="25" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.32)" stroke-width="1.5"/>
+  <text x="355" y="368" font-size="20" font-family="Segoe UI,Arial,sans-serif" fill="#6ee7b7" text-anchor="middle">🔬 Science</text>
+  <rect x="455" y="336" width="210" height="50" rx="25" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.32)" stroke-width="1.5"/>
+  <text x="560" y="368" font-size="20" font-family="Segoe UI,Arial,sans-serif" fill="#c4b5fd" text-anchor="middle">📝 Language Arts</text>
+  <text x="80" y="460" font-size="24" font-family="Segoe UI,Arial,sans-serif" fill="rgba(203,213,225,0.9)">Elementary · Middle · High School</text>
+  <text x="80" y="496" font-size="20" font-family="Segoe UI,Arial,sans-serif" fill="rgba(100,116,139,1)">Exam prep · Quick review · Worked examples</text>
+  <text x="80" y="572" font-size="20" font-family="Segoe UI,Arial,sans-serif" fill="rgba(71,85,105,1)">criel2019.github.io/studyhub/en/</text>
+  <rect x="1010" y="72" width="148" height="58" rx="29" fill="#10b981"/>
+  <text x="1084" y="109" font-size="22" font-weight="700" font-family="Segoe UI,Arial,sans-serif" fill="white" text-anchor="middle">100% Free</text>
+</svg>
