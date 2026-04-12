@@ -384,9 +384,33 @@
     main.appendChild(note);
   }
 
+  function injectBreadcrumbJsonLd() {
+    const crumbs = document.querySelectorAll("nav.breadcrumb a, nav.breadcrumb span:last-child");
+    if (!crumbs.length) return;
+    const base = "https://criel2019.github.io/studyhub/";
+    const items = [];
+    crumbs.forEach((node, i) => {
+      const name = node.textContent.trim();
+      if (!name) return;
+      const entry = { "@type": "ListItem", "position": i + 1, "name": name };
+      if (node.tagName === "A") {
+        const href = node.getAttribute("href");
+        entry["item"] = href && href.startsWith("http") ? href : base;
+      }
+      items.push(entry);
+    });
+    if (items.length < 2) return;
+    const ld = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(ld);
+    document.head.appendChild(script);
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     addProgressBar();
     addBackToTop();
+    injectBreadcrumbJsonLd();
     if (page.type === "global-home") enhanceGlobalHome();
     if (page.type === "language-home") enhanceLanguageHome();
     if (page.type === "section-index") enhanceSectionIndex();
