@@ -1,0 +1,32 @@
+﻿{
+    "timestamp":  "2026-04-12T06:25:02.9989175+09:00",
+    "root":  "F:\\work\\studyhub",
+    "screenshots":  [
+                        {
+                            "Name":  "home.png",
+                            "Length":  517121,
+                            "LastWriteTime":  "\/Date(1775940294000)\/"
+                        },
+                        {
+                            "Name":  "home-mobile.png",
+                            "Length":  363899,
+                            "LastWriteTime":  "\/Date(1775940876000)\/"
+                        },
+                        {
+                            "Name":  "article.png",
+                            "Length":  1367772,
+                            "LastWriteTime":  "\/Date(1775941502000)\/"
+                        },
+                        {
+                            "Name":  "article-mobile.png",
+                            "Length":  822979,
+                            "LastWriteTime":  "\/Date(1775942218000)\/"
+                        },
+                        {
+                            "Name":  "404.png",
+                            "Length":  253770,
+                            "LastWriteTime":  "\/Date(1775942662000)\/"
+                        }
+                    ],
+    "gitStatus":  "M 404.html\r\n M css/style.css\r\n M en/english/grammar.html\r\n M en/english/index.html\r\n M en/english/literature.html\r\n M en/english/writing.html\r\n M en/index.html\r\n M en/math/algebra.html\r\n M en/math/arithmetic.html\r\n M en/math/calculus.html\r\n M en/math/fractions.html\r\n M en/math/geometry.html\r\n M en/math/index.html\r\n M en/math/statistics.html\r\n M en/science/biology.html\r\n M en/science/chemistry.html\r\n M en/science/index.html\r\n M en/science/physics.html\r\n M index.html\r\n M ja/index.html\r\n M ja/japanese/classical.html\r\n M ja/japanese/grammar.html\r\n M ja/japanese/index.html\r\n M ja/japanese/modern.html\r\n M ja/math/addition.html\r\n M ja/math/calculus.html\r\n M ja/math/decimals.html\r\n M ja/math/division.html\r\n M ja/math/equations.html\r\n M ja/math/fractions.html\r\n M ja/math/functions.html\r\n M ja/math/geometry.html\r\n M ja/math/index.html\r\n M ja/math/multiplication.html\r\n M ja/math/statistics.html\r\n M ja/math/subtraction.html\r\n M ja/math/trigonometry.html\r\n M ja/science/biology.html\r\n M ja/science/chemistry.html\r\n M ja/science/index.html\r\n M ja/science/physics.html\r\n M ko/index.html\r\n M ko/korean/classical.html\r\n M ko/korean/grammar.html\r\n M ko/korean/index.html\r\n M ko/korean/modern.html\r\n M ko/math/addition.html\r\n M ko/math/calculus.html\r\n M ko/math/decimals.html\r\n M ko/math/division.html\r\n M ko/math/equations.html\r\n M ko/math/fractions.html\r\n M ko/math/functions.html\r\n M ko/math/geometry.html\r\n M ko/math/index.html\r\n M ko/math/multiplication.html\r\n M ko/math/statistics.html\r\n M ko/math/subtraction.html\r\n M ko/math/trigonometry.html\r\n M ko/science/biology.html\r\n M ko/science/chemistry.html\r\n M ko/science/index.html\r\n M ko/science/physics.html\r\n M zh/chinese/classical.html\r\n M zh/chinese/grammar.html\r\n M zh/chinese/index.html\r\n M zh/chinese/modern.html\r\n M zh/index.html\r\n M zh/math/addition.html\r\n M zh/math/calculus.html\r\n M zh/math/decimals.html\r\n M zh/math/division.html\r\n M zh/math/equations.html\r\n M zh/math/fractions.html\r\n M zh/math/functions.html\r\n M zh/math/geometry.html\r\n M zh/math/index.html\r\n M zh/math/multiplication.html\r\n M zh/math/statistics.html\r\n M zh/math/subtraction.html\r\n M zh/math/trigonometry.html\r\n M zh/science/biology.html\r\n M zh/science/chemistry.html\r\n M zh/science/index.html\r\n M zh/science/physics.html\r\n?? .claude/\r\n?? .codex-audit/\r\n?? js/\r\n?? tools/"
+}
