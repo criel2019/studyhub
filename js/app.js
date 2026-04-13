@@ -415,8 +415,42 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  // ── 루프34: 표 카드 변환 — thead th → td[data-label] 자동 주입 ──
+  function initTableCards() {
+    document.querySelectorAll(".table-wrap table:not(.times-table):not(.no-card)").forEach(table => {
+      const headers = [...table.querySelectorAll("thead th")].map(th => th.textContent.trim());
+      if (!headers.length) return;
+      table.querySelectorAll("tbody td").forEach((td, i) => {
+        const label = headers[i % headers.length];
+        if (label) td.setAttribute("data-label", label);
+      });
+    });
+  }
+
+  // ── 루프34: 테이블 스크롤 마스크 (.scrolled-end 토글) + 힌트 주입 ──
+  function initTableScrollMask() {
+    const wraps = [...document.querySelectorAll(".table-wrap")];
+    const checkEnd = w => w.classList.toggle("scrolled-end", w.scrollLeft + w.clientWidth >= w.scrollWidth - 2);
+    wraps.forEach(w => {
+      checkEnd(w);
+      w.addEventListener("scroll", () => checkEnd(w), { passive: true });
+      // .times-table / .no-card 앞에 스크롤 힌트 삽입
+      const hasBigTable = w.querySelector("table.times-table, table.no-card");
+      const alreadyHasHint = w.previousElementSibling?.classList.contains("table-scroll-hint");
+      if (hasBigTable && !alreadyHasHint) {
+        const hint = document.createElement("span");
+        hint.className = "table-scroll-hint";
+        hint.textContent = "좌우로 스크롤해 전체 보기";
+        w.parentNode.insertBefore(hint, w);
+      }
+    });
+    window.addEventListener("resize", () => wraps.forEach(checkEnd), { passive: true });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     addNavScrolled();
+    initTableCards();
+    initTableScrollMask();
     addProgressBar();
     addBackToTop();
     injectBreadcrumbJsonLd();

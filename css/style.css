@@ -3199,3 +3199,171 @@ header.nav-scrolled nav {
     border-color: rgba(255, 255, 255, 0.18) !important;
   }
 }
+
+/* ===========================
+   모바일 UX 강화 (루프34)
+   표·수식 반응형 최적화
+   =========================== */
+
+/* ── 1. 텍스트 넘침 방지 전역 ── */
+p, li, dd, dt, figcaption, blockquote, caption {
+  overflow-wrap: anywhere;
+}
+th, td {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* ── 2. .table-wrap — 스크롤 마스크 + 스크롤바 세련화 ── */
+/* mask-image로 우측 "더 있음" fade — position 불필요, 스크롤과 무관 */
+.table-wrap {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34, 85, 216, 0.28) transparent;
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 2.4rem), transparent 100%);
+  mask-image: linear-gradient(to right, black calc(100% - 2.4rem), transparent 100%);
+}
+.table-wrap::-webkit-scrollbar { height: 4px; }
+.table-wrap::-webkit-scrollbar-thumb {
+  background: rgba(34, 85, 216, 0.3);
+  border-radius: 2px;
+}
+.table-wrap::-webkit-scrollbar-track { background: transparent; }
+/* JS가 scrolled-end 추가하면 마스크 제거 */
+.table-wrap.scrolled-end {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* ── 3. 가로 스크롤 힌트 배너 (JS로 .times-table 앞에 주입) ── */
+.table-scroll-hint {
+  display: none;
+}
+@media (max-width: 720px) {
+  .table-scroll-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--brand, #2255d8);
+    background: rgba(34, 85, 216, 0.06);
+    border: 1px solid rgba(34, 85, 216, 0.15);
+    border-radius: 6px;
+    padding: 0.28rem 0.62rem;
+    margin-bottom: 0.28rem;
+  }
+  .table-scroll-hint::before {
+    content: "↔";
+    font-size: 0.9rem;
+  }
+}
+
+/* ── 4. 반응형 테이블 카드 변환 (.times-table · .no-card 제외) ── */
+/* JS가 thead th 텍스트로 td[data-label]을 자동 주입 → ::before 레이블 표시 */
+@media (max-width: 720px) {
+  .table-wrap table:not(.times-table):not(.no-card) {
+    min-width: 0;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+  }
+  .table-wrap table:not(.times-table):not(.no-card) thead {
+    display: none;
+  }
+  .table-wrap table:not(.times-table):not(.no-card) tbody {
+    display: block;
+  }
+  .table-wrap table:not(.times-table):not(.no-card) tr {
+    display: block;
+    margin-bottom: 0.7rem;
+    border: 1.5px solid rgba(34, 85, 216, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--surface, #fff);
+    box-shadow: 0 1px 6px rgba(13, 37, 84, 0.06);
+  }
+  .table-wrap table:not(.times-table):not(.no-card) td {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.52rem 0.85rem;
+    font-size: max(0.85rem, 14px);
+    border-bottom: 1px solid rgba(34, 85, 216, 0.07);
+    min-height: 44px;
+  }
+  .table-wrap table:not(.times-table):not(.no-card) td:last-child {
+    border-bottom: none;
+  }
+  /* thead th 텍스트에서 자동 추출된 레이블 */
+  .table-wrap table:not(.times-table):not(.no-card) td[data-label]::before {
+    content: attr(data-label);
+    flex-shrink: 0;
+    width: 4.5rem;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--brand, #2255d8);
+    opacity: 0.82;
+    padding-top: 0.14rem;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* ── 5. code 인라인 box화 ── */
+/* .memory-tip code의 기존 스타일(warning 색상)은 높은 specificity로 자연 보존됨 */
+article code,
+.concept-box code,
+.tip code,
+.example code,
+.why-box code,
+.misconception code,
+.tldr code,
+.step-solution code,
+.concept-bridge code,
+.skill-unlock code {
+  background: rgba(34, 85, 216, 0.08);
+  color: var(--brand, #2255d8);
+  padding: 0.12em 0.38em;
+  border-radius: 4px;
+  font-size: 0.91em;
+  font-family: 'SFMono-Regular', 'Consolas', 'Menlo', monospace;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* ── 루프34 다크모드 ── */
+@media (prefers-color-scheme: dark) {
+  .table-wrap table:not(.times-table):not(.no-card) tr {
+    border-color: rgba(100, 140, 255, 0.18);
+    background: var(--surface, #141e30);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+  }
+  .table-wrap table:not(.times-table):not(.no-card) td {
+    border-bottom-color: rgba(100, 140, 255, 0.1);
+  }
+  .table-wrap table:not(.times-table):not(.no-card) td[data-label]::before {
+    color: var(--brand-strong, #93baff);
+  }
+  article code,
+  .concept-box code,
+  .tip code,
+  .example code,
+  .why-box code,
+  .misconception code,
+  .tldr code,
+  .step-solution code,
+  .concept-bridge code,
+  .skill-unlock code {
+    background: rgba(91, 143, 238, 0.18);
+    color: var(--brand-strong, #93baff);
+  }
+  .table-scroll-hint {
+    background: rgba(34, 85, 216, 0.12);
+    border-color: rgba(34, 85, 216, 0.3);
+    color: var(--brand-strong, #93baff);
+  }
+}

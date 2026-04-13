@@ -1,7 +1,7 @@
 {
-  "angleIndex": 7,
-  "lastRun": "2026-04-14T16:10:00Z",
-  "lastAngle": "정보 구조",
-  "filesChanged": 2,
-  "summary": "정보 구조 개선 (루프33): css/style.css + js/app.js 2파일 수정. 과목별 색상 와이파인딩 시스템 — --section-math(파랑)·--section-science(초록)·--section-lang(보라)·--section-efl(주황) CSS 변수 + :has() 자동 감지. nav 활성 항목 화이트 필 강화. 브레드크럼 과목별 색상 어센트. h1 하단 섹션 컬러 언더라인. entry-point/section-hook 섹션 컬러. nav-scrolled 스크롤 축소. 모바일 하단 탭 바 (bottom:0 고정, iOS safe-area 대응). js/app.js: addNavScrolled() 추가."
+  "angleIndex": 0,
+  "lastRun": "2026-04-14T16:40:00Z",
+  "lastAngle": "모바일 UX",
+  "filesChanged": 3,
+  "summary": "모바일 UX 강화 (루프34): css/style.css + js/app.js + ko/math/decimals.html 3파일. (1) .table-wrap mask-image 그라데이션 스크롤 마스크 + 슬림 스크롤바. (2) .table-scroll-hint 힌트 배너 CSS. (3) 반응형 테이블 카드 변환 — .times-table·.no-card 제외, tbody 카드화, td[data-label]::before 레이블. (4) JS: initTableCards(thead th→td data-label 자동주입) + initTableScrollMask(scrolled-end 토글+힌트 삽입). (5) code 인라인 box화. (6) overflow-wrap 전역. decimals.html: 2번째 테이블 .table-wrap 래핑."
 }
