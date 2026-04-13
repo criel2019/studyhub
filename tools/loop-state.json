@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
-  "lastRun": "2026-04-14T18:30:00Z",
-  "lastAngle": "학습 효과 장치",
-  "filesChanged": 31,
-  "summary": "학습 효과 장치 강화 (루프37): (1) CSS .practice-set 컴포넌트 + ★☆☆/★★☆/★★★ 난이도 배지 추가. (2) ko/ 아티클 9개에 연습문제 3문항(기초·심화·도전) — <details> 네이티브 아코디언으로 정답 숨김. (3) ko/ 아티클 16개에 .memory-tip 암기법 블록. (4) en/ja/zh 아티클 9개에 영문/일문/중문 연습문제 전파."
+  "angleIndex": 4,
+  "lastRun": "2026-04-14T19:15:00Z",
+  "lastAngle": "신뢰 신호",
+  "filesChanged": 110,
+  "summary": "신뢰 신호 강화 (루프38): (1) CRITICAL — ko/ 아티클 30개 Loop30 인코딩 오염 복구 (제목·메타·본문 정상화 + Loops31-37 추가 콘텐츠 재통합). (2) ko/ 16개 파일 curriculum-badge 교육과정 성취기준 코드 추가 ([9국01-01] 등). (3) trust-signal-bar 교육과정명 구체화 — 과목별 맞춤 정보 (초등 수학 · 2022 개정 교육과정 등). (4) en/ja/zh 79개 파일 .ts-curriculum 강조 스타일 적용. CSS .ts-curriculum 스타일 추가."
 }
