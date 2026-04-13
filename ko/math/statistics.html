@@ -73,7 +73,7 @@
       <span class="sep">›</span>
       <a href="../math/">수학</a>
       <span class="sep">›</span>
-      <span>확률과 통계</span>
+      <span class="breadcrumb-current">확률과 통계</span>
     </nav>
 
     <h1>📊 확률과 통계 완벽 정리</h1>
@@ -82,7 +82,60 @@
       <span>🎯 핵심 개념: 대표값, 산포도, 확률, 분포</span>
     </div>
 
-    <h2>1. 대표값 (Measures of Central Tendency)</h2>
+    <nav class="page-overview" aria-label="이 페이지 목차">
+      <div class="page-overview-label">이 페이지에서</div>
+      <ol class="page-overview-list">
+        <li><a href="#s1">대표값</a></li>
+        <li><a href="#s2">산포도</a></li>
+        <li><a href="#s3">확률의 기초</a></li>
+        <li><a href="#s4">확률의 덧셈정리</a></li>
+        <li><a href="#s5">조건부 확률</a></li>
+        <li><a href="#s6">이항분포</a></li>
+        <li><a href="#s7">정규분포</a></li>
+        <li><a href="#s8">연습 문제</a></li>
+      </ol>
+    </nav>
+
+    <div class="concept-journey">
+      <span class="cj-label">개념 여정</span>
+      <span class="cj-node cj-prev"><a href="equations.html">방정식</a></span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node cj-prev"><a href="functions.html">함수</a></span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node cj-current">확률·통계</span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node">추론통계</span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node">데이터 과학</span>
+    </div>
+
+    <div class="learning-goal">
+      <span class="learning-goal-label">📌 이 단원을 마치면</span>
+      <ul>
+        <li>평균·중앙값·최빈값의 차이와 각각의 적절한 사용 상황을 설명할 수 있다</li>
+        <li>분산과 표준편차를 계산하고 데이터의 퍼짐 정도를 비교할 수 있다</li>
+        <li>덧셈정리와 곱셈정리를 이용해 복합 사건의 확률을 구할 수 있다</li>
+        <li>정규분포의 표준화 과정을 통해 확률표에서 확률을 읽을 수 있다</li>
+      </ul>
+    </div>
+
+    <div class="why-box">
+      <div class="why-label">🌱 왜 확률과 통계를 배우는가?</div>
+      <p>우리는 매일 불확실한 정보를 판단합니다 — 날씨 예보, 약의 효과, 선거 결과 예측. <strong>통계는 데이터에서 패턴을 발견하고, 확률은 미래의 불확실성을 수치화하는 도구</strong>입니다. AI와 머신러닝의 핵심이 통계학이며, 의학 연구·금융 리스크 분석·여론 조사 모두 이 단원의 개념을 직접 사용합니다. 정규분포 하나만 이해해도 세상의 수많은 현상을 새로운 시각으로 볼 수 있습니다.</p>
+    </div>
+
+    <div class="tldr">
+      <div class="tldr-label">⚡ 핵심 30초 요약</div>
+      <ul>
+        <li><strong>평균</strong>: 전체 합 ÷ 개수. <strong>중앙값</strong>: 정렬 후 가운데. <strong>최빈값</strong>: 가장 많은 값</li>
+        <li><strong>분산</strong> \(\sigma^2\): 편차 제곱의 평균. <strong>표준편차</strong> \(\sigma\): \(\sqrt{\text{분산}}\)</li>
+        <li><strong>확률 기본</strong>: \(0 \le P(A) \le 1\), 전사건 \(P(U)=1\)</li>
+        <li><strong>덧셈정리</strong>: \(P(A \cup B)=P(A)+P(B)-P(A \cap B)\)</li>
+        <li><strong>정규분포</strong>: 평균 μ에서 좌우 대칭 종모양. \(Z = \frac{X-\mu}{\sigma}\)로 표준화</li>
+      </ul>
+    </div>
+
+    <h2 id="s1">1. 대표값 (Measures of Central Tendency)</h2>
     <p>자료 전체의 특징을 하나의 값으로 나타내는 값을 <strong>대표값</strong>이라 합니다.</p>
 
     <h3>평균 (Mean)</h3>
@@ -121,7 +174,7 @@
       <strong>예제: [2, 3, 3, 5, 7, 3, 8]의 최빈값 = 3</strong> (3이 3번으로 가장 많음)
     </div>
 
-    <h2>2. 산포도 (Measures of Dispersion)</h2>
+    <h2 id="s2">2. 산포도 (Measures of Dispersion)</h2>
     <p>자료가 평균으로부터 얼마나 퍼져 있는지를 나타내는 값입니다.</p>
 
     <h3>편차 (Deviation)</h3>
@@ -151,7 +204,7 @@
       </div>
     </div>
 
-    <h2>3. 확률의 기초</h2>
+    <h2 id="s3">3. 확률의 기초</h2>
     <p><strong>확률(probability)</strong>은 어떤 사건이 일어날 가능성을 수로 나타낸 것입니다.</p>
 
     <div class="concept-box">
@@ -178,7 +231,7 @@
       \[ P(A^c) = P(\bar{A}) = 1 - P(A) \]
     </div>
 
-    <h2>4. 확률의 덧셈정리</h2>
+    <h2 id="s4">4. 확률의 덧셈정리</h2>
 
     <div class="formula">
       \[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
@@ -200,7 +253,7 @@
       </div>
     </div>
 
-    <h2>5. 조건부 확률과 곱셈정리</h2>
+    <h2 id="s5">5. 조건부 확률과 곱셈정리</h2>
 
     <h3>조건부 확률</h3>
     <p>사건 B가 일어났다는 조건 하에서 사건 A가 일어날 확률입니다.</p>
@@ -229,7 +282,7 @@
       </div>
     </div>
 
-    <h2>6. 이항분포 (Binomial Distribution)</h2>
+    <h2 id="s6">6. 이항분포 (Binomial Distribution)</h2>
     <p>같은 조건 아래 독립적으로 반복되는 실험에서, 각 시행의 성공 확률이 \(p\)일 때 \(n\)번 시행 중 성공 횟수 X의 분포입니다.</p>
 
     <div class="formula">
@@ -254,7 +307,7 @@
       </div>
     </div>
 
-    <h2>7. 정규분포 (Normal Distribution)</h2>
+    <h2 id="s7">7. 정규분포 (Normal Distribution)</h2>
     <p>평균 \(\mu\), 표준편차 \(\sigma\)를 가지는 연속 확률 분포입니다. 자연과 사회의 많은 현상이 정규분포를 따릅니다.</p>
 
     <div class="formula">
@@ -287,7 +340,7 @@
       </ul>
     </div>
 
-    <h2>8. 연습 문제</h2>
+    <h2 id="s8">8. 연습 문제</h2>
     <ol>
       <li>자료 [6, 8, 5, 9, 7]의 평균, 중앙값, 최빈값을 구하시오.</li>
       <li>자료 [3, 5, 7, 5, 5]의 분산과 표준편차를 구하시오.</li>

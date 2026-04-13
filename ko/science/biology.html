@@ -71,7 +71,7 @@
       <span class="sep">›</span>
       <a href="../science/">과학</a>
       <span class="sep">›</span>
-      <span>생물</span>
+      <span class="breadcrumb-current">생물</span>
     </nav>
 
     <h1>🧬 생물 완벽 정리</h1>
@@ -80,8 +80,57 @@
       <span>🎯 핵심 개념: 세포, 광합성, 유전, 진화</span>
     </div>
 
+    <nav class="page-overview" aria-label="이 페이지 목차">
+      <div class="page-overview-label">이 페이지에서</div>
+      <ol class="page-overview-list">
+        <li><a href="#s1">생명의 특성</a></li>
+        <li><a href="#s2">세포 구조</a></li>
+        <li><a href="#s3">광합성</a></li>
+        <li><a href="#s4">세포 호흡</a></li>
+        <li><a href="#s5">유전의 법칙</a></li>
+        <li><a href="#s6">DNA와 단백질 합성</a></li>
+        <li><a href="#s7">진화론</a></li>
+        <li><a href="#s8">연습 문제</a></li>
+      </ol>
+    </nav>
+
+    <div class="concept-journey">
+      <span class="cj-label">개념 여정</span>
+      <span class="cj-node cj-current">생물 기초</span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node"><a href="cells.html">세포 심화</a></span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node"><a href="ecology.html">생태계</a></span>
+    </div>
+
+    <div class="learning-goal">
+      <span class="learning-goal-label">📌 이 단원을 마치면</span>
+      <ul>
+        <li>생명체의 7가지 공통 특성을 구체적인 예와 함께 설명할 수 있다</li>
+        <li>광합성과 세포 호흡의 반응식을 쓰고 두 과정을 비교할 수 있다</li>
+        <li>멘델의 법칙으로 유전 형질의 유전 비율을 계산할 수 있다</li>
+        <li>자연선택설을 바탕으로 진화 과정을 설명할 수 있다</li>
+      </ul>
+    </div>
+
+    <div class="why-box">
+      <div class="why-label">🌱 왜 생물을 배우는가?</div>
+      <p>생물학은 <strong>생명의 작동 원리를 이해하는 학문</strong>입니다. 왜 사람은 잠을 자야 하는지, 암세포가 어떻게 증식하는지, 항생제는 왜 바이러스에 듣지 않는지 — 모두 생물학적 원리입니다. 광합성을 이해하면 식량 문제와 탄소중립이 보이고, 유전법칙을 알면 유전자 치료와 GMO의 원리가 이해됩니다. 현대 의학·농업·환경과학의 핵심이 모두 생물학입니다.</p>
+    </div>
+
+    <div class="tldr">
+      <div class="tldr-label">⚡ 핵심 30초 요약</div>
+      <ul>
+        <li><strong>생명 특성</strong>: 세포 구성, 물질대사, 자극 반응, 생장, 생식, 유전, 진화</li>
+        <li><strong>광합성</strong>: 6CO₂ + 6H₂O + 빛에너지 → C₆H₁₂O₆ + 6O₂ (엽록체)</li>
+        <li><strong>세포 호흡</strong>: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP (미토콘드리아)</li>
+        <li><strong>멘델의 법칙</strong>: 우열 법칙 → 분리 법칙 → 독립 법칙. Rr × Rr = 3:1</li>
+        <li><strong>진화</strong>: 변이 + 자연선택 → 적응 → 종 분화 (다윈의 자연선택설)</li>
+      </ul>
+    </div>
+
     <!-- 1. 생명의 특성 -->
-    <h2>1. 생명의 특성</h2>
+    <h2 id="s1">1. 생명의 특성</h2>
     <div class="concept-box">
       모든 생명체가 공통으로 가지는 특성:
       <ol>
@@ -96,7 +145,7 @@
     </div>
 
     <!-- 2. 세포 구조 -->
-    <h2>2. 세포 구조와 기능</h2>
+    <h2 id="s2">2. 세포 구조와 기능</h2>
     <p>세포는 모든 생명체의 구조적·기능적 기본 단위입니다.</p>
 
     <div class="concept-box">
@@ -136,7 +185,7 @@
     </div>
 
     <!-- 3. 광합성 -->
-    <h2>3. 광합성(Photosynthesis)</h2>
+    <h2 id="s3">3. 광합성(Photosynthesis)</h2>
     <p>식물, 조류, 일부 세균이 빛에너지를 이용하여 이산화탄소와 물로부터 포도당을 합성하는 과정입니다.</p>
 
     <div class="formula">
@@ -170,7 +219,7 @@
     </div>
 
     <!-- 4. 세포 호흡 -->
-    <h2>4. 세포 호흡(Cellular Respiration)</h2>
+    <h2 id="s4">4. 세포 호흡(Cellular Respiration)</h2>
     <p>세포가 포도당을 분해하여 생명활동에 필요한 에너지(ATP)를 얻는 과정입니다.</p>
 
     <div class="formula">
@@ -215,7 +264,7 @@
     </div>
 
     <!-- 5. 유전의 법칙 -->
-    <h2>5. 유전의 법칙 — 멘델의 법칙</h2>
+    <h2 id="s5">5. 유전의 법칙 — 멘델의 법칙</h2>
     <p>그레고르 멘델(Gregor Mendel)은 완두콩 교배 실험을 통해 유전의 기본 법칙을 발견했습니다(1865년).</p>
 
     <h3>기본 용어</h3>
@@ -256,7 +305,7 @@
     </div>
 
     <!-- 6. DNA와 단백질 합성 -->
-    <h2>6. DNA와 단백질 합성</h2>
+    <h2 id="s6">6. DNA와 단백질 합성</h2>
     <div class="concept-box">
       <strong>중심 원리(Central Dogma)</strong>
       <div class="formula" style="margin:0.5rem 0;">
@@ -276,7 +325,7 @@
     </div>
 
     <!-- 7. 진화론 -->
-    <h2>7. 진화론</h2>
+    <h2 id="s7">7. 진화론</h2>
     <div class="concept-box">
       <strong>다윈의 자연선택설(Natural Selection, 1859년 발표)</strong>
       <ol>
@@ -299,7 +348,7 @@
     </div>
 
     <!-- 연습 문제 -->
-    <h2>✏️ 연습 문제</h2>
+    <h2 id="s8">✏️ 연습 문제</h2>
     <div class="concept-box">
       <ol>
         <li style="margin-bottom:1rem;">

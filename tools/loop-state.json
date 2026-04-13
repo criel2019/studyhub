@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
+  "angleIndex": 1,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 16,
-  "summary": "CSS에 MathJax overflow·concept-journey 모바일 스크롤·article-meta 소형화·pre 모바일 최적화·컴포넌트 패딩 최적화 추가. ko/ja/zh science 10개 페이지에 table-wrap 래퍼 추가(atoms/biology/cells/chemistry/energy/index). table-wrap에 -webkit-overflow-scrolling:touch 추가."
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 45,
+  "summary": "콘텐츠 깊이 개선 (2주차): ko/math 5개(equations,trigonometry,functions,geometry,statistics) + ko/science 7개(atoms,biology,cells,chemistry,earth,ecology,energy)에 why-box+tldr+learning-goal+page-overview+concept-journey+h2 ids 추가. en/science 7개 동일 처리(영어). ja/science 7개(일본어). zh/science 7개(중국어). 총 26개 아티클 콘텐츠 깊이 강화 완료."
 }
