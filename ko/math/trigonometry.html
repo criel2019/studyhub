@@ -108,6 +108,21 @@
       <span class="cj-node">물리학·공학</span>
     </div>
 
+    <div class="prereq-box">
+      <span class="prereq-icon">🔑</span>
+      <div class="prereq-content">
+        <div class="prereq-label">선행 학습 필요</div>
+        <div class="prereq-links">
+          <a href="geometry.html">도형 — 각도·피타고라스</a>
+          <span class="prereq-sep">·</span>
+          <a href="functions.html">함수의 정의·그래프</a>
+          <span class="prereq-sep">·</span>
+          <a href="equations.html">방정식·부등식</a>
+        </div>
+        <div class="prereq-text" style="margin-top:0.35rem;">피타고라스 정리와 함수의 정의역·치역 개념을 완벽히 이해한 후 이 단원을 시작하세요. 선행 없이 공식만 암기하면 덧셈정리·사인 법칙에서 막힙니다.</div>
+      </div>
+    </div>
+
     <div class="learning-goal">
       <span class="learning-goal-label">📌 이 단원을 마치면</span>
       <ul>
@@ -134,7 +149,22 @@
       </ul>
     </div>
 
+    <div class="exam-relevance">
+      <div class="exam-relevance-label">📊 수능 출제 포인트</div>
+      <ul>
+        <li><strong>출제 빈도:</strong> 매년 4~5문항 (수학Ⅰ 전체에서 가장 많은 출제 비중)</li>
+        <li><strong>핵심 유형:</strong> 삼각함수 방정식·부등식, 삼각함수 그래프 변환, 사인·코사인 법칙 활용</li>
+        <li><strong>고난도 포인트:</strong> 덧셈정리를 이용한 식 변환 (2배각·반각 공식 포함) — 4점 문항 단골</li>
+        <li><strong>실수 주의:</strong> 라디안↔도 변환 실수, \(\sin\theta\)와 \(\sin^2\theta\) 혼동</li>
+      </ul>
+    </div>
+
     <h2 id="s1">1. 삼각함수의 정의 (직각삼각형) <span class="curriculum-badge">[12수I02-01]</span></h2>
+
+    <div class="concept-origin">
+      <div class="concept-origin-label">🏛️ 개념의 탄생</div>
+      <p>삼각함수는 고대 이집트·바빌로니아 천문학에서 시작됐습니다. 기원전 150년경 <strong>히파르코스(Hipparchus)</strong>가 천체 관측을 위해 최초의 삼각함수표(현의 표)를 만들었습니다. 인도 수학자 <strong>아리야바타(Aryabhata, 499년)</strong>가 오늘날의 sine 개념을 정립했고, 아랍 수학자를 거쳐 16~17세기 유럽에 전파되며 코사인·탄젠트 기호가 확립되었습니다.</p>
+    </div>
 
     <div class="intuition-box">
       <span class="intuition-box-label">🧠 기호 없이 직관으로</span>
@@ -324,6 +354,13 @@
         \(= \dfrac{\sqrt{2}}{2} \cdot \dfrac{\sqrt{3}}{2} + \dfrac{\sqrt{2}}{2} \cdot \dfrac{1}{2}\)<br>
         \(= \dfrac{\sqrt{6}}{4} + \dfrac{\sqrt{2}}{4} = \dfrac{\sqrt{6}+\sqrt{2}}{4}\)
       </div>
+    </div>
+
+    <div class="wrong-way">
+      <div class="wrong-way-label">❌ 흔한 실수 — 덧셈정리</div>
+      <span class="ww-wrong">\(\sin(\alpha + \beta) = \sin\alpha + \sin\beta\)</span>
+      <span class="ww-correct">\(\sin(\alpha + \beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta\)</span>
+      <div class="ww-why">삼각함수는 <strong>분배법칙이 성립하지 않습니다</strong>. \(\sin(A+B) \neq \sin A + \sin B\). 예를 들어 \(\sin(30°+60°)=\sin 90°=1\)이지만, \(\sin 30°+\sin 60°=\frac{1}{2}+\frac{\sqrt{3}}{2} \neq 1\). 덧셈정리 공식을 반드시 외워야 합니다.</div>
     </div>
 
     <h3>배각 공식</h3>

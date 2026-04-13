@@ -1,7 +1,7 @@
 {
-  "angleIndex": 4,
-  "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "신뢰 신호",
-  "filesChanged": 27,
-  "summary": "신뢰 신호 강화 (루프22): ko/ 전체 아티클 27개에 curriculum badge + trust-signal-bar 추가. 수학(functions+geometry+statistics+기초6개)에 curriculum-badge([12수I/09수학 코드]) 및 📋 교육과정 span 추가. 과학(biology+chemistry+earth+atoms+cells+ecology+energy)에 동일 처리. 국어(grammar+reading+writing+vocabulary+classical+modern)+영어(grammar+vocabulary+reading+writing) article-meta에 📋 교육과정 span + trust-signal-bar 추가. 결과: ko/ 전체 30개 파일 100% trust-signal-bar 커버."
+  "angleIndex": 5,
+  "lastRun": "2026-04-14T06:00:00Z",
+  "lastAngle": "차별화 가치",
+  "filesChanged": 35,
+  "summary": "차별화 가치 강화 (루프23): 4개 신규 CSS 컴포넌트 추가 — .concept-origin(인디고), .exam-relevance(크림슨), .prereq-box(시안), .wrong-way(로즈). ko/ 8개 파일에 컴포넌트 삽입(functions,trig,calculus,statistics,chemistry,biology,earth,geometry). en/ 8개 파일(calculus,statistics,geometry,chemistry,biology,earth). ja/ 9개 파일(calculus,trigonometry,statistics,geometry,chemistry,biology,earth). zh/ 9개 파일(calculus,trigonometry,statistics,geometry,chemistry,biology,earth). 네이버/EBS에 없는 독자 가치: 개념 탄생 역사·수능 출제 패턴·선행 개념 안내·실제 틀린 풀이 분석."
 }

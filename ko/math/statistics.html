@@ -137,6 +137,16 @@
       </ul>
     </div>
 
+    <div class="exam-relevance">
+      <div class="exam-relevance-label">📊 수능 출제 포인트</div>
+      <ul>
+        <li><strong>출제 빈도:</strong> 매년 3~5문항 (확률과 통계 선택 시 집중 출제)</li>
+        <li><strong>핵심 유형:</strong> 조건부 확률 계산, 이항분포→정규분포 근사, 모비율 신뢰구간</li>
+        <li><strong>고난도 포인트:</strong> "독립과 배반의 차이" — 독립은 확률 곱, 배반은 교집합=공집합. 혼동 시 오답 다수</li>
+        <li><strong>실수 주의:</strong> 분산 계산 시 편차의 합이 0이 되는 성질을 이용한 함정 문항</li>
+      </ul>
+    </div>
+
     <h2 id="s1">1. 대표값 (Measures of Central Tendency) <span class="curriculum-badge">[12수I04-01]</span></h2>
     <p>자료 전체의 특징을 하나의 값으로 나타내는 값을 <strong>대표값</strong>이라 합니다.</p>
 
@@ -274,6 +284,13 @@
       <p>두 사건 A, B가 <strong>독립</strong>이면 (서로 영향을 주지 않으면):</p>
       \[ P(A \cap B) = P(A) \cdot P(B) \]
       \[ P(A | B) = P(A), \quad P(B | A) = P(B) \]
+    </div>
+
+    <div class="wrong-way">
+      <div class="wrong-way-label">❌ 흔한 실수 — 독립 vs 배반</div>
+      <span class="ww-wrong">두 사건이 배반이면 독립이다</span>
+      <span class="ww-correct">두 사건이 배반이면 대부분 <em>종속</em>이다 (A 발생 시 B 불가 → 서로 영향)</span>
+      <div class="ww-why"><strong>배반</strong>: \(A \cap B = \emptyset\) → 동시에 일어날 수 없음. <strong>독립</strong>: \(P(A \cap B) = P(A)P(B)\) → 서로 영향 없음. 두 사건이 배반이면 한 사건의 발생이 다른 사건의 확률을 0으로 만들므로, \(P(A) > 0, P(B) > 0\)이면 오히려 종속입니다.</div>
     </div>
 
     <div class="example">
