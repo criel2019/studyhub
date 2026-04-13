@@ -85,6 +85,19 @@
       <span>🎯 수능 필수 출제 단원</span>
     </div>
 
+    <div class="concept-journey">
+      <span class="cj-label">개념 여정</span>
+      <span class="cj-node cj-prev"><a href="functions.html">함수</a></span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node cj-prev"><a href="trigonometry.html">삼각함수</a></span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node cj-current">미적분</span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node">미분방정식</span>
+      <span class="cj-arrow">›</span>
+      <span class="cj-node">공학수학</span>
+    </div>
+
     <div class="learning-goal">
       <span class="learning-goal-label">📌 이 단원을 마치면</span>
       <ul>
@@ -164,6 +177,12 @@
     </div>
 
     <h2>2. 미분(Differentiation) <span class="curriculum-badge">[12수II02-01]</span></h2>
+
+    <div class="intuition-box">
+      <span class="intuition-box-label">🧠 기호 없이 직관으로</span>
+      <p><strong>미분 = 순간 스냅샷</strong>. 달리는 자동차의 속도계 바늘이 가리키는 숫자가 바로 미분값입니다. "지금 이 순간 얼마나 빠르게 변하고 있는가?" — 그게 f'(x)입니다. 반대로 <strong>적분 = 면적 합산기</strong>. 속도계 기록을 시간에 걸쳐 다 더하면 총 이동 거리가 나오는 것이 적분입니다.</p>
+    </div>
+
     <p><strong>미분</strong>은 함수의 순간 변화율(기울기)을 구하는 연산입니다.</p>
 
     <h3>도함수의 정의</h3>
@@ -241,6 +260,15 @@
       </div>
     </div>
 
+    <div class="exam-trap">
+      <div class="exam-trap-label">⚠️ 수능·내신 자주 틀리는 포인트</div>
+      <ul>
+        <li><strong>도함수 vs 원함수 혼동</strong> — f'(x)를 구한 뒤 f(x) 값을 묻는 문제에서 f'(x)값을 그대로 답으로 쓰는 실수</li>
+        <li><strong>연쇄 법칙 빠뜨리기</strong> — \((3x^2+1)^5\) 미분 시 겉 함수만 미분하고 속 함수 미분 \(\times 6x\)를 빠뜨림</li>
+        <li><strong>극값 판별 실수</strong> — f'(x)=0이어도 극값이 아닐 수 있음 (예: \(f(x)=x^3\)에서 x=0은 극값 없음)</li>
+      </ul>
+    </div>
+
     <h2>3. 미분의 활용</h2>
 
     <h3>증가·감소 구간과 극값</h3>
@@ -285,6 +313,21 @@
 
     <div class="memory-tip">
       <span><span class="memory-tip-label">부정적분 암기팁</span>미분의 역: "지수에 <strong>1 더하고</strong>, 늘어난 지수로 <strong>나눈다</strong>" — \(\int x^4 dx = \dfrac{x^5}{5} + C\)</span>
+    </div>
+
+    <div class="common-mistake">
+      <div class="common-mistake-label">🔴 적분에서 흔한 실수 3가지</div>
+      <ol>
+        <li><strong>적분상수 +C 빠뜨리기</strong> — 부정적분에서 C를 빠뜨리면 틀린 답. 정적분에서는 C 불필요.
+          <span class="mistake-fix">부정적분 = 항상 +C, 정적분 = C 상쇄되므로 생략</span>
+        </li>
+        <li><strong>정적분 구간 순서 실수</strong> — \(\int_3^1 f(x)dx = -\int_1^3 f(x)dx\). 위아래 바꾸면 부호 반전.
+          <span class="mistake-fix">아래 작은 값, 위 큰 값이 기본. 반대면 −1 곱해야 함</span>
+        </li>
+        <li><strong>넓이 구할 때 절댓값 빠뜨리기</strong> — f(x)<0인 구간에서 \(\int f(x)dx\)는 음수. 넓이는 항상 양수.
+          <span class="mistake-fix">\(S = \int_a^b |f(x)|dx\) — 절댓값 필수</span>
+        </li>
+      </ol>
     </div>
 
     <div class="example">

@@ -1,7 +1,7 @@
 {
-  "angleIndex": 4,
+  "angleIndex": 5,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "신뢰 신호",
+  "lastAngle": "차별화 가치",
   "filesChanged": 9,
-  "summary": "CSS에 curriculum-badge·exam-year-badge·trust-signal-bar 3개 신뢰 신호 컴포넌트 추가. ko/math(calculus·trigonometry·equations)·ko/science/physics 4페이지 article-meta 교육과정 명시 + 성취기준 코드 배지(curriculum-badge) + trust-signal-bar 추가. en/ja/zh calculus 3페이지 article-meta 커리큘럼 정보 + trust-signal-bar 추가. footer 텍스트 교육과정 명시로 강화."
+  "summary": "CSS에 concept-journey·exam-trap·compare-method·intuition-box·common-mistake 5개 차별화 컴포넌트 추가. ko/ 4페이지에 개념여정바·직관설명·시험함정경고·흔한실수패턴 추가. 방정식에 인수분해 vs 근의 공식 compare-method 추가. en/ja/zh calculus에 concept-journey + intuition-box 전파."
 }

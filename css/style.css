@@ -1242,6 +1242,302 @@ tr:nth-child(even) td {
   .trust-signal-bar .ts-div { background: rgba(91, 143, 238, 0.25); }
 }
 
+/* ── 차별화 가치 컴포넌트 ─────────────────────────────────── */
+
+/* 1. 개념 여정 바 — 지식 연결 네비게이션 */
+.concept-journey {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0 0 1.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  background: rgba(51, 65, 85, 0.04);
+  border: 1px solid rgba(51, 65, 85, 0.11);
+  font-size: 0.75rem;
+  overflow: hidden;
+}
+.cj-label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-right: 0.7rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.cj-node {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+.cj-node.cj-current {
+  background: rgba(34, 85, 216, 0.1);
+  color: var(--brand-strong);
+  font-weight: 800;
+  border: 1px solid rgba(34, 85, 216, 0.17);
+}
+.cj-node a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.cj-arrow {
+  color: #cbd5e1;
+  font-size: 0.6rem;
+  margin: 0 0.05rem;
+  flex-shrink: 0;
+}
+
+/* 2. 시험 함정 경고 박스 */
+.exam-trap {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(185, 28, 28, 0.05);
+  border: 1px solid rgba(185, 28, 28, 0.18);
+  border-left: 4px solid #b91c1c;
+}
+.exam-trap-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b91c1c;
+  margin-bottom: 0.55rem;
+}
+.exam-trap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.exam-trap ul li {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem 0.3rem 1.5rem;
+  position: relative;
+  line-height: 1.5;
+  background: rgba(185, 28, 28, 0.04);
+  border-radius: 5px;
+}
+.exam-trap ul li::before {
+  content: "✗";
+  position: absolute;
+  left: 0.45rem;
+  top: 0.3rem;
+  color: #b91c1c;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.exam-trap ul li strong { color: #b91c1c; }
+
+/* 3. 풀이법 비교 박스 */
+.compare-method {
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+.compare-method-header {
+  padding: 0.5rem 1rem;
+  background: rgba(34, 85, 216, 0.04);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-strong);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.compare-method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cm-col {
+  padding: 0.85rem 1rem;
+}
+.cm-col + .cm-col { border-left: 1px solid var(--line); }
+.cm-col-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.38rem;
+  border-bottom: 2px solid currentColor;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.cm-col:first-child .cm-col-label { color: var(--brand); border-bottom-color: var(--brand); }
+.cm-col:last-child .cm-col-label { color: var(--success); border-bottom-color: var(--success); }
+.cm-col p { margin: 0; font-size: 0.86rem; line-height: 1.55; }
+.cm-col ul { list-style: none; padding: 0; margin: 0; font-size: 0.86rem; }
+.cm-col ul li { padding: 0.18rem 0 0.18rem 1rem; position: relative; line-height: 1.5; }
+.cm-col ul li::before { content: "·"; position: absolute; left: 0.15rem; font-weight: 800; color: var(--ink-soft); }
+.compare-when {
+  padding: 0.55rem 1rem;
+  background: rgba(34, 85, 216, 0.03);
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.compare-when strong { color: var(--brand-strong); }
+
+/* 4. 직관 설명 박스 (기호 없이) */
+.intuition-box {
+  margin: 1.2rem 0;
+  padding: 0.85rem 1.1rem;
+  border-radius: 9px;
+  background: rgba(109, 40, 217, 0.04);
+  border: 1px solid rgba(109, 40, 217, 0.13);
+  border-left: 3px solid #7c3aed;
+}
+.intuition-box-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  margin-bottom: 0.4rem;
+}
+.intuition-box p, .intuition-box span {
+  margin: 0;
+  font-size: 0.89rem;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--ink);
+}
+.intuition-box strong { color: #6d28d9; }
+
+/* 5. 흔한 실수 패턴 박스 */
+.common-mistake {
+  margin: 1.4rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(194, 65, 12, 0.05);
+  border: 1px solid rgba(194, 65, 12, 0.17);
+  border-left: 4px solid #c2410c;
+}
+.common-mistake-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c2410c;
+  margin-bottom: 0.55rem;
+}
+.common-mistake ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: mistake-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.common-mistake ol li {
+  counter-increment: mistake-counter;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.38rem 0.75rem 0.38rem 2rem;
+  position: relative;
+  line-height: 1.5;
+  background: rgba(194, 65, 12, 0.04);
+  border-radius: 5px;
+}
+.common-mistake ol li::before {
+  content: counter(mistake-counter);
+  position: absolute;
+  left: 0.45rem;
+  top: 0.38rem;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #c2410c;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.common-mistake .mistake-fix {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.77rem;
+  color: var(--success);
+  font-weight: 600;
+}
+.common-mistake .mistake-fix::before { content: "→ "; }
+
+/* 모바일 — 비교 박스 세로 정렬 */
+@media (max-width: 720px) {
+  .compare-method-grid { grid-template-columns: 1fr; }
+  .cm-col + .cm-col { border-left: none; border-top: 1px solid var(--line); }
+}
+
+/* Dark mode — 차별화 가치 컴포넌트 */
+@media (prefers-color-scheme: dark) {
+  .concept-journey {
+    background: rgba(51, 65, 85, 0.12);
+    border-color: rgba(100, 116, 139, 0.18);
+  }
+  .cj-node.cj-current {
+    background: rgba(91, 143, 238, 0.14);
+    border-color: rgba(91, 143, 238, 0.22);
+  }
+  .exam-trap {
+    background: rgba(185, 28, 28, 0.1);
+    border-color: rgba(239, 68, 68, 0.22);
+    border-left-color: #ef4444;
+  }
+  .exam-trap-label { color: #f87171; }
+  .exam-trap ul li { background: rgba(185, 28, 28, 0.08); }
+  .exam-trap ul li::before, .exam-trap ul li strong { color: #f87171; }
+  .compare-method { border-color: rgba(91, 143, 238, 0.18); }
+  .compare-method-header { background: rgba(91, 143, 238, 0.07); border-bottom-color: rgba(91, 143, 238, 0.14); }
+  .cm-col + .cm-col { border-left-color: rgba(91, 143, 238, 0.14); }
+  .compare-when { background: rgba(91, 143, 238, 0.04); border-top-color: rgba(91, 143, 238, 0.14); }
+  .intuition-box {
+    background: rgba(109, 40, 217, 0.1);
+    border-color: rgba(139, 92, 246, 0.2);
+    border-left-color: #8b5cf6;
+  }
+  .intuition-box-label { color: #a78bfa; }
+  .intuition-box strong { color: #c4b5fd; }
+  .common-mistake {
+    background: rgba(194, 65, 12, 0.1);
+    border-color: rgba(234, 88, 12, 0.2);
+    border-left-color: #ea580c;
+  }
+  .common-mistake-label { color: #fb923c; }
+  .common-mistake ol li { background: rgba(194, 65, 12, 0.08); }
+  .common-mistake ol li::before { background: #ea580c; }
+  @media (max-width: 720px) {
+    .cm-col + .cm-col { border-top-color: rgba(91, 143, 238, 0.14); }
+  }
+}
+
 .continue-section {
   margin-top: 2rem;
 }
