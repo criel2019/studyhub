@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
+  "angleIndex": 4,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "학습 효과 장치",
-  "filesChanged": 11,
-  "summary": "학습 효과 장치 강화 (루프21): CSS .memory-tip 신규 컴포넌트 추가. ko/math/functions+geometry+statistics에 quiz-check(details 정답숨김)+misconception+memory-tip 추가. ko/science/chemistry에 misconception+memory-tip+quiz-check 추가. en/math/geometry에 동일처리(영어). ja/math/geometry+zh/math/geometry에 misconception+quiz-check+memory-tip 추가. 연습문제 정답 details로 전환(★난이도 태그)."
+  "lastAngle": "신뢰 신호",
+  "filesChanged": 27,
+  "summary": "신뢰 신호 강화 (루프22): ko/ 전체 아티클 27개에 curriculum badge + trust-signal-bar 추가. 수학(functions+geometry+statistics+기초6개)에 curriculum-badge([12수I/09수학 코드]) 및 📋 교육과정 span 추가. 과학(biology+chemistry+earth+atoms+cells+ecology+energy)에 동일 처리. 국어(grammar+reading+writing+vocabulary+classical+modern)+영어(grammar+vocabulary+reading+writing) article-meta에 📋 교육과정 span + trust-signal-bar 추가. 결과: ko/ 전체 30개 파일 100% trust-signal-bar 커버."
 }
