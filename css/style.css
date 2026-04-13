@@ -1672,6 +1672,11 @@ tr:nth-child(even) td {
   background: var(--line-strong);
   flex-shrink: 0;
 }
+.trust-signal-bar .ts-curriculum {
+  font-weight: 700;
+  color: var(--brand-strong);
+  letter-spacing: 0.01em;
+}
 
 /* Dark mode — 신뢰 신호 */
 @media (prefers-color-scheme: dark) {
