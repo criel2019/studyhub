@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
-  "lastRun": "2026-04-14T10:00:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 16,
-  "summary": "콘텐츠 깊이 강화 (루프27): WHY/직관/오개념 블록 추가 — ko/ 7파일(addition,subtraction,multiplication,division,fractions,decimals + korean/reading TOC+h2id), en/ 2파일(arithmetic,fractions), ja/ 3파일(addition,multiplication,fractions), zh/ 3파일(addition,multiplication,fractions). 총 40+ .why-box/.intuition-box/.misconception 블록 신규 삽입."
+  "angleIndex": 2,
+  "lastRun": "2026-04-14T10:30:00Z",
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 11,
+  "summary": "첫인상 설득력 강화 (루프28): 모든 과목 인덱스에 .quick-jump anchor-chip 빠른 링크 추가 — ko/ 5파일(index·math·science·korean·english), en/ 2파일(math·science index), ja/ 2파일(math·science index), zh/ 2파일(math·science index). ko/korean + ko/english topic-card에 unit-card-meta(난이도·시간) 추가. 총 11개 인덱스 파일 첫인상 개선."
 }
