@@ -1765,6 +1765,117 @@ tr:nth-child(even) td {
   margin-top: 2rem;
 }
 
+/* ===========================
+   정보 구조 컴포넌트 (Loop 17)
+   breadcrumb-current · page-overview · unit-diff badges
+   =========================== */
+
+/* 1. 브레드크럼 현재 위치 강조 */
+.breadcrumb-current {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* 2. "이 페이지에서" 요약 박스 */
+.page-overview {
+  margin: 0 0 1.8rem;
+  padding: 0.85rem 1.1rem;
+  border-left: 3px solid var(--brand);
+  background: rgba(34, 85, 216, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+.page-overview-label {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 0.52rem;
+}
+.page-overview-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  counter-reset: po-counter;
+}
+.page-overview-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  counter-increment: po-counter;
+}
+.page-overview-list li::before {
+  content: counter(po-counter, decimal-leading-zero);
+  font-size: 0.57rem;
+  font-weight: 800;
+  color: var(--brand);
+  opacity: 0.42;
+  min-width: 1.5rem;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, 'SF Mono', Consolas, monospace;
+}
+.page-overview-list a {
+  font-size: 0.8rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.45;
+  transition: color 0.15s;
+}
+.page-overview-list a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* 3. 단원 난이도 배지 */
+.unit-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+  flex-wrap: wrap;
+}
+.unit-diff {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.61rem;
+  font-weight: 700;
+  padding: 0.06rem 0.38rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+}
+.unit-diff-easy {
+  background: rgba(26, 127, 90, 0.1);
+  color: var(--success);
+}
+.unit-diff-mid {
+  background: rgba(200, 112, 0, 0.1);
+  color: var(--warning);
+}
+.unit-diff-hard {
+  background: rgba(34, 85, 216, 0.1);
+  color: var(--brand-strong);
+}
+.unit-time {
+  font-size: 0.61rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+/* Dark mode — 정보 구조 */
+@media (prefers-color-scheme: dark) {
+  .page-overview { background: rgba(34, 85, 216, 0.09); }
+  .unit-diff-easy { background: rgba(26, 127, 90, 0.16); }
+  .unit-diff-mid { background: rgba(200, 112, 0, 0.16); }
+  .unit-diff-hard { background: rgba(34, 85, 216, 0.16); }
+}
+
 .continue-label {
   font-size: 0.76rem;
   font-weight: 800;

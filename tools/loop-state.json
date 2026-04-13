@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
+  "angleIndex": 7,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 8,
-  "summary": "CSS에 unit-complete·next-unit-card·series-progress 3개 리텐션 훅 컴포넌트 추가. ko/ 4페이지(calculus·trigonometry·equations·physics)에 단원완료섹션·진행바·다음단원카드 삽입. en/ja/zh calculus에 동일 컴포넌트 전파. 각 언어별 bridge 문장 및 다음 단원 정보 현지화."
+  "lastAngle": "정보 구조",
+  "filesChanged": 10,
+  "summary": "CSS에 breadcrumb-current·page-overview·unit-diff(easy/mid/hard)·unit-card-meta·unit-time 5개 정보구조 컴포넌트 추가. ko/math/index·science/index에 난이도 배지+학습시간 추가. ko/math/calculus·equations에 breadcrumb-current+page-overview+h2 id 앵커 추가. en/ja/zh calculus에 동일 구조 전파."
 }
