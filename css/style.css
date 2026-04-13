@@ -3559,3 +3559,77 @@ article code,
     border-color: rgba(35, 195, 143, 0.32);
   }
 }
+
+/* ===========================
+   학습 효과 장치 (루프37)
+   practice-set · diff 뱃지
+   =========================== */
+
+/* 연습문제 세트 컨테이너 */
+.practice-set {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.25rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(34, 85, 216, 0.04), rgba(34, 85, 216, 0.01));
+  border: 1px solid rgba(34, 85, 216, 0.15);
+}
+
+.practice-set-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--brand, #2255d8);
+  margin-bottom: 0.75rem;
+}
+
+.practice-set-label::before {
+  content: "✏";
+  font-size: 0.85rem;
+}
+
+/* 난이도 뱃지 */
+.practice-diff {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.practice-diff-1 {
+  background: rgba(26, 127, 90, 0.12);
+  color: var(--success, #1a7f5a);
+}
+
+.practice-diff-2 {
+  background: rgba(200, 112, 0, 0.12);
+  color: var(--warning, #c87000);
+}
+
+.practice-diff-3 {
+  background: rgba(180, 30, 30, 0.1);
+  color: #b41e1e;
+}
+
+/* practice-set 안의 quiz-check 간격 */
+.practice-set .quiz-check {
+  margin: 0.65rem 0 0;
+  border-left-color: var(--brand, #2255d8);
+  background: linear-gradient(135deg, rgba(34, 85, 216, 0.05), rgba(34, 85, 216, 0.02));
+  border-color: rgba(34, 85, 216, 0.2);
+}
+
+.practice-set .quiz-check:first-of-type { margin-top: 0; }
+
+@media (prefers-color-scheme: dark) {
+  .practice-set {
+    background: rgba(34, 85, 216, 0.07);
+    border-color: rgba(34, 85, 216, 0.22);
+  }
+}

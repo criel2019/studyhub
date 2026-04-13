@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
-  "lastRun": "2026-04-14T17:55:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 23,
-  "summary": "첫인상 설득력 강화 (루프36): (1) hero h1 초대형 clamp(2.2rem,6.5vw,4.6rem) + 수식 기호 부유 배경(∑∫π△α∂√∞) + 사회적 증명 '지금 N명 공부 중'. (2) .today-concept 날짜 배너 — JS 날짜 기반 개념 로테이션 4개 언어. (3) .card-preview 슬라이드업 hover 효과 + data-subject 컬러 accent. (4) localStorage 재방문 CTA. 전 언어(en/ja/zh) index 페이지 전파."
+  "angleIndex": 3,
+  "lastRun": "2026-04-14T18:30:00Z",
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 31,
+  "summary": "학습 효과 장치 강화 (루프37): (1) CSS .practice-set 컴포넌트 + ★☆☆/★★☆/★★★ 난이도 배지 추가. (2) ko/ 아티클 9개에 연습문제 3문항(기초·심화·도전) — <details> 네이티브 아코디언으로 정답 숨김. (3) ko/ 아티클 16개에 .memory-tip 암기법 블록. (4) en/ja/zh 아티클 9개에 영문/일문/중문 연습문제 전파."
 }
