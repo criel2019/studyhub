@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
+  "angleIndex": 2,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 11,
-  "summary": "CSS에 why-box·misconception·tldr·exam-badge 컴포넌트 추가. ko/en/ja/zh 미적분·영문법·물리 등 10개 페이지에 '왜 배우는가' 도입부·핵심요약·오개념 섹션 추가. ko/english/grammar.html 180→420줄로 대폭 확장."
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 5,
+  "summary": "히어로 섹션 전면 개편: hero-kicker·신뢰배지(회원가입없음·광고없음·전부무료)·핵심개념 순환텍스트(CSS keyframe 16s 4항목) 4개 언어 모두 적용. 과목카드 카피 직접화 + 주제 수 배지(수학12·국어6·영어4·과학8) 추가."
 }

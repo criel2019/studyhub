@@ -789,6 +789,104 @@ tr:nth-child(even) td {
   vertical-align: middle;
 }
 
+/* ── 히어로 첫인상 강화 컴포넌트 ─────────────────────────── */
+
+/* 히어로 상단 브랜드 킥커 */
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(34, 85, 216, 0.1);
+  color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+/* 신뢰 배지 3종 */
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.85rem 0 0.25rem;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(31, 143, 88, 0.1);
+  border: 1px solid rgba(31, 143, 88, 0.35);
+  color: var(--success);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* 핵심 개념 예고편 순환 텍스트 */
+.hero-rotate-wrap {
+  position: relative;
+  height: 1.9em;
+  overflow: hidden;
+  margin: 0.55rem auto 0;
+  max-width: 560px;
+}
+
+.hero-rotate-item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand);
+  font-style: italic;
+  animation: heroRotate 16s infinite;
+  pointer-events: none;
+  transform: translateY(6px);
+}
+
+.hero-rotate-item:nth-child(1) { animation-delay: 0s; }
+.hero-rotate-item:nth-child(2) { animation-delay: 4s; }
+.hero-rotate-item:nth-child(3) { animation-delay: 8s; }
+.hero-rotate-item:nth-child(4) { animation-delay: 12s; }
+
+@keyframes heroRotate {
+  0%   { opacity: 0; transform: translateY(6px); }
+  6%   { opacity: 1; transform: translateY(0); }
+  19%  { opacity: 1; transform: translateY(0); }
+  25%  { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 0; transform: translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rotate-item { animation: none; }
+  .hero-rotate-item:first-child { opacity: 1; transform: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-kicker {
+    background: rgba(91, 143, 238, 0.15);
+    color: var(--brand-strong);
+  }
+  .trust-badge {
+    background: rgba(52, 211, 153, 0.1);
+    border-color: rgba(52, 211, 153, 0.3);
+    color: var(--success);
+  }
+  .hero-rotate-item {
+    color: var(--brand-strong);
+  }
+}
+
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   .why-box {
