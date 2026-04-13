@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
-  "lastRun": "2026-04-14T09:30:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 8,
-  "summary": "모바일 UX 강화 (루프26): CSS — table display:block/overflow-x:auto(전체 보호), .concept-box·.example·.tip·.formula 모바일 패딩 축소, .why-box·.misconception·.tldr·.concept-bridge·.skill-unlock 좌우 패딩 최적화, article-meta span 높이 축소, h2 상단 마진 축소. HTML — ko/korean/vocabulary + en/science/6파일(index,energy,cells,atoms)+en/english/reading,vocabulary table-wrap 래퍼 누락 7건 수정."
+  "angleIndex": 1,
+  "lastRun": "2026-04-14T10:00:00Z",
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 16,
+  "summary": "콘텐츠 깊이 강화 (루프27): WHY/직관/오개념 블록 추가 — ko/ 7파일(addition,subtraction,multiplication,division,fractions,decimals + korean/reading TOC+h2id), en/ 2파일(arithmetic,fractions), ja/ 3파일(addition,multiplication,fractions), zh/ 3파일(addition,multiplication,fractions). 총 40+ .why-box/.intuition-box/.misconception 블록 신규 삽입."
 }
