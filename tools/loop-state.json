@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
-  "lastRun": "2026-04-14T16:40:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 3,
-  "summary": "모바일 UX 강화 (루프34): css/style.css + js/app.js + ko/math/decimals.html 3파일. (1) .table-wrap mask-image 그라데이션 스크롤 마스크 + 슬림 스크롤바. (2) .table-scroll-hint 힌트 배너 CSS. (3) 반응형 테이블 카드 변환 — .times-table·.no-card 제외, tbody 카드화, td[data-label]::before 레이블. (4) JS: initTableCards(thead th→td data-label 자동주입) + initTableScrollMask(scrolled-end 토글+힌트 삽입). (5) code 인라인 box화. (6) overflow-wrap 전역. decimals.html: 2번째 테이블 .table-wrap 래핑."
+  "angleIndex": 1,
+  "lastRun": "2026-04-14T17:20:00Z",
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 82,
+  "summary": "콘텐츠 깊이 강화 (루프35): ko/ 전체 article에 why-box·intuition-box·misconception 추가, en/ja/zh 56파일 전파. 수학(equations·functions·geometry·statistics·calculus·trigonometry), 과학(atoms·biology·cells·chemistry·earth·ecology·energy·physics), 국어(classical·modern·vocabulary·writing·grammar·reading), 영어(grammar·reading·vocabulary·writing) 전 과목 커버."
 }
