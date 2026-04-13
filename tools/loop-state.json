@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-14T20:30:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 31,
-  "summary": "리텐션 훅 강화 (루프40): (1) CSS .concept-bridge(dark navy — 개념 연결 필연성 설명 박스) + .three-path-nav(3경로 네비: 복습←  | 다음→ | 연관) + 다크모드 추가. (2) ko/ 30개 파일: three-path-nav 전수 삽입, concept-bridge 9개(나눗셈→분수, 분수→소수, 방정식→함수, 통계→미적분, 함수→기하, 원자→세포, 화학→생물, 국어문법→고전, 영어문법→어휘). 총 39개 리텐션 요소."
+  "angleIndex": 7,
+  "lastRun": "2026-04-14T21:00:00Z",
+  "lastAngle": "정보 구조",
+  "filesChanged": 39,
+  "summary": "정보 구조 강화 (루프41): (1) CRITICAL — ko/ 인덱스 5개 Loop30 인코딩 오염 복구 (ko/index.html + 4개 과목 index.html, 6becf14 기반 복원 + today-concept 재통합). (2) ko/ 전체 35개 파일 브레드크럼 과목 클래스 추가 (bc-math/bc-korean/bc-english/bc-science) — section-color CSS 훅 강화."
 }
