@@ -95,6 +95,16 @@
       </ol>
     </nav>
 
+
+    <div class="tldr">
+      <div class="tldr-label">⚡ 소수 핵심 30초 요약</div>
+      <ul>
+        <li>×10→소수점 오른쪽 이동, ÷10→왼쪽 이동</li>
+        <li>덧셈/뺄셈: 소수점 위치 반드시 정렬</li>
+        <li>곱셈: 소수점 자리 수를 합산해 결과에 적용</li>
+        <li>나눗셈: 나누는 수를 정수로 만든 후 계산</li>
+      </ul>
+    </div>
     <h2 id="s1">1. 소수의 뜻 <span class="curriculum-badge">[04수학01-03]</span></h2>
     <p>소수(小數, decimal)는 1보다 작은 수 또는 정수가 아닌 수를 표현하는 방법입니다. <strong>소수점(.)</strong>을 사용해 정수 부분과 소수 부분을 구분합니다.</p>
 
@@ -267,6 +277,12 @@
       <div class="why-label">💡 원리</div>
       0.1이 왜 1/10인가? — 소수 첫째 자리는 10분의 1을 나타냅니다. 0.25는 25/100이고, 이것이 1/4과 같은 이유입니다.
     </div>
+    <div class="analogy-box">
+      <div class="analogy-label">&#128161; 이걸로 이해하면 됩니다</div>
+      <strong class="analogy-title">소수 = 줄자의 mm 단위</strong>
+      <p>줄자로 키를 재면 172.5cm. 여기서 0.5cm = 5mm. <strong>소수점 오른쪽 숫자</strong>는 이처럼 "1보다 작은 부분"을 나타낸다. 소수점이 오른쪽으로 한 칸 이동하면 10배 — 키가 갑자기 1725cm가 되는 것처럼.</p>
+    </div>
+
 
     <div class="misconception">
       <div class="misc-label">⚠ 흔한 오개념</div>
@@ -304,6 +320,15 @@
         <li>곱셈: 두 소수의 소수점 자리 수의 합만큼 소수점 이동</li>
         <li>나눗셈: 나누는 수가 소수면 자연수로 변환 후 계산</li>
         <li>반올림·올림·버림의 기준 자리 정확히 확인</li>
+      </ul>
+    </div>
+
+    <div class="exam-trap">
+      <div class="exam-trap-label">&#9888; 자주 틀리는 포인트</div>
+      <ul>
+        <li>소수점 위치 이동 방향 오류: ×10이면 소수점이 <strong>오른쪽</strong>으로, ÷10이면 <strong>왼쪽</strong>으로. 반대로 적용하는 실수 주의</li>
+        <li>소수 덧셈에서 소수점 정렬 누락: 3.14+2.7을 3.14+2.70으로 맞춰 쓰지 않으면 자릿값 혼동 발생</li>
+        <li>0.1×0.1=0.01을 0.1로 쓰는 오류: 소수 곱셈에서는 소수점 자리 수를 합산. 0.1(소수1자리)×0.1(소수1자리)=0.01(소수2자리)</li>
       </ul>
     </div>
     <div class="memory-tip"><div class="memory-tip-label">소수점 이동 규칙</div><p><strong>×10 → 오른쪽 1칸 / ÷10 → 왼쪽 1칸</strong>. 0.3 × 10 = 3.0 (점이 오른쪽으로). 3.0 ÷ 10 = 0.3 (점이 왼쪽으로). 소수 덧셈·뺄셈: 소수점 위치 맞추기가 핵심!</p></div>

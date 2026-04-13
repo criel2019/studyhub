@@ -1944,6 +1944,106 @@ tr:nth-child(even) td {
 }
 .common-mistake .mistake-fix::before { content: "→ "; }
 
+/* 6. 비유 이해 박스 */
+.analogy-box {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(202, 138, 4, 0.05);
+  border: 1px solid rgba(202, 138, 4, 0.18);
+  border-left: 4px solid #d97706;
+}
+.analogy-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b45309;
+  margin-bottom: 0.55rem;
+}
+.analogy-title {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.45rem;
+}
+.analogy-body {
+  margin: 0;
+  font-size: 0.89rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.analogy-body strong { color: #b45309; }
+
+/* 7. 원리 발견 경로 박스 */
+.insight-path {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(14, 116, 144, 0.04);
+  border: 1px solid rgba(14, 116, 144, 0.16);
+  border-left: 4px solid #0e7490;
+}
+.insight-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0e7490;
+  margin-bottom: 0.5rem;
+}
+.insight-title {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.insight-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: insight-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.insight-steps li {
+  counter-increment: insight-counter;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.38rem 0.75rem 0.38rem 2.1rem;
+  position: relative;
+  line-height: 1.55;
+  background: rgba(14, 116, 144, 0.04);
+  border-radius: 5px;
+}
+.insight-steps li::before {
+  content: counter(insight-counter);
+  position: absolute;
+  left: 0.45rem;
+  top: 0.38rem;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #0e7490;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.insight-steps li strong { color: #0e7490; }
+
 /* 모바일 — 비교 박스 세로 정렬 */
 @media (max-width: 720px) {
   .compare-method-grid { grid-template-columns: 1fr; }
@@ -1987,6 +2087,22 @@ tr:nth-child(even) td {
   .common-mistake-label { color: #fb923c; }
   .common-mistake ol li { background: rgba(194, 65, 12, 0.08); }
   .common-mistake ol li::before { background: #ea580c; }
+  .analogy-box {
+    background: rgba(202, 138, 4, 0.09);
+    border-color: rgba(251, 191, 36, 0.22);
+    border-left-color: #f59e0b;
+  }
+  .analogy-label { color: #fbbf24; }
+  .analogy-body strong { color: #fcd34d; }
+  .insight-path {
+    background: rgba(14, 116, 144, 0.09);
+    border-color: rgba(6, 182, 212, 0.2);
+    border-left-color: #06b6d4;
+  }
+  .insight-label { color: #22d3ee; }
+  .insight-steps li { background: rgba(14, 116, 144, 0.08); }
+  .insight-steps li::before { background: #0891b2; }
+  .insight-steps li strong { color: #22d3ee; }
   @media (max-width: 720px) {
     .cm-col + .cm-col { border-top-color: rgba(91, 143, 238, 0.14); }
   }

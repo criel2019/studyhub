@@ -97,6 +97,16 @@
       </ol>
     </nav>
 
+
+    <div class="tldr">
+      <div class="tldr-label">⚡ 분수 핵심 30초 요약</div>
+      <ul>
+        <li>덧셈/뺄셈: 통분(LCM) 먼저, 분자만 계산</li>
+        <li>곱셈: 분자×분자, 분모×분모 (통분 불필요)</li>
+        <li>나눗셈: 뒤 분수를 역수로 바꿔 곱하기</li>
+        <li>약분 시 GCD(최대공약수)로 나누기</li>
+      </ul>
+    </div>
     <h2 id="s1">1. 분수의 뜻 <span class="curriculum-badge">[04수학03-01]</span></h2>
     <p>분수는 전체를 똑같이 몇 등분한 것 중의 일부를 나타내는 수입니다.</p>
 
@@ -188,6 +198,12 @@
       <div class="why-label">💡 원리</div>
       왜 통분이 필요한가? — 1/2+1/3은 피자 반 판과 피자 1/3판의 합. 조각 크기가 다를 때는 같은 크기로 맞춰야(통분) 더할 수 있습니다.
     </div>
+    <div class="analogy-box">
+      <div class="analogy-label">&#128161; 이걸로 이해하면 됩니다</div>
+      <strong class="analogy-title">분수 = 피자 조각의 언어</strong>
+      <p>피자 한 판을 8조각으로 나눴다. 3조각을 먹었다면? 3/8을 먹은 것이다. 분모는 "몇 조각으로 나눴나", 분자는 "몇 조각을 가졌나"다. <strong>분수 나눗셈 = 역수를 곱하는 이유</strong>: 3조각을 1/2명이 먹는다면 6조각(2배)이 필요하다는 뜻이다.</p>
+    </div>
+
 
     <h2 id="s5">5. 분수의 덧셈과 뺄셈</h2>
 
@@ -291,6 +307,24 @@
         <li>곱셈: 분자×분자, 분모×분모 — 통분 불필요</li>
         <li>나눗셈: 나누는 분수를 뒤집어서 곱하기</li>
         <li>약분 가능하면 계산 전후로 반드시 약분</li>
+      </ul>
+    </div>
+
+    <div class="insight-path">
+      <div class="insight-path-label">&#128270; 이 공식은 어디서 왔나?</div>
+      <strong class="insight-path-title">분수 나눗셈이 역수 곱셈인 이유</strong>
+      <div class="insight-path-body"><strong>왜 (3/4) ÷ (2/3) = (3/4) × (3/2) 인가?</strong><br>
+나눗셈의 정의: a ÷ b = a × (b의 역수)<br>
+(2/3)의 역수는? 분자·분모를 바꾸면 (3/2)<br>
+<em>직관: (3/4) ÷ (2/3)은 "3/4이 2/3의 몇 배인가?" → (3/4)÷(2/3) = (3×3)/(4×2) = 9/8</em></div>
+    </div>
+
+    <div class="exam-trap">
+      <div class="exam-trap-label">&#9888; 자주 틀리는 포인트</div>
+      <ul>
+        <li>분모가 다른 덧셈에서 분자만 더하는 오류: 1/2+1/3 ≠ 2/5. 반드시 통분 먼저 → 3/6+2/6=5/6</li>
+        <li>나눗셈에서 역수 취하는 방향 혼동: 2/3 ÷ 4/5 에서 <strong>4/5의 역수인 5/4를 곱해야</strong> 함. 2/3의 역수를 쓰는 실수 주의</li>
+        <li>약분 후 부호 오류: (-6)/(-8) = 3/4. 분자·분모 모두 음수면 양수가 됨을 잊는 경우</li>
       </ul>
     </div>
     <div class="memory-tip"><div class="memory-tip-label">분수 연산 핵심 암기</div><p><strong>÷ = × (역수)</strong> — 분수를 나눌 때는 뒤 분수를 뒤집어서 곱하기. 이유: a ÷ (b/c) = a × (c/b). 통분 시 분모의 LCM(최소공배수) 사용. 약분 = GCD(최대공약수)로 나누기.</p></div>

@@ -125,6 +125,12 @@
       <div class="why-label">🌱 왜 확률과 통계를 배우는가?</div>
       <p>우리는 매일 불확실한 정보를 판단합니다 — 날씨 예보, 약의 효과, 선거 결과 예측. <strong>통계는 데이터에서 패턴을 발견하고, 확률은 미래의 불확실성을 수치화하는 도구</strong>입니다. AI와 머신러닝의 핵심이 통계학이며, 의학 연구·금융 리스크 분석·여론 조사 모두 이 단원의 개념을 직접 사용합니다. 정규분포 하나만 이해해도 세상의 수많은 현상을 새로운 시각으로 볼 수 있습니다.</p>
     </div>
+    <div class="analogy-box">
+      <div class="analogy-label">&#128161; 이걸로 이해하면 됩니다</div>
+      <strong class="analogy-title">평균 = 키 맞추기 게임</strong>
+      <p>5명의 키를 모두 똑같이 맞추려면? 모두의 키를 합쳐서 5로 나누면 된다 — 이게 평균이다. <strong>분산</strong>은 "키가 평균에서 얼마나 떨어져 있나"를 수치화한 것. 키가 모두 170cm면 분산=0, 들쑥날쑥하면 분산이 커진다.</p>
+    </div>
+
 
     <div class="tldr">
       <div class="tldr-label">⚡ 핵심 30초 요약</div>
@@ -359,6 +365,16 @@
       </ul>
     </div>
 
+
+    <div class="insight-path">
+      <div class="insight-path-label">&#128270; 이 공식은 어디서 왔나?</div>
+      <strong class="insight-path-title">표준편차 공식이 나온 이유</strong>
+      <div class="insight-path-body">단순히 "평균에서 얼마나 떨어졌나" 측정 시도:<br>
+편차 합 = (x₁−μ)+(x₂−μ)+… = 0 (항상 0 → 의미 없음!)<br>
+해결책 1: 절댓값 → 계산 불편<br>
+해결책 2: <strong>제곱</strong>해서 더함 → 분산(σ²)<br>
+단위를 원래대로 복원: √분산 = <em>표준편차 σ = √(Σ(xᵢ−μ)²/n)</em></div>
+    </div>
     <div class="memory-tip">
       <div class="memory-tip-label">🧠 암기 포인트</div>
       <p><strong>평균·중앙값·최빈값</strong>: <code>평균</code>=전체 합÷개수, <code>중앙값</code>=정렬 후 가운데, <code>최빈값</code>=가장 자주 등장</p>

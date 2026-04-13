@@ -139,6 +139,12 @@
       <div class="why-label">🌱 왜 미적분을 배우는가?</div>
       <p>미적분은 <strong>"변화를 수학으로 다루는 언어"</strong>입니다. 자동차의 속도계는 순간 속도를 표시하는데, 이것이 바로 미분입니다. 물을 채우는 부피나 구불구불한 도로의 길이를 계산하는 것이 적분입니다. 뉴턴과 라이프니츠가 물리 현상(포물선 운동, 행성 궤도)을 설명하기 위해 개발한 이 도구는 오늘날 AI, 기상 예측, 건축 구조 계산에 이르기까지 모든 과학·공학의 기반입니다. 미적분을 이해하면 "세상의 변화"를 수식으로 표현할 수 있습니다.</p>
     </div>
+    <div class="analogy-box">
+      <div class="analogy-label">&#128161; 이걸로 이해하면 됩니다</div>
+      <strong class="analogy-title">미분 = 속도계, 적분 = 주행거리계</strong>
+      <p>차 속도계는 지금 이 순간 얼마나 빠른지(미분)를 보여준다. 주행거리계는 지금까지 얼마나 달렸는지(적분)를 기록한다. <strong>미분과 적분은 서로 역연산</strong> — 속도계 값을 시간으로 쌓으면 주행거리가 된다(미적분 기본정리).</p>
+    </div>
+
 
     <div class="tldr">
       <div class="tldr-label">⚡ 핵심 30초 요약</div>
@@ -241,6 +247,15 @@
       \end{align}
     </div>
 
+
+    <div class="insight-path">
+      <div class="insight-path-label">&#128270; 이 공식은 어디서 왔나?</div>
+      <strong class="insight-path-title">미분의 정의가 나온 과정</strong>
+      <div class="insight-path-body"><strong>문제</strong>: 곡선 y=x²에서 x=2 지점의 "순간 기울기"를 어떻게 구할까?<br>
+<strong>아이디어</strong>: 두 점 사이의 기울기 = Δy/Δx = (f(x+h)−f(x))/h<br>
+<strong>핵심 트릭</strong>: h → 0으로 극한을 취하면 순간 기울기가 됨<br>
+<em>d/dx(x²) = lim(h→0) [(x+h)²−x²]/h = lim[(2xh+h²)/h] = lim[2x+h] = <strong>2x</strong></em></div>
+    </div>
     <div class="memory-tip">
       <span><span class="memory-tip-label">거듭제곱 미분 암기팁</span>"지수가 <strong>앞으로 내려오고</strong>, 지수는 <strong>1 줄어든다</strong>" — \((x^5)' = 5x^4\), \((x^3)' = 3x^2\)</span>
     </div>
