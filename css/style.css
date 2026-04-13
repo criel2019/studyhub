@@ -3056,3 +3056,146 @@ pre {
   .exam-checklist ul { padding: 0.4rem 0.85rem 0.6rem; }
   .exam-checklist-header { padding: 0.5rem 0.85rem; }
 }
+
+/* ===========================
+   정보 구조 개선 (루프33)
+   과목별 색상 와이파인딩 시스템
+   =========================== */
+
+/* ── 1. 과목별 섹션 컬러 변수 ── */
+:root {
+  --section-math:    #2255d8;   /* 수학 — 브랜드 블루   */
+  --section-science: #1a7f5a;   /* 과학 — 서세스 그린   */
+  --section-lang:    #7c3aed;   /* 모국어 — 인디고 퍼플 */
+  --section-efl:     #c87000;   /* 외국어 EFL — 앰버    */
+  --section-color:   var(--brand, #2255d8); /* 현재 섹션 컬러 기본값 */
+}
+
+/* ── 2. :has() 기반 섹션 컬러 자동 감지 ── */
+body:has(nav a[href*="math"].active)     { --section-color: var(--section-math);    }
+body:has(nav a[href*="science"].active)  { --section-color: var(--section-science); }
+body:has(nav a[href*="korean"].active),
+body:has(nav a[href*="japanese"].active),
+body:has(nav a[href*="chinese"].active)  { --section-color: var(--section-lang);    }
+body:has(nav a[href*="english"].active)  { --section-color: var(--section-efl);     }
+
+/* ── 3. nav 활성 항목 — 흰 pill + 섹션 컬러 텍스트 ── */
+nav a.active {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: var(--section-color) !important;
+  border-color: transparent !important;
+  font-weight: 800 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.14);
+  transform: none !important;
+}
+
+/* ── 4. 브레드크럼 섹션 컬러 악센트 ── */
+.breadcrumb a[href*="/math/"]     { color: var(--section-math); }
+.breadcrumb a[href*="/science/"]  { color: var(--section-science); }
+.breadcrumb a[href*="/korean/"],
+.breadcrumb a[href*="/japanese/"],
+.breadcrumb a[href*="/chinese/"]  { color: var(--section-lang); }
+.breadcrumb a[href*="/english/"]  { color: var(--section-efl); }
+.breadcrumb span:not(.sep),
+.breadcrumb .breadcrumb-current   { color: var(--section-color); font-weight: 700; }
+
+/* ── 5. h1 섹션 컬러 악센트 언더라인 ── */
+.page-article h1,
+.page-section-index h1 {
+  padding-bottom: 0.55rem;
+}
+.page-article h1::after,
+.page-section-index h1::after {
+  content: "";
+  display: block;
+  width: 2.2rem;
+  height: 3px;
+  background: var(--section-color);
+  border-radius: 2px;
+  margin-top: 0.45rem;
+  transition: background 0.3s;
+}
+
+/* ── 6. entry-point / section-hook 섹션 컬러 연동 ── */
+.entry-point {
+  border-color: color-mix(in srgb, var(--section-color) 32%, transparent);
+  background: color-mix(in srgb, var(--section-color) 4%, var(--surface));
+}
+.entry-point-label { color: var(--section-color); }
+.entry-point-path a {
+  color: var(--section-color);
+  background: color-mix(in srgb, var(--section-color) 8%, transparent);
+  border-color: color-mix(in srgb, var(--section-color) 22%, transparent);
+}
+.entry-point-path a:hover {
+  background: color-mix(in srgb, var(--section-color) 16%, transparent);
+}
+.section-hook { border-color: color-mix(in srgb, var(--section-color) 35%, transparent); }
+.section-hook strong { color: var(--section-color); }
+
+/* ── 7. nav 스크롤 축소 전환 (.nav-scrolled) ── */
+header { transition: box-shadow 0.22s; }
+header.nav-scrolled {
+  box-shadow: 0 2px 18px rgba(13, 37, 84, 0.28);
+}
+header.nav-scrolled nav {
+  min-height: 56px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: min-height 0.22s, padding 0.22s;
+}
+
+/* ── 8. 모바일 하단 탭 바 ── */
+@media (max-width: 720px) {
+  header {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: none;
+  }
+  header nav {
+    min-height: 0 !important;
+    padding: 0.28rem 0.5rem calc(0.28rem + env(safe-area-inset-bottom, 0px)) !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.18rem !important;
+    justify-content: flex-start !important;
+  }
+  header nav::-webkit-scrollbar { display: none; }
+  .nav-logo {
+    width: auto !important;
+    margin-right: 0.4rem !important;
+    font-size: 0.82rem !important;
+    flex-shrink: 0;
+  }
+  nav a:not(.nav-logo) {
+    flex: 0 0 auto !important;
+    padding: 0.3rem 0.65rem !important;
+    font-size: 0.78rem !important;
+    min-width: 0 !important;
+  }
+  main {
+    padding-top: 1.35rem !important;
+    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  footer {
+    margin-bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* 다크모드 보완 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --section-lang: #9d5cf5;   /* 다크모드 퍼플 — 명도 보정 */
+  }
+  nav a.active {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.18) !important;
+  }
+}

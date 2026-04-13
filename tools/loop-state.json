@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-14T15:30:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 110,
-  "summary": "리텐션 훅 강화 (루프32): CSS 2종 신규 — .next-teaser(다음 단원 예고 카드) · .recall-prompt(에빙하우스 복습 타이밍). ko/ 30파일 + en/ 19파일 + ja/ 30파일 + zh/ 30파일 = 109 HTML + css/style.css 1 = 110파일 전파. 전 언어 전 아티클 하단에 recall-prompt(복습 권장 칩) + next-teaser(다음 단원 예고) 추가. 마지막 단원은 is-complete 변형으로 섹션 완료 표시."
+  "angleIndex": 7,
+  "lastRun": "2026-04-14T16:10:00Z",
+  "lastAngle": "정보 구조",
+  "filesChanged": 2,
+  "summary": "정보 구조 개선 (루프33): css/style.css + js/app.js 2파일 수정. 과목별 색상 와이파인딩 시스템 — --section-math(파랑)·--section-science(초록)·--section-lang(보라)·--section-efl(주황) CSS 변수 + :has() 자동 감지. nav 활성 항목 화이트 필 강화. 브레드크럼 과목별 색상 어센트. h1 하단 섹션 컬러 언더라인. entry-point/section-hook 섹션 컬러. nav-scrolled 스크롤 축소. 모바일 하단 탭 바 (bottom:0 고정, iOS safe-area 대응). js/app.js: addNavScrolled() 추가."
 }

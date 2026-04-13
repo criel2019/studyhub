@@ -407,7 +407,16 @@
     document.head.appendChild(script);
   }
 
+  function addNavScrolled() {
+    const hdr = document.querySelector("header");
+    if (!hdr) return;
+    const update = () => hdr.classList.toggle("nav-scrolled", window.scrollY > 48);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    addNavScrolled();
     addProgressBar();
     addBackToTop();
     injectBreadcrumbJsonLd();
