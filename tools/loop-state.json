@@ -1,7 +1,7 @@
 {
-  "angleIndex": 7,
-  "lastRun": "2026-04-14T09:00:00Z",
-  "lastAngle": "정보구조",
-  "filesChanged": 22,
-  "summary": "정보구조 강화 (루프25): CSS — h2[id] scroll-margin-top:3.5rem + hover §인디케이터 추가. page-overview TOC 신규 삽입: ko/science/physics + ko/math/6파일(addition,subtraction,multiplication,division,fractions,decimals), en/science/physics, ja/science/physics + ja/math/6파일, zh/science/physics + zh/math/6파일 = 22개 파일. 모든 h2에 id=s1~sN 부여."
+  "angleIndex": 0,
+  "lastRun": "2026-04-14T09:30:00Z",
+  "lastAngle": "모바일 UX",
+  "filesChanged": 8,
+  "summary": "모바일 UX 강화 (루프26): CSS — table display:block/overflow-x:auto(전체 보호), .concept-box·.example·.tip·.formula 모바일 패딩 축소, .why-box·.misconception·.tldr·.concept-bridge·.skill-unlock 좌우 패딩 최적화, article-meta span 높이 축소, h2 상단 마진 축소. HTML — ko/korean/vocabulary + en/science/6파일(index,energy,cells,atoms)+en/english/reading,vocabulary table-wrap 래퍼 누락 7건 수정."
 }

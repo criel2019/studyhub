@@ -2737,3 +2737,53 @@ pre {
     font-size: 0.92em;
   }
 }
+
+/* ===========================
+   모바일 UX 보완 (루프26)
+   테이블·컴포넌트 모바일 최적화
+   =========================== */
+
+/* 1. 테이블 직접 overflow 처리 (.table-wrap 없는 파일 포함) */
+@media (max-width: 720px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  /* 2. 박스 컴포넌트 모바일 패딩 최적화 — 좁은 화면 콘텐츠 공간 확보 */
+  .concept-box,
+  .example,
+  .tip {
+    padding: 0.85rem 0.9rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .formula {
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+  }
+
+  /* 3. 기타 박스류 좌우 패딩 최적화 */
+  .why-box,
+  .misconception,
+  .tldr,
+  .step-solution,
+  .concept-bridge,
+  .skill-unlock {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  /* 4. article-meta 뱃지 높이 축소 */
+  .article-meta span {
+    min-height: 28px;
+    padding: 0.18rem 0.6rem;
+  }
+
+  /* 5. h2 모바일 상단 마진 축소 */
+  h2 {
+    margin-top: 1.8rem;
+  }
+}
