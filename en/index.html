@@ -91,24 +91,37 @@
       </div>
     </div>
 
-    <h2>📘 Subject Areas</h2>
+    <h2>    <div class="today-concept">
+      <span class="today-concept-date"></span>
+      <span class="today-concept-label">Today's Concept</span>
+      <span class="today-concept-name">Loading...</span>
+      <a href="#" class="today-concept-link">View →</a>
+    </div>
+
+📘 Subject Areas</h2>
     <p>Study guides that explain the <em>why</em> before the <em>how</em> — aligned with US Common Core Standards. Each subject has worked examples and practice problems.</p>
 
     <div class="subject-grid">
-      <a href="./math/" class="subject-card">
+      <a href="./math/" class="subject-card" data-subject="math" data-subject="math">
         <span class="card-icon">🔢</span>
         <h2>Math <small style="font-size:0.7em;font-weight:500;opacity:0.7">12 topics</small></h2>
         <p>Arithmetic to calculus — understand the why, not just the formula. Step-by-step worked examples.</p>
+      
+        <span class="card-preview">e.g., Calculus: derivative as the slope of a curve</span>
       </a>
-      <a href="./english/" class="subject-card">
+      <a href="./english/" class="subject-card" data-subject="english" data-subject="english">
         <span class="card-icon">📖</span>
         <h2>English ELA <small style="font-size:0.7em;font-weight:500;opacity:0.7">6 topics</small></h2>
         <p>Grammar to literature — core concepts for every grade. Essays, vocabulary, and reading comprehension.</p>
+      
+        <span class="card-preview">e.g., Tenses: the time map of English</span>
       </a>
-      <a href="./science/" class="subject-card">
+      <a href="./science/" class="subject-card" data-subject="science" data-subject="science">
         <span class="card-icon">🔬</span>
         <h2>Science <small style="font-size:0.7em;font-weight:500;opacity:0.7">8 topics</small></h2>
         <p>Physics, chemistry, biology, earth science — explained through phenomena, not just formulas.</p>
+      
+        <span class="card-preview">e.g., Atoms: 99.9999% empty space — why things feel solid</span>
       </a>
     </div>
 

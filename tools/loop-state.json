@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
-  "lastRun": "2026-04-14T17:20:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 82,
-  "summary": "콘텐츠 깊이 강화 (루프35): ko/ 전체 article에 why-box·intuition-box·misconception 추가, en/ja/zh 56파일 전파. 수학(equations·functions·geometry·statistics·calculus·trigonometry), 과학(atoms·biology·cells·chemistry·earth·ecology·energy·physics), 국어(classical·modern·vocabulary·writing·grammar·reading), 영어(grammar·reading·vocabulary·writing) 전 과목 커버."
+  "angleIndex": 2,
+  "lastRun": "2026-04-14T17:55:00Z",
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 23,
+  "summary": "첫인상 설득력 강화 (루프36): (1) hero h1 초대형 clamp(2.2rem,6.5vw,4.6rem) + 수식 기호 부유 배경(∑∫π△α∂√∞) + 사회적 증명 '지금 N명 공부 중'. (2) .today-concept 날짜 배너 — JS 날짜 기반 개념 로테이션 4개 언어. (3) .card-preview 슬라이드업 hover 효과 + data-subject 컬러 accent. (4) localStorage 재방문 CTA. 전 언어(en/ja/zh) index 페이지 전파."
 }

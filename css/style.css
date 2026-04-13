@@ -3367,3 +3367,195 @@ article code,
     color: var(--brand-strong, #93baff);
   }
 }
+
+/* ===========================
+   첫인상 설득력 강화 (루프36)
+   hero 대형 타이포 · 수식 배경
+   today-concept · card-preview
+   =========================== */
+
+/* 1. Hero h1 초대형 + letter-spacing */
+.hero h1 {
+  font-size: clamp(2.2rem, 6.5vw, 4.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  font-weight: 900;
+}
+
+/* 수식 기호 부유 배경 */
+.hero::before {
+  content: "∑  ∫  π  △  α  ∂  √  ∞  θ  λ  ≡  φ";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 2.8rem;
+  font-family: 'Georgia', 'Times New Roman', 'Noto Serif', serif;
+  color: var(--brand, #2255d8);
+  opacity: 0.045;
+  letter-spacing: 0.9rem;
+  line-height: 2.2;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* 사회적 증명 배지 */
+.hero-social-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  margin-top: 0.9rem;
+  padding: 0.34rem 0.88rem;
+  border-radius: 999px;
+  background: rgba(26, 127, 90, 0.09);
+  border: 1px solid rgba(26, 127, 90, 0.25);
+  color: var(--success, #1a7f5a);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.hero-social-proof::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--success, #1a7f5a);
+  animation: spPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes spPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.68); }
+}
+
+/* 재방문 계속하기 CTA */
+.hero-resume-cta {
+  display: none;
+  align-items: center;
+  gap: 0.48rem;
+  margin: 0.6rem auto 0;
+  padding: 0.58rem 1.25rem;
+  border-radius: 999px;
+  background: var(--brand, #2255d8);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  max-width: max-content;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.hero-resume-cta:hover {
+  background: #1a44b8;
+  transform: translateY(-1px);
+}
+
+/* 2. 오늘의 개념 배너 */
+.today-concept {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.72rem 1.05rem;
+  border-radius: 10px;
+  background: rgba(34, 85, 216, 0.04);
+  border: 1px solid rgba(34, 85, 216, 0.13);
+  border-left: 3.5px solid var(--brand, #2255d8);
+  margin: 0 0 1.2rem;
+  flex-wrap: wrap;
+  row-gap: 0.28rem;
+}
+
+.today-concept-date {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--brand, #2255d8);
+  opacity: 0.75;
+  white-space: nowrap;
+  background: rgba(34, 85, 216, 0.09);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.today-concept-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft, #6b7a96);
+  white-space: nowrap;
+}
+
+.today-concept-name {
+  flex: 1;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--ink, #14213d);
+  min-width: 120px;
+}
+
+.today-concept-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand, #2255d8);
+  white-space: nowrap;
+  padding: 0.26rem 0.62rem;
+  border-radius: 6px;
+  background: rgba(34, 85, 216, 0.09);
+  transition: background 0.14s;
+}
+
+.today-concept-link:hover { background: rgba(34, 85, 216, 0.18); }
+
+/* 3. subject-card hover 컬러 + card-preview 슬라이드업 */
+.subject-card { overflow: hidden; }
+
+.card-preview {
+  display: block;
+  font-size: 0.77rem;
+  color: var(--brand, #2255d8);
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 0.32rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.22s ease, transform 0.22s ease, max-height 0.22s ease;
+  line-height: 1.45;
+}
+
+.subject-card:hover .card-preview,
+.topic-card:hover .card-preview {
+  opacity: 1;
+  max-height: 3em;
+  transform: translateY(0);
+}
+
+/* 과목별 hover 컬러 accent */
+.subject-card[data-subject="math"]:hover    { border-color: rgba(34, 85, 216, 0.55); border-left: 3px solid var(--brand, #2255d8); }
+.subject-card[data-subject="korean"]:hover  { border-color: rgba(200, 112, 0, 0.45); border-left: 3px solid var(--warning, #c87000); }
+.subject-card[data-subject="english"]:hover { border-color: rgba(26, 127, 90, 0.45); border-left: 3px solid var(--success, #1a7f5a); }
+.subject-card[data-subject="science"]:hover { border-color: rgba(14, 165, 160, 0.5); border-left: 3px solid #0ea5a0; }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .hero::before { color: rgba(130, 170, 255, 1); opacity: 0.06; }
+  .today-concept {
+    background: rgba(34, 85, 216, 0.09);
+    border-color: rgba(34, 85, 216, 0.28);
+  }
+  .hero-social-proof {
+    background: rgba(35, 195, 143, 0.12);
+    border-color: rgba(35, 195, 143, 0.32);
+  }
+}
