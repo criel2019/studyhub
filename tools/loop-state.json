@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
-  "lastRun": "2026-04-14T10:30:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 11,
-  "summary": "첫인상 설득력 강화 (루프28): 모든 과목 인덱스에 .quick-jump anchor-chip 빠른 링크 추가 — ko/ 5파일(index·math·science·korean·english), en/ 2파일(math·science index), ja/ 2파일(math·science index), zh/ 2파일(math·science index). ko/korean + ko/english topic-card에 unit-card-meta(난이도·시간) 추가. 총 11개 인덱스 파일 첫인상 개선."
+  "angleIndex": 3,
+  "lastRun": "2026-04-14T11:00:00Z",
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 12,
+  "summary": "학습 효과 장치 강화 (루프29): .quiz-check <details> 정답 숨기기 변환 — ko/math 6파일(addition·subtraction·multiplication·division·decimals·fractions) + ko/science 5파일(earth·energy·ecology·cells·atoms) + ko/english/vocabulary. .exam-trap 시험 함정 박스 신규 추가 — science 5파일 + english/vocabulary 3파일에 각 2~3개 함정 항목."
 }
