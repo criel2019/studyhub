@@ -699,6 +699,114 @@ tr:nth-child(even) td {
   background: rgba(244, 247, 252, 0.9);
 }
 
+/* ── 콘텐츠 깊이 강화 컴포넌트 ───────────────────────────── */
+
+/* 왜 배우는가? 도입 박스 */
+.why-box {
+  padding: 1.1rem 1.2rem;
+  margin: 1.15rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(198, 211, 231, 0.76);
+  border-left: 4px solid #0d9d8e;
+  background: linear-gradient(180deg, rgba(13, 157, 142, 0.08), rgba(13, 157, 142, 0.04));
+  box-shadow: var(--shadow-sm);
+}
+
+.why-box .why-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0d9d8e;
+  margin-bottom: 0.5rem;
+}
+
+/* 흔한 오개념 박스 */
+.misconception {
+  padding: 1.1rem 1.2rem;
+  margin: 1.15rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(198, 211, 231, 0.76);
+  border-left: 4px solid #c0294a;
+  background: linear-gradient(180deg, rgba(192, 41, 74, 0.07), rgba(192, 41, 74, 0.03));
+  box-shadow: var(--shadow-sm);
+}
+
+.misconception .misc-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c0294a;
+  margin-bottom: 0.5rem;
+}
+
+/* 핵심 30초 요약 (TL;DR) */
+.tldr {
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(34, 85, 216, 0.32);
+  background: linear-gradient(135deg, rgba(34, 85, 216, 0.09), rgba(35, 195, 143, 0.07));
+  box-shadow: var(--shadow-sm);
+}
+
+.tldr .tldr-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand-strong);
+  margin-bottom: 0.55rem;
+}
+
+.tldr ul,
+.tldr ol {
+  margin: 0.4rem 0 0;
+}
+
+/* 시험 출제 포인트 인라인 배지 */
+.exam-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(179, 114, 18, 0.14);
+  color: var(--warning);
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  .why-box {
+    background: linear-gradient(180deg, rgba(13, 157, 142, 0.15), rgba(13, 157, 142, 0.07));
+    border-color: rgba(13, 157, 142, 0.3);
+  }
+
+  .misconception {
+    background: linear-gradient(180deg, rgba(192, 41, 74, 0.16), rgba(192, 41, 74, 0.07));
+    border-color: rgba(192, 41, 74, 0.3);
+  }
+
+  .tldr {
+    background: linear-gradient(135deg, rgba(34, 85, 216, 0.18), rgba(35, 195, 143, 0.12));
+    border-color: rgba(91, 143, 238, 0.35);
+  }
+}
+
 .continue-section {
   margin-top: 2rem;
 }
