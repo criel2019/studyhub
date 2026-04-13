@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
-  "lastRun": "2026-04-14T20:00:00Z",
-  "lastAngle": "차별화 가치",
+  "angleIndex": 6,
+  "lastRun": "2026-04-14T20:30:00Z",
+  "lastAngle": "리텐션 훅",
   "filesChanged": 31,
-  "summary": "차별화 가치 강화 (루프39): (1) CSS .analogy-box (amber) + .insight-path (cyan) + 다크모드 추가. (2) ko/ 30개 파일 전수: analogy-box 30개(비유로 개념 이해), insight-path 8개(미분·적분·방정식·삼각함수·통계·원자·생태·생물 원리 발견 경로), exam-trap 15개(기존 없던 파일 추가), tldr 13개(기존 없던 파일 추가). 총 65개 차별화 요소 삽입."
+  "summary": "리텐션 훅 강화 (루프40): (1) CSS .concept-bridge(dark navy — 개념 연결 필연성 설명 박스) + .three-path-nav(3경로 네비: 복습←  | 다음→ | 연관) + 다크모드 추가. (2) ko/ 30개 파일: three-path-nav 전수 삽입, concept-bridge 9개(나눗셈→분수, 분수→소수, 방정식→함수, 통계→미적분, 함수→기하, 원자→세포, 화학→생물, 국어문법→고전, 영어문법→어휘). 총 39개 리텐션 요소."
 }
