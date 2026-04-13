@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
+  "angleIndex": 6,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "차별화 가치",
-  "filesChanged": 9,
-  "summary": "CSS에 concept-journey·exam-trap·compare-method·intuition-box·common-mistake 5개 차별화 컴포넌트 추가. ko/ 4페이지에 개념여정바·직관설명·시험함정경고·흔한실수패턴 추가. 방정식에 인수분해 vs 근의 공식 compare-method 추가. en/ja/zh calculus에 concept-journey + intuition-box 전파."
+  "lastAngle": "리텐션 훅",
+  "filesChanged": 8,
+  "summary": "CSS에 unit-complete·next-unit-card·series-progress 3개 리텐션 훅 컴포넌트 추가. ko/ 4페이지(calculus·trigonometry·equations·physics)에 단원완료섹션·진행바·다음단원카드 삽입. en/ja/zh calculus에 동일 컴포넌트 전파. 각 언어별 bridge 문장 및 다음 단원 정보 현지화."
 }
