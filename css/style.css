@@ -700,6 +700,81 @@ tr:nth-child(even) td {
   background: rgba(244, 247, 252, 0.9);
 }
 
+/* ── 첫인상 설득력 컴포넌트 ────────────────────────────────── */
+
+/* 섹션 훅 — "왜 이 과목인가" 즉시 납득 한 문장 */
+.section-hook {
+  margin: 0.75rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--brand);
+  background: linear-gradient(135deg, rgba(34, 85, 216, 0.06), rgba(34, 85, 216, 0.02));
+  border: 1px solid rgba(34, 85, 216, 0.14);
+  border-left: 4px solid var(--brand);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.section-hook strong { color: var(--brand-strong); }
+
+/* 입문 가이드 — "처음이라면 여기서 시작" */
+.entry-point {
+  margin: 1.25rem 0;
+  padding: 1.1rem 1.3rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(26, 127, 90, 0.07), rgba(26, 127, 90, 0.03));
+  border: 1.5px solid rgba(26, 127, 90, 0.28);
+}
+.entry-point-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--success);
+  margin-bottom: 0.55rem;
+}
+.entry-point-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.entry-point-path a {
+  color: var(--brand-strong);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.1rem 0.45rem;
+  border-radius: 5px;
+  background: rgba(34, 85, 216, 0.08);
+  border: 1px solid rgba(34, 85, 216, 0.2);
+  white-space: nowrap;
+}
+.entry-point-path a:hover { background: rgba(34, 85, 216, 0.15); }
+.entry-point-path .ep-arrow { color: var(--muted); font-weight: 400; }
+.entry-point-path .ep-time {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-hook {
+    background: linear-gradient(135deg, rgba(91, 143, 238, 0.1), rgba(91, 143, 238, 0.04));
+    border-color: rgba(91, 143, 238, 0.2);
+    border-left-color: var(--brand-strong);
+  }
+  .entry-point {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.09), rgba(52, 211, 153, 0.04));
+    border-color: rgba(52, 211, 153, 0.25);
+  }
+}
+
 /* ── 콘텐츠 깊이 강화 컴포넌트 ───────────────────────────── */
 
 /* 왜 배우는가? 도입 박스 */

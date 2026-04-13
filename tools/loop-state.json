@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
+  "angleIndex": 2,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 45,
-  "summary": "콘텐츠 깊이 개선 (2주차): ko/math 5개(equations,trigonometry,functions,geometry,statistics) + ko/science 7개(atoms,biology,cells,chemistry,earth,ecology,energy)에 why-box+tldr+learning-goal+page-overview+concept-journey+h2 ids 추가. en/science 7개 동일 처리(영어). ja/science 7개(일본어). zh/science 7개(중국어). 총 26개 아티클 콘텐츠 깊이 강화 완료."
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 15,
+  "summary": "첫인상 설득력 개선 (루프20): CSS에 .section-hook + .entry-point 컴포넌트 추가. ko/math, ko/science, ko/korean, ko/english 인덱스에 슬로건+섹션훅+입문가이드 추가. en/math, en/science, en/english 동일처리(영어). ja/math, ja/science, ja/japanese, ja/english 동일처리(일본어). zh/math, zh/science, zh/chinese, zh/english 동일처리(중국어). ko/index.html subject-card 설명 개선. 총 15개 파일 + css 1개 수정."
 }
