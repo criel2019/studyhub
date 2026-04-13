@@ -83,6 +83,16 @@
       <span>🎯 힘·운동·에너지·파동·전기</span>
     </div>
 
+    <div class="learning-goal">
+      <span class="learning-goal-label">📌 이 단원을 마치면</span>
+      <ul>
+        <li>뉴턴의 운동 3법칙을 설명하고 F=ma로 계산할 수 있다</li>
+        <li>등가속도 운동 공식 3가지를 상황에 맞게 선택할 수 있다</li>
+        <li>역학적 에너지 보존 법칙을 이용해 속도를 구할 수 있다</li>
+        <li>옴의 법칙으로 전류·전압·저항을 계산하고 직렬·병렬 회로를 분석할 수 있다</li>
+      </ul>
+    </div>
+
     <div class="why-box">
       <div class="why-label">🌱 왜 물리를 배우는가?</div>
       <p>물리는 <strong>"자연이 왜 이렇게 작동하는가"</strong>에 대한 답입니다. 사과가 떨어지는 이유, 브레이크를 밟으면 차가 멈추는 이유, 형광등이 빛나는 이유 — 모두 물리 법칙으로 설명됩니다. 뉴턴의 운동 법칙을 이해하면 로켓 발사를, 에너지 보존 법칙을 이해하면 롤러코스터 설계를, 전자기를 이해하면 스마트폰 작동 원리를 설명할 수 있습니다. 물리 공식은 암기 대상이 아니라 자연의 패턴을 간결하게 표현한 것입니다.</p>
@@ -148,11 +158,28 @@
       \[ F = ma \]
       <p style="font-family:inherit; font-size:0.95rem;">F: 알짜힘(N), m: 질량(kg), a: 가속도(m/s²)</p>
     </div>
-    <div class="example">
-      <strong>예제: 질량 5 kg인 물체에 20 N의 힘이 작용할 때 가속도는?</strong>
-      <div class="formula">
-        \( a = \dfrac{F}{m} = \dfrac{20 \text{ N}}{5 \text{ kg}} = 4 \text{ m/s}^2 \)
-      </div>
+
+    <div class="memory-tip">
+      <span><span class="memory-tip-label">F=ma 암기팁</span>"무거운 차일수록 멈추기 어렵다" — <strong>질량(m)이 클수록</strong> 같은 힘(F)으로 낼 수 있는 가속도(a)는 작아진다</span>
+    </div>
+
+    <div class="step-solution">
+      <span class="step-solution-label">🔢 단계별 풀이 — 질량 5 kg, 힘 20 N</span>
+      <ol>
+        <li><strong>구하는 것 확인</strong>가속도 a = ? / 주어진 것: F = 20 N, m = 5 kg</li>
+        <li><strong>공식 선택</strong>F = ma → a = F ÷ m</li>
+        <li><strong>대입·계산</strong>\( a = \dfrac{20 \text{ N}}{5 \text{ kg}} = 4 \text{ m/s}^2 \)</li>
+        <li><strong>단위 확인</strong>N/kg = (kg·m/s²)/kg = m/s² ✓</li>
+      </ol>
+    </div>
+
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 바로 확인 — 뉴턴 제2법칙</div>
+      <p><strong>문제:</strong> 질량 8 kg인 물체에 알짜힘 24 N이 작용할 때, 가속도는 몇 m/s²인가?</p>
+      <details>
+        <summary>정답 확인하기</summary>
+        <div class="answer-reveal">a = F/m = 24 ÷ 8 = <strong>3 m/s²</strong></div>
+      </details>
     </div>
 
     <h3>제3법칙 — 작용·반작용의 법칙</h3>
@@ -258,6 +285,10 @@
       <p style="font-family:inherit; font-size:0.95rem;">v: 파동의 속도(m/s), f: 진동수(Hz), λ: 파장(m)</p>
     </div>
 
+    <div class="memory-tip">
+      <span><span class="memory-tip-label">v=fλ 암기팁</span>"빠를수록 진동이 많거나 파장이 길다" — 소리 속도 340 m/s ÷ 진동수 = 파장. <strong>v, f, λ 중 두 개를 알면 나머지를 구할 수 있다</strong></span>
+    </div>
+
     <h3>횡파와 종파</h3>
     <div class="concept-box">
       <ul>
@@ -334,48 +365,50 @@
     <div class="concept-box">
       <ol>
         <li style="margin-bottom:1rem;">
-          <strong>질량 3 kg인 물체에 힘이 작용하여 가속도 5 m/s²가 발생했다. 이 물체에 작용한 알짜힘은 몇 N인가?</strong>
+          <span class="level-badge level-1">⭐ 기초</span>
+          <strong>질량 3 kg인 물체에 힘이 작용하여 가속도 5 m/s²가 발생했다. 알짜힘은 몇 N인가?</strong>
           <details style="margin-top:0.5rem;">
-            <summary style="cursor:pointer; color:#3b82f6;">정답 보기</summary>
-            <div class="formula">\( F = ma = 3 \text{ kg} \times 5 \text{ m/s}^2 = \mathbf{15 \text{ N}} \)</div>
+            <summary style="cursor:pointer; color:var(--brand); font-size:0.82rem;">정답 보기</summary>
+            <div class="formula">\( F = ma = 3 \times 5 = \mathbf{15 \text{ N}} \)</div>
           </details>
         </li>
         <li style="margin-bottom:1rem;">
-          <strong>초속도 0으로 출발하여 3초 후 속도가 15 m/s가 되었다. 가속도는 얼마인가? 3초 동안 이동한 거리는?</strong>
+          <span class="level-badge level-1">⭐ 기초</span>
+          <strong>진동수 500 Hz, 파장 0.68 m인 소리의 속도는?</strong>
           <details style="margin-top:0.5rem;">
-            <summary style="cursor:pointer; color:#3b82f6;">정답 보기</summary>
+            <summary style="cursor:pointer; color:var(--brand); font-size:0.82rem;">정답 보기</summary>
+            <div class="formula">\( v = f\lambda = 500 \times 0.68 = \mathbf{340 \text{ m/s}} \)</div>
+          </details>
+        </li>
+        <li style="margin-bottom:1rem;">
+          <span class="level-badge level-2">⭐⭐ 표준</span>
+          <strong>초속도 0으로 출발하여 3초 후 속도가 15 m/s가 되었다. 가속도는? 3초간 이동 거리는?</strong>
+          <details style="margin-top:0.5rem;">
+            <summary style="cursor:pointer; color:var(--brand); font-size:0.82rem;">정답 보기</summary>
             <div class="formula">
-              \( a = \dfrac{v - v_0}{t} = \dfrac{15 - 0}{3} = \mathbf{5 \text{ m/s}^2} \)<br>
-              \( s = v_0 t + \frac{1}{2}at^2 = 0 + \frac{1}{2} \times 5 \times 9 = \mathbf{22.5 \text{ m}} \)
+              \( a = \dfrac{15-0}{3} = \mathbf{5 \text{ m/s}^2} \)<br>
+              \( s = 0 + \tfrac{1}{2} \times 5 \times 9 = \mathbf{22.5 \text{ m}} \)
             </div>
           </details>
         </li>
         <li style="margin-bottom:1rem;">
-          <strong>질량 2 kg인 물체가 높이 10 m에서 정지 상태로 떨어진다. 지면 직전의 속도는? (g = 9.8 m/s², 공기 저항 무시)</strong>
+          <span class="level-badge level-2">⭐⭐ 표준</span>
+          <strong>전압 9 V, 전류 0.3 A일 때 저항은? 10초간 소비 전기에너지는?</strong>
           <details style="margin-top:0.5rem;">
-            <summary style="cursor:pointer; color:#3b82f6;">정답 보기</summary>
+            <summary style="cursor:pointer; color:var(--brand); font-size:0.82rem;">정답 보기</summary>
             <div class="formula">
-              에너지 보존: \( mgh = \frac{1}{2}mv^2 \)<br>
-              \( v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 10} = \sqrt{196} = \mathbf{14 \text{ m/s}} \)
-            </div>
-          </details>
-        </li>
-        <li style="margin-bottom:1rem;">
-          <strong>진동수가 500 Hz이고 파장이 0.68 m인 소리의 속도는 몇 m/s인가?</strong>
-          <details style="margin-top:0.5rem;">
-            <summary style="cursor:pointer; color:#3b82f6;">정답 보기</summary>
-            <div class="formula">
-              \( v = f\lambda = 500 \text{ Hz} \times 0.68 \text{ m} = \mathbf{340 \text{ m/s}} \)
-            </div>
-          </details>
-        </li>
-        <li style="margin-bottom:1rem;">
-          <strong>전압 9 V에서 전류 0.3 A가 흘렀다. 저항은 몇 Ω인가? 10초 동안 소비된 전기에너지는?</strong>
-          <details style="margin-top:0.5rem;">
-            <summary style="cursor:pointer; color:#3b82f6;">정답 보기</summary>
-            <div class="formula">
-              \( R = \dfrac{V}{I} = \dfrac{9}{0.3} = \mathbf{30\ \Omega} \)<br>
+              \( R = \dfrac{9}{0.3} = \mathbf{30\ \Omega} \)<br>
               \( E = VIt = 9 \times 0.3 \times 10 = \mathbf{27 \text{ J}} \)
+            </div>
+          </details>
+        </li>
+        <li style="margin-bottom:1rem;">
+          <span class="level-badge level-3">⭐⭐⭐ 심화</span>
+          <strong>질량 2 kg인 물체가 높이 10 m에서 정지 상태로 떨어진다. 역학적 에너지 보존을 이용해 지면 직전 속도를 구하시오. (g = 9.8 m/s²)</strong>
+          <details style="margin-top:0.5rem;">
+            <summary style="cursor:pointer; color:var(--brand); font-size:0.82rem;">정답 보기</summary>
+            <div class="formula">
+              \( mgh = \tfrac{1}{2}mv^2 \) → \( v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 10} = \sqrt{196} = \mathbf{14 \text{ m/s}} \)
             </div>
           </details>
         </li>

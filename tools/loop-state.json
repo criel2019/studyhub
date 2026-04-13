@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
+  "angleIndex": 3,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 5,
-  "summary": "히어로 섹션 전면 개편: hero-kicker·신뢰배지(회원가입없음·광고없음·전부무료)·핵심개념 순환텍스트(CSS keyframe 16s 4항목) 4개 언어 모두 적용. 과목카드 카피 직접화 + 주제 수 배지(수학12·국어6·영어4·과학8) 추가."
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 12,
+  "summary": "CSS에 quiz-check·level-badge·step-solution·memory-tip·learning-goal 5개 컴포넌트 추가. ko/math 4페이지(calculus·trigonometry·equations·physics), en/ja/zh calculus에 학습목표·레벨배지·미니퀴즈·암기팁·단계별풀이·정답숨김 적용."
 }

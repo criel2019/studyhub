@@ -81,6 +81,16 @@
       <span>🎯 핵심 개념: 일차방정식, 연립방정식, 이차방정식</span>
     </div>
 
+    <div class="learning-goal">
+      <span class="learning-goal-label">📌 이 단원을 마치면</span>
+      <ul>
+        <li>이항을 이용해 일차방정식의 해를 구할 수 있다</li>
+        <li>가감법·대입법으로 연립방정식을 풀 수 있다</li>
+        <li>이차방정식을 인수분해 또는 근의 공식으로 풀 수 있다</li>
+        <li>판별식(D)으로 근의 개수를 미리 판단할 수 있다</li>
+      </ul>
+    </div>
+
     <h2>1. 방정식이란?</h2>
     <p><strong>방정식(方程式)</strong>은 미지수(변수)를 포함한 등식으로, 특정 값에서만 참이 됩니다. 방정식을 만족시키는 값을 <strong>해(解)</strong> 또는 <strong>근(根)</strong>이라 하고, 해를 구하는 과정을 <strong>방정식을 푼다</strong>고 합니다.</p>
 
@@ -105,16 +115,27 @@
       원리: 등호 양변에 같은 수를 더하거나 빼어도 등식이 성립합니다.</p>
     </div>
 
-    <div class="example">
-      <strong>예제: 3x + 5 = 14 풀기</strong>
-      <div class="formula">
-        3x + 5 = 14<br>
-        3x = 14 − 5 &nbsp;&nbsp;(5를 우변으로 이항)<br>
-        3x = 9<br>
-        x = 9 ÷ 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(양변을 3으로 나눔)<br>
-        <strong>x = 3</strong><br>
-        검산: 3(3) + 5 = 9 + 5 = 14 ✓
-      </div>
+    <div class="memory-tip">
+      <span><span class="memory-tip-label">이항 암기팁</span>"부호를 바꿔서 반대편으로" — 더하기는 건너가면 빼기, 곱하기는 건너가면 나누기. <strong>검산은 필수: 구한 x를 원래 식에 대입해 확인</strong></span>
+    </div>
+
+    <div class="step-solution">
+      <span class="step-solution-label">🔢 단계별 풀이 — 3x + 5 = 14</span>
+      <ol>
+        <li><strong>상수 이항</strong>우변에 있는 상수 5를 좌변으로: 3x = 14 − 5 = 9</li>
+        <li><strong>계수로 나누기</strong>양변을 계수 3으로 나눔: x = 9 ÷ 3</li>
+        <li><strong>해 계산</strong><strong>x = 3</strong></li>
+        <li><strong>검산</strong>3(3) + 5 = 9 + 5 = 14 ✓</li>
+      </ol>
+    </div>
+
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 바로 확인 — 일차방정식</div>
+      <p><strong>문제:</strong> 2x − 3 = 9를 풀어 x를 구하시오.</p>
+      <details>
+        <summary>정답 확인하기</summary>
+        <div class="answer-reveal">2x = 9 + 3 = 12 → <strong>x = 6</strong> &nbsp; 검산: 2(6)−3 = 9 ✓</div>
+      </details>
     </div>
 
     <div class="example">
@@ -198,6 +219,10 @@
       \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
     </div>
 
+    <div class="memory-tip">
+      <span><span class="memory-tip-label">근의 공식 암기팁</span>"<strong>마이너스 b에 플마 루트 b제곱 마이너스 4ac, 2a로 나눈다</strong>" — a, b, c는 ax²+bx+c=0에서 각 항의 계수</span>
+    </div>
+
     <div class="example">
       <strong>예제: \(2x^2 - 5x + 2 = 0\) 풀기 (a=2, b=−5, c=2)</strong>
       <div class="formula">
@@ -243,23 +268,37 @@
 
     <h2>6. 연습 문제</h2>
     <ol>
-      <li>\(4x - 9 = 11\)을 풀어라.</li>
-      <li>\(\begin{cases} x + 2y = 8 \\ 2x - y = 6 \end{cases}\)을 풀어라.</li>
-      <li>\(x^2 + x - 12 = 0\)을 인수분해로 풀어라.</li>
-      <li>근의 공식을 이용하여 \(x^2 - 4x + 1 = 0\)을 풀어라.</li>
-      <li>연속하는 두 자연수의 합이 31입니다. 두 수를 구하시오.</li>
+      <li>
+        <span class="level-badge level-1">⭐ 기초</span>
+        \(4x - 9 = 11\)을 풀어라.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">정답 보기</summary>
+        <div style="padding:0.5rem 0;">\(4x = 20\) → <strong>\(x = 5\)</strong></div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ 표준</span>
+        \(\begin{cases} x + 2y = 8 \\ 2x - y = 6 \end{cases}\)을 풀어라.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">정답 보기</summary>
+        <div style="padding:0.5rem 0;">② ×2 → \(4x-2y=12\). ①+: \(5x=20\) → \(x=4\), \(y=2\) &nbsp; <strong>∴ (4, 2)</strong></div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ 표준</span>
+        \(x^2 + x - 12 = 0\)을 인수분해로 풀어라.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">정답 보기</summary>
+        <div style="padding:0.5rem 0;">\((x+4)(x-3)=0\) → <strong>\(x=-4\) 또는 \(x=3\)</strong></div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ 표준</span>
+        근의 공식을 이용하여 \(x^2 - 4x + 1 = 0\)을 풀어라.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">정답 보기</summary>
+        <div style="padding:0.5rem 0;">\(x = \dfrac{4 \pm \sqrt{16-4}}{2} = \dfrac{4 \pm \sqrt{12}}{2} = \mathbf{2 \pm \sqrt{3}}\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-3">⭐⭐⭐ 심화</span>
+        연속하는 두 자연수의 합이 31입니다. 두 수를 구하시오.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">정답 보기</summary>
+        <div style="padding:0.5rem 0;">두 수를 \(n, n+1\)로 놓으면 \(2n+1=31\) → \(n=15\) &nbsp; <strong>∴ 15와 16</strong></div></details>
+      </li>
     </ol>
-
-    <div class="concept-box">
-      <strong>정답</strong>
-      <ol>
-        <li>\(4x = 20\) → \(x = 5\)</li>
-        <li>가감법: 두 번째 식 ×2: \(4x - 2y = 12\) → 더하면 \(5x = 20\), \(x=4\), \(y=2\)</li>
-        <li>\((x+4)(x-3)=0\) → \(x=-4\) 또는 \(x=3\)</li>
-        <li>\(x = \dfrac{4 \pm \sqrt{16-4}}{2} = \dfrac{4 \pm \sqrt{12}}{2} = 2 \pm \sqrt{3}\)</li>
-        <li>두 수를 \(n, n+1\)로 놓으면: \(2n+1=31\) → \(n=15\), 두 수: 15와 16</li>
-      </ol>
-    </div>
   </main>
 
   <footer>

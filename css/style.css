@@ -905,6 +905,255 @@ tr:nth-child(even) td {
   }
 }
 
+/* ── 학습 효과 장치 컴포넌트 ────────────────────────────── */
+
+/* 1. 인터리브드 미니 퀴즈 ✏️ */
+.quiz-check {
+  margin: 1.6rem 0;
+  padding: 1.1rem 1.25rem 1rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(88, 101, 242, 0.07), rgba(88, 101, 242, 0.02));
+  border: 1.5px solid rgba(88, 101, 242, 0.25);
+  border-left: 4px solid #5865f2;
+}
+.quiz-check-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5865f2;
+  margin-bottom: 0.6rem;
+}
+.quiz-check > p { margin: 0 0 0.75rem; font-weight: 500; }
+.quiz-check details summary {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #5865f2;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(88, 101, 242, 0.09);
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.quiz-check details summary::-webkit-details-marker { display: none; }
+.quiz-check details summary::before {
+  content: "▶";
+  font-size: 0.6rem;
+  transition: transform 0.18s;
+  display: inline-block;
+}
+.quiz-check details[open] summary::before { transform: rotate(90deg); }
+.quiz-check .answer-reveal {
+  margin-top: 0.55rem;
+  padding: 0.7rem 0.9rem;
+  background: rgba(88, 101, 242, 0.06);
+  border-radius: 6px;
+  font-size: 0.91rem;
+}
+
+/* 2. 난이도 레벨 배지 */
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+  white-space: nowrap;
+}
+.level-badge.level-1 {
+  background: rgba(26, 127, 90, 0.11);
+  color: var(--success);
+  border: 1px solid rgba(26, 127, 90, 0.28);
+}
+.level-badge.level-2 {
+  background: rgba(34, 85, 216, 0.09);
+  color: var(--brand);
+  border: 1px solid rgba(34, 85, 216, 0.22);
+}
+.level-badge.level-3 {
+  background: rgba(200, 112, 0, 0.1);
+  color: var(--warning);
+  border: 1px solid rgba(200, 112, 0, 0.28);
+}
+
+/* 3. 단계별 풀이 — 4박자 플로우 */
+.step-solution {
+  margin: 1.4rem 0;
+  padding: 1.1rem 1.25rem;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid rgba(34, 85, 216, 0.13);
+}
+.step-solution-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-strong);
+  margin-bottom: 0.85rem;
+}
+.step-solution ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: step-counter;
+  position: relative;
+}
+.step-solution ol::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 24px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--brand) 60%, rgba(34, 85, 216, 0.0));
+  border-radius: 2px;
+}
+.step-solution ol li {
+  counter-increment: step-counter;
+  padding: 0 0 1rem 2.5rem;
+  position: relative;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.step-solution ol li:last-child { padding-bottom: 0; }
+.step-solution ol li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-solution ol li strong {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--brand-strong);
+  margin-bottom: 0.15rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* 4. 운율·직관 암기팁 */
+.memory-tip {
+  margin: 1rem 0;
+  padding: 0.7rem 1rem 0.7rem 0.95rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(200, 112, 0, 0.08), rgba(200, 112, 0, 0.03));
+  border-left: 3px solid var(--warning);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+.memory-tip::before {
+  content: "💡";
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+  line-height: 1.5;
+}
+.memory-tip p,
+.memory-tip span {
+  margin: 0;
+  font-size: 0.89rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+.memory-tip strong { color: var(--warning); }
+.memory-tip-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--warning);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* 5. 학습 목표 체크리스트 */
+.learning-goal {
+  margin: 0 0 1.8rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 85, 216, 0.16);
+  border-top: 3px solid var(--brand);
+  background: rgba(34, 85, 216, 0.03);
+}
+.learning-goal-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-strong);
+  margin-bottom: 0.6rem;
+}
+.learning-goal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.learning-goal ul li {
+  padding: 0.2rem 0 0.2rem 1.75rem;
+  position: relative;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.learning-goal ul li::before {
+  content: "□";
+  position: absolute;
+  left: 0.1rem;
+  top: 0.2rem;
+  font-size: 0.95rem;
+  color: var(--brand);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Dark mode — 학습 효과 장치 */
+@media (prefers-color-scheme: dark) {
+  .quiz-check {
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.13), rgba(88, 101, 242, 0.05));
+    border-color: rgba(123, 137, 245, 0.3);
+    border-left-color: #7b89f5;
+  }
+  .quiz-check-label { color: #7b89f5; }
+  .quiz-check details summary { color: #7b89f5; background: rgba(88, 101, 242, 0.14); }
+  .quiz-check .answer-reveal { background: rgba(88, 101, 242, 0.1); }
+  .step-solution { border-color: rgba(91, 143, 238, 0.18); }
+  .memory-tip {
+    background: linear-gradient(135deg, rgba(200, 112, 0, 0.13), rgba(200, 112, 0, 0.05));
+  }
+  .learning-goal {
+    background: rgba(91, 143, 238, 0.05);
+    border-color: rgba(91, 143, 238, 0.22);
+    border-top-color: var(--brand-strong);
+  }
+}
+
 .continue-section {
   margin-top: 2rem;
 }

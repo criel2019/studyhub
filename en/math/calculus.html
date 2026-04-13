@@ -81,6 +81,16 @@
       <span>🎯 Limits · Derivatives · Integration · Applications</span>
     </div>
 
+    <div class="learning-goal">
+      <span class="learning-goal-label">📌 By the end of this unit you will be able to</span>
+      <ul>
+        <li>Evaluate limits algebraically, including indeterminate forms</li>
+        <li>Apply the power, product, quotient, and chain rules to differentiate functions</li>
+        <li>Find critical points and determine local maxima/minima using the first derivative test</li>
+        <li>Evaluate indefinite and definite integrals and apply the Fundamental Theorem of Calculus</li>
+      </ul>
+    </div>
+
     <div class="why-box">
       <div class="why-label">🌱 Why learn Calculus?</div>
       <p>Calculus is the <strong>mathematics of change</strong>. Derivatives answer "how fast is this changing right now?" — your speedometer reads a derivative. Integrals answer "how much has accumulated?" — fuel consumed on a trip is an integral. Newton invented calculus to describe planetary orbits; today it powers AI, climate models, structural engineering, and medical imaging. Understanding calculus means you can <strong>model any continuous process in the real world</strong>.</p>
@@ -211,27 +221,49 @@
       </div>
     </div>
 
+    <div class="memory-tip">
+      <span><span class="memory-tip-label">Power Rule memory tip</span>"<strong>bring the exponent down, then subtract 1</strong>" — \((x^5)' = 5x^4\), \((x^3)' = 3x^2\). The coefficient multiplies the front.</span>
+    </div>
+
     <h2>4. Practice Problems</h2>
     <ol>
-      <li>Find \(\displaystyle\lim_{x \to 2} \frac{x^2 - 4}{x - 2}\).</li>
-      <li>Differentiate \(f(x) = 4x^3 - 3x^2 + 7x - 2\).</li>
-      <li>Differentiate \(g(x) = x^2 \sin x\) (use product rule).</li>
-      <li>Find all critical points of \(f(x) = x^3 - 3x + 2\).</li>
-      <li>Evaluate \(\displaystyle\int (6x^2 - 4x + 3)\, dx\).</li>
-      <li>Evaluate \(\displaystyle\int_0^2 (3x^2 + 1)\, dx\).</li>
+      <li>
+        <span class="level-badge level-1">⭐ Basic</span>
+        Find \(\displaystyle\lim_{x \to 2} \frac{x^2 - 4}{x - 2}\).
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">Factor: \(\dfrac{(x+2)(x-2)}{x-2} = x+2 \to \mathbf{4}\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-1">⭐ Basic</span>
+        Differentiate \(f(x) = 4x^3 - 3x^2 + 7x - 2\).
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">\(f'(x) = 12x^2 - 6x + 7\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ Standard</span>
+        Differentiate \(g(x) = x^2 \sin x\) (use product rule).
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">\(g'(x) = 2x\sin x + x^2\cos x\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ Standard</span>
+        Evaluate \(\displaystyle\int (6x^2 - 4x + 3)\, dx\).
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">\(2x^3 - 2x^2 + 3x + C\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-2">⭐⭐ Standard</span>
+        Evaluate \(\displaystyle\int_0^2 (3x^2 + 1)\, dx\).
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">\([x^3 + x]_0^2 = (8+2) - 0 = \mathbf{10}\)</div></details>
+      </li>
+      <li>
+        <span class="level-badge level-3">⭐⭐⭐ Challenge</span>
+        Find all critical points of \(f(x) = x^3 - 3x + 2\) and classify each.
+        <details style="margin-top:0.5rem;"><summary style="cursor:pointer;font-size:0.82rem;color:var(--brand);">Show answer</summary>
+        <div style="padding:0.5rem 0;">\(f'(x) = 3x^2-3 = 0 \Rightarrow x=\pm1\) &nbsp;·&nbsp; \(x=-1\): local max (f'&nbsp; + → −) &nbsp;·&nbsp; \(x=1\): local min (f'&nbsp; − → +)</div></details>
+      </li>
     </ol>
-
-    <div class="concept-box">
-      <strong>Answers</strong>
-      <ol>
-        <li>Factor: \(\dfrac{(x+2)(x-2)}{x-2} \to x+2 \to \mathbf{4}\)</li>
-        <li>\(f'(x) = 12x^2 - 6x + 7\)</li>
-        <li>\(g'(x) = 2x\sin x + x^2\cos x\)</li>
-        <li>\(f'(x) = 3x^2 - 3 = 0 \Rightarrow x^2 = 1 \Rightarrow x = \pm 1\)</li>
-        <li>\(2x^3 - 2x^2 + 3x + C\)</li>
-        <li>\([x^3 + x]_0^2 = (8+2) - 0 = \mathbf{10}\)</li>
-      </ol>
-    </div>
   </main>
 
   <footer>
