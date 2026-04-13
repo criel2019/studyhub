@@ -2225,6 +2225,19 @@ tr:nth-child(even) td {
   color: var(--ink);
 }
 
+/* h2 앵커 스크롤 여백 + 호버 § 인디케이터 (루프25) */
+h2[id] {
+  scroll-margin-top: 3.5rem;
+}
+h2[id]:hover::after {
+  content: ' §';
+  font-size: 0.72em;
+  font-weight: 400;
+  color: var(--brand);
+  opacity: 0.55;
+  margin-left: 0.3em;
+}
+
 /* 2. "이 페이지에서" 요약 박스 */
 .page-overview {
   margin: 0 0 1.8rem;

@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-14T07:30:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 31,
-  "summary": "리텐션 훅 강화 (루프24): 2개 신규 CSS 컴포넌트 추가 — .concept-bridge(딥 틸 #0f766e, 클리프행어 질문+연결 문장+다음 링크), .skill-unlock(골드 #ca8a04, 잠금 해제 카드). ko/ 8개 파일: functions, geometry, statistics(concept-bridge+skill-unlock), calculus, trigonometry(skill-unlock만), chemistry, biology, earth(concept-bridge+skill-unlock). en/ 6개 파일, ja/ 7개 파일, zh/ 7개 파일에 동일 컴포넌트 삽입."
+  "angleIndex": 7,
+  "lastRun": "2026-04-14T09:00:00Z",
+  "lastAngle": "정보구조",
+  "filesChanged": 22,
+  "summary": "정보구조 강화 (루프25): CSS — h2[id] scroll-margin-top:3.5rem + hover §인디케이터 추가. page-overview TOC 신규 삽입: ko/science/physics + ko/math/6파일(addition,subtraction,multiplication,division,fractions,decimals), en/science/physics, ja/science/physics + ja/math/6파일, zh/science/physics + zh/math/6파일 = 22개 파일. 모든 h2에 id=s1~sN 부여."
 }
