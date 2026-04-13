@@ -2787,3 +2787,160 @@ pre {
     margin-top: 1.8rem;
   }
 }
+
+/* ===========================
+   차별화 컴포넌트 (루프31)
+   선행지식·수능기출·체크리스트
+   =========================== */
+
+/* ── 선행지식 박스 (.prerequisite-box) ──────────────────────── */
+.prerequisite-box {
+  position: relative;
+  border-left: 4px solid #0891b2;
+  background: linear-gradient(135deg, rgba(8,145,178,0.07) 0%, rgba(8,145,178,0.02) 100%);
+  border-radius: 0 10px 10px 0;
+  padding: 0.9rem 1rem 0.9rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.prerequisite-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0891b2;
+  margin-bottom: 0.5rem;
+}
+.prerequisite-label::before {
+  content: "⚡";
+  font-size: 0.7rem;
+}
+.prerequisite-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+.prerequisite-box li {
+  font-size: 0.9rem;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.prerequisite-box li::before {
+  content: "→";
+  color: #0891b2;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.prerequisite-box a {
+  color: #0891b2;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(8,145,178,0.35);
+  transition: border-color 0.15s;
+}
+.prerequisite-box a:hover { border-color: #0891b2; }
+
+/* ── 수능 기출 배지 (.csat-tag) ──────────────────────────────── */
+.csat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15em 0.55em 0.15em 0.45em;
+  border-radius: 4px;
+  background: rgba(200, 112, 0, 0.1);
+  color: var(--warning, #c87000);
+  border: 1px solid rgba(200, 112, 0, 0.3);
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+  line-height: 1.6;
+  cursor: default;
+}
+.csat-tag::before {
+  content: "★";
+  font-size: 0.6em;
+}
+
+/* ── 시험 직전 체크리스트 (.exam-checklist) ─────────────────── */
+.exam-checklist {
+  border: 1.5px solid var(--brand, #2255d8);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1.8rem;
+}
+.exam-checklist-header {
+  background: var(--brand, #2255d8);
+  color: #fff;
+  padding: 0.58rem 1rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.exam-checklist-header::before {
+  content: "✓";
+  font-size: 0.9rem;
+  font-weight: 900;
+  opacity: 0.85;
+}
+.exam-checklist ul {
+  margin: 0;
+  padding: 0.5rem 1rem 0.7rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.exam-checklist li {
+  font-size: 0.88rem;
+  color: var(--ink);
+  padding: 0.42rem 0;
+  border-bottom: 1px solid rgba(34, 85, 216, 0.08);
+  display: grid;
+  grid-template-columns: 1.1em 1fr;
+  gap: 0.55rem;
+  align-items: baseline;
+}
+.exam-checklist li:last-child { border-bottom: none; }
+.exam-checklist li::before {
+  content: "□";
+  font-size: 1rem;
+  color: var(--brand, #2255d8);
+  line-height: 1;
+  margin-top: 0.05em;
+}
+.exam-checklist strong { color: var(--brand, #2255d8); }
+
+/* 다크모드 보완 */
+@media (prefers-color-scheme: dark) {
+  .prerequisite-box {
+    background: linear-gradient(135deg, rgba(8,145,178,0.12) 0%, rgba(8,145,178,0.04) 100%);
+  }
+  .csat-tag {
+    background: rgba(200, 112, 0, 0.16);
+    border-color: rgba(200, 112, 0, 0.45);
+  }
+  .exam-checklist { border-color: rgba(34,85,216,0.55); }
+  .exam-checklist li { border-color: rgba(34,85,216,0.13); }
+}
+
+/* 모바일 최적화 */
+@media (max-width: 720px) {
+  .prerequisite-box { padding: 0.75rem 0.85rem; }
+  .exam-checklist ul { padding: 0.4rem 0.85rem 0.6rem; }
+  .exam-checklist-header { padding: 0.5rem 0.85rem; }
+}

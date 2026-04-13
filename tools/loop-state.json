@@ -1,7 +1,7 @@
 {
-  "angleIndex": 4,
-  "lastRun": "2026-04-14T12:00:00Z",
-  "lastAngle": "신뢰 신호",
-  "filesChanged": 110,
-  "summary": "신뢰 신호 강화 (루프30): trust-signal-bar 전파 — en/ 18파일(math×5·science×8·english×5) + ja/ 29파일(math×11·science×8·japanese×6·english×4) + zh/ 29파일(math×11·science×8·chinese×6·english×4) 신규 추가. 과목별 교육과정 근거 표기(Common Core·NGSS / 학습指導要領 / 义务教育课标). dateModified 2026-04-13→2026-04-14 전체 4개 언어 110건 일괄 업데이트."
+  "angleIndex": 5,
+  "lastRun": "2026-04-14T13:00:00Z",
+  "lastAngle": "차별화 가치",
+  "filesChanged": 76,
+  "summary": "차별화 가치 강화 (루프31): CSS 3종 신규 컴포넌트 — .prerequisite-box(선행지식 박스) · .csat-tag(수능/AP/共通テスト/高考 배지) · .exam-checklist(시험 직전 체크리스트). ko/math 12파일 + ko/science 8파일 + en/math 6파일 + en/science 8파일 + ja/math 12파일 + ja/science 8파일 + zh/math 12파일 + zh/science 8파일 = 76파일 전파. 과목별 선행지식 명시·시험 관련 태그·4~5항목 체크리스트 추가."
 }
