@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
-  "lastRun": "2026-04-14T11:00:00Z",
-  "lastAngle": "학습 효과 장치",
-  "filesChanged": 12,
-  "summary": "학습 효과 장치 강화 (루프29): .quiz-check <details> 정답 숨기기 변환 — ko/math 6파일(addition·subtraction·multiplication·division·decimals·fractions) + ko/science 5파일(earth·energy·ecology·cells·atoms) + ko/english/vocabulary. .exam-trap 시험 함정 박스 신규 추가 — science 5파일 + english/vocabulary 3파일에 각 2~3개 함정 항목."
+  "angleIndex": 4,
+  "lastRun": "2026-04-14T12:00:00Z",
+  "lastAngle": "신뢰 신호",
+  "filesChanged": 110,
+  "summary": "신뢰 신호 강화 (루프30): trust-signal-bar 전파 — en/ 18파일(math×5·science×8·english×5) + ja/ 29파일(math×11·science×8·japanese×6·english×4) + zh/ 29파일(math×11·science×8·chinese×6·english×4) 신규 추가. 과목별 교육과정 근거 표기(Common Core·NGSS / 학습指導要領 / 义务教育课标). dateModified 2026-04-13→2026-04-14 전체 4개 언어 110건 일괄 업데이트."
 }
