@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
-  "lastRun": "2026-04-14T13:00:00Z",
-  "lastAngle": "차별화 가치",
-  "filesChanged": 76,
-  "summary": "차별화 가치 강화 (루프31): CSS 3종 신규 컴포넌트 — .prerequisite-box(선행지식 박스) · .csat-tag(수능/AP/共通テスト/高考 배지) · .exam-checklist(시험 직전 체크리스트). ko/math 12파일 + ko/science 8파일 + en/math 6파일 + en/science 8파일 + ja/math 12파일 + ja/science 8파일 + zh/math 12파일 + zh/science 8파일 = 76파일 전파. 과목별 선행지식 명시·시험 관련 태그·4~5항목 체크리스트 추가."
+  "angleIndex": 6,
+  "lastRun": "2026-04-14T15:30:00Z",
+  "lastAngle": "리텐션 훅",
+  "filesChanged": 110,
+  "summary": "리텐션 훅 강화 (루프32): CSS 2종 신규 — .next-teaser(다음 단원 예고 카드) · .recall-prompt(에빙하우스 복습 타이밍). ko/ 30파일 + en/ 19파일 + ja/ 30파일 + zh/ 30파일 = 109 HTML + css/style.css 1 = 110파일 전파. 전 언어 전 아티클 하단에 recall-prompt(복습 권장 칩) + next-teaser(다음 단원 예고) 추가. 마지막 단원은 is-complete 변형으로 섹션 완료 표시."
 }

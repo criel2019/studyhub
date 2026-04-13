@@ -2789,6 +2789,118 @@ pre {
 }
 
 /* ===========================
+   리텐션 훅 컴포넌트 (루프32)
+   다음 단원 예고·복습 안내
+   =========================== */
+
+/* ── 다음 단원 예고 카드 (.next-teaser) ─────────────────────── */
+.next-teaser {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  border: 1.5px solid rgba(34, 85, 216, 0.22);
+  background: var(--surface);
+}
+.next-teaser-label {
+  display: block;
+  background: var(--brand, #2255d8);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+}
+.next-teaser-body {
+  padding: 0.9rem 1rem 1rem;
+}
+.next-teaser-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brand, #2255d8);
+  margin-bottom: 0.35rem;
+}
+.next-teaser-text {
+  font-size: 0.87rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0 0 0.75rem;
+}
+.next-teaser-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--brand, #2255d8);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 0.83rem;
+  font-weight: 700;
+  padding: 0.42rem 0.9rem;
+  border-radius: 6px;
+  transition: background 0.15s, transform 0.12s;
+}
+.next-teaser-btn::after { content: " →"; }
+.next-teaser-btn:hover {
+  background: #1a44b8;
+  transform: translateX(3px);
+}
+/* 섹션 완료 변형 */
+.next-teaser.is-complete { border-color: rgba(26,127,90,0.4); }
+.next-teaser.is-complete .next-teaser-label { background: var(--success, #1a7f5a); }
+.next-teaser.is-complete .next-teaser-title { color: var(--success, #1a7f5a); }
+.next-teaser.is-complete .next-teaser-btn { background: var(--success, #1a7f5a); }
+.next-teaser.is-complete .next-teaser-btn:hover { background: #15694c; }
+.next-teaser.is-complete .next-teaser-btn::after { content: " ✓"; }
+
+/* ── 에빙하우스 복습 안내 (.recall-prompt) ──────────────────── */
+.recall-prompt {
+  border-left: 4px solid var(--success, #1a7f5a);
+  background: linear-gradient(to right, rgba(26,127,90,0.07), transparent);
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.recall-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1.5; }
+.recall-body { flex: 1; }
+.recall-label {
+  font-size: 0.64rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--success, #1a7f5a);
+  margin-bottom: 0.2rem;
+}
+.recall-text {
+  font-size: 0.85rem;
+  color: var(--ink);
+  line-height: 1.5;
+  margin: 0 0 0.42rem;
+}
+.recall-chips { display: flex; flex-wrap: wrap; gap: 0.32rem; }
+.recall-chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.12em 0.5em;
+  border-radius: 20px;
+  background: rgba(26, 127, 90, 0.11);
+  color: var(--success, #1a7f5a);
+  border: 1px solid rgba(26, 127, 90, 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  .next-teaser { border-color: rgba(34,85,216,0.38); }
+  .recall-prompt { background: linear-gradient(to right, rgba(26,127,90,0.12), transparent); }
+}
+@media (max-width: 720px) {
+  .next-teaser-body { padding: 0.8rem 0.85rem 0.9rem; }
+  .recall-prompt { padding: 0.75rem 0.85rem; }
+}
+
+/* ===========================
    차별화 컴포넌트 (루프31)
    선행지식·수능기출·체크리스트
    =========================== */
