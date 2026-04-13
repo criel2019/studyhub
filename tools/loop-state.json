@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
+  "angleIndex": 4,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "학습 효과 장치",
-  "filesChanged": 12,
-  "summary": "CSS에 quiz-check·level-badge·step-solution·memory-tip·learning-goal 5개 컴포넌트 추가. ko/math 4페이지(calculus·trigonometry·equations·physics), en/ja/zh calculus에 학습목표·레벨배지·미니퀴즈·암기팁·단계별풀이·정답숨김 적용."
+  "lastAngle": "신뢰 신호",
+  "filesChanged": 9,
+  "summary": "CSS에 curriculum-badge·exam-year-badge·trust-signal-bar 3개 신뢰 신호 컴포넌트 추가. ko/math(calculus·trigonometry·equations)·ko/science/physics 4페이지 article-meta 교육과정 명시 + 성취기준 코드 배지(curriculum-badge) + trust-signal-bar 추가. en/ja/zh calculus 3페이지 article-meta 커리큘럼 정보 + trust-signal-bar 추가. footer 텍스트 교육과정 명시로 강화."
 }

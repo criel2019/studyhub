@@ -1154,6 +1154,94 @@ tr:nth-child(even) td {
   }
 }
 
+/* ── 신뢰 신호 컴포넌트 ─────────────────────────────────── */
+
+/* 1. 성취기준 코드 배지 */
+.curriculum-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.07rem 0.38rem;
+  border-radius: 4px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  font-family: "Consolas", "SF Mono", "Fira Code", "Courier New", monospace;
+  letter-spacing: 0.01em;
+  background: rgba(79, 93, 120, 0.08);
+  color: var(--ink-soft);
+  border: 1px solid rgba(79, 93, 120, 0.18);
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-left: 0.38rem;
+}
+
+/* 2. 수능 출제 연도 배지 */
+.exam-year-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.1rem 0.52rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  background: rgba(34, 85, 216, 0.09);
+  color: var(--brand-strong);
+  border: 1px solid rgba(34, 85, 216, 0.2);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* 3. 신뢰 신호 바 */
+.trust-signal-bar {
+  margin: 1.8rem 0 0;
+  padding: 0.7rem 1.1rem;
+  border-radius: 9px;
+  background: rgba(34, 85, 216, 0.03);
+  border: 1px solid rgba(34, 85, 216, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.trust-signal-bar .ts-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+.trust-signal-bar .ts-item a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.trust-signal-bar .ts-div {
+  width: 1px;
+  height: 13px;
+  background: var(--line-strong);
+  flex-shrink: 0;
+}
+
+/* Dark mode — 신뢰 신호 */
+@media (prefers-color-scheme: dark) {
+  .curriculum-badge {
+    background: rgba(140, 155, 185, 0.1);
+    border-color: rgba(140, 155, 185, 0.2);
+    color: rgba(175, 190, 215, 0.75);
+  }
+  .exam-year-badge {
+    background: rgba(91, 143, 238, 0.13);
+    border-color: rgba(91, 143, 238, 0.24);
+  }
+  .trust-signal-bar {
+    background: rgba(91, 143, 238, 0.04);
+    border-color: rgba(91, 143, 238, 0.12);
+  }
+  .trust-signal-bar .ts-div { background: rgba(91, 143, 238, 0.25); }
+}
+
 .continue-section {
   margin-top: 2rem;
 }
