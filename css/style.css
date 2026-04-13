@@ -1274,6 +1274,139 @@ tr:nth-child(even) td {
   .prereq-box { flex-direction: column; gap: 0.4rem; }
 }
 
+/* ── 리텐션 훅 컴포넌트 (루프24) ── */
+
+/* 개념 연결 다리 — 딥 틸/제이드 */
+.concept-bridge {
+  margin: 1.8rem 0 1.3rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.07), rgba(15, 118, 110, 0.02));
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  border-left: 4px solid #0f766e;
+}
+.concept-bridge-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #0f766e;
+  margin-bottom: 0.55rem;
+}
+.concept-bridge-q {
+  font-size: 1.03rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0 0 0.5rem;
+}
+.concept-bridge-hint {
+  font-size: 0.91rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0 0 0.9rem;
+}
+.concept-bridge-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f766e;
+  background: rgba(15, 118, 110, 0.09);
+  border: 1px solid rgba(15, 118, 110, 0.28);
+  border-radius: 8px;
+  padding: 0.38rem 0.9rem;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+.concept-bridge-next::after { content: ' →'; }
+.concept-bridge-next:hover {
+  background: rgba(15, 118, 110, 0.16);
+  transform: translateX(3px);
+}
+
+/* 스킬 해금 카드 — 골드/앰버 */
+.skill-unlock {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.35rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(202, 138, 4, 0.09), rgba(202, 138, 4, 0.03));
+  border: 1px solid rgba(202, 138, 4, 0.22);
+  border-left: 4px solid #ca8a04;
+}
+.skill-unlock-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #b45309;
+  margin-bottom: 0.5rem;
+}
+.skill-unlock-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.4rem 0 0.5rem;
+}
+.skill-unlock-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 8px;
+  background: rgba(202, 138, 4, 0.08);
+  border: 1px solid rgba(202, 138, 4, 0.24);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.skill-unlock-item::before { content: '🔓'; font-size: 0.82rem; }
+.skill-unlock-item a {
+  color: #92400e;
+  text-decoration: none;
+  font-weight: 700;
+}
+.skill-unlock-item a:hover { text-decoration: underline; }
+.skill-unlock-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+  line-height: 1.58;
+}
+
+@media (prefers-color-scheme: dark) {
+  .concept-bridge {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.13), rgba(15, 118, 110, 0.05));
+    border-color: rgba(45, 212, 191, 0.22);
+    border-left-color: #14b8a6;
+  }
+  .concept-bridge-label { color: #2dd4bf; }
+  .concept-bridge-next {
+    color: #2dd4bf;
+    background: rgba(15, 118, 110, 0.12);
+    border-color: rgba(45, 212, 191, 0.28);
+  }
+  .concept-bridge-next:hover { background: rgba(15, 118, 110, 0.2); }
+
+  .skill-unlock {
+    background: linear-gradient(135deg, rgba(202, 138, 4, 0.13), rgba(202, 138, 4, 0.05));
+    border-color: rgba(251, 191, 36, 0.22);
+    border-left-color: #fbbf24;
+  }
+  .skill-unlock-label { color: #fcd34d; }
+  .skill-unlock-item {
+    background: rgba(202, 138, 4, 0.11);
+    border-color: rgba(251, 191, 36, 0.22);
+  }
+  .skill-unlock-item a { color: #fbbf24; }
+}
+
+@media (max-width: 720px) {
+  .skill-unlock-items { gap: 0.35rem; }
+  .concept-bridge-next { font-size: 0.86rem; }
+}
+
 /* 2. 난이도 레벨 배지 */
 .level-badge {
   display: inline-flex;
