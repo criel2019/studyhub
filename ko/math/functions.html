@@ -148,6 +148,15 @@
       <strong>핵심 조건:</strong> 함수는 정의역의 한 원소에 공역의 원소가 <strong>정확히 하나</strong>만 대응해야 합니다. 한 x값에 두 개 이상의 y값이 대응되면 함수가 아닙니다.
     </div>
 
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 확인 퀴즈</div>
+      <p>다음 중 함수인 것은? ① x² + y² = 1 (원) &nbsp; ② y = x² &nbsp; ③ y = ±√x</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal"><strong>② y = x²</strong> — x 하나에 y가 정확히 하나 대응합니다. ① 원은 x 하나에 y가 두 개(±값) 대응하므로 함수 아님. ③ ±√x도 두 값이 나옵니다.</div>
+      </details>
+    </div>
+
     <h2 id="s2">2. 일차함수</h2>
     <p>일차함수는 \(x\)에 대한 일차식으로 표현되는 함수입니다.</p>
 
@@ -189,6 +198,23 @@
         \(y = 2x + b\)에 (1, 3) 대입: \(3 = 2(1) + b\) → \(b = 1\)<br>
         <strong>∴ \(y = 2x + 1\)</strong>
       </div>
+    </div>
+
+    <div class="misconception">
+      <div class="misconception-label">⚠️ 자주 하는 실수</div>
+      <p><strong>기울기 \(a &lt; 0\)이면 항상 감소한다?</strong> — 맞습니다만, 기울기 부호만 보고 "함수값이 음수"라고 착각하는 경우가 많습니다. 기울기 \(a\)는 y의 <strong>변화 방향</strong>을 나타내는 것이고, y의 값 자체가 양수인지 음수인지는 y절편 \(b\)에 따라 다릅니다. 예) \(y = -x + 100\)은 기울기가 음수지만 x=50까지는 y &gt; 0입니다.</p>
+    </div>
+
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 확인 퀴즈</div>
+      <p>\(y = 3x - 6\)의 x절편과 y절편을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">
+          <strong>x절편</strong>: y=0 대입 → \(0 = 3x - 6\) → \(x = 2\) → <strong>x절편: 2</strong><br>
+          <strong>y절편</strong>: x=0 대입 → \(y = -6\) → <strong>y절편: −6</strong>
+        </div>
+      </details>
     </div>
 
     <h2 id="s3">3. 이차함수</h2>
@@ -284,24 +310,53 @@
       <strong>주의:</strong> 합성함수는 교환법칙이 성립하지 않습니다. 일반적으로 \(f \circ g \neq g \circ f\)입니다.
     </div>
 
-    <h2 id="s6">6. 연습 문제</h2>
-    <ol>
-      <li>두 점 (2, 1)과 (4, 7)을 지나는 일차함수를 구하시오.</li>
-      <li>\(y = x^2 - 6x + 11\)을 표준형으로 변환하고, 꼭짓점을 구하시오.</li>
-      <li>\(f(x) = 4x - 3\)의 역함수 \(f^{-1}(x)\)를 구하시오.</li>
-      <li>\(f(x) = x + 2\), \(g(x) = 3x - 1\)일 때, \((g \circ f)(2)\)를 구하시오.</li>
-      <li>\(y = -2x^2 + 8x - 5\)의 최댓값을 구하시오.</li>
-    </ol>
+    <div class="memory-tip">
+      <div class="memory-tip-label">🧠 암기 포인트</div>
+      <p><strong>역함수 구하는 순서</strong>: <code>y = f(x)</code> → <code>x에 대해 풀기</code> → <code>x, y 교환</code></p>
+      <p><strong>합성함수 방향</strong>: \((f \circ g)(x)\)는 g를 먼저, f를 나중에 — <strong>"오른쪽에서 왼쪽"</strong>으로 읽는다.</p>
+      <p><strong>이차함수 꼭짓점</strong>: 대칭축 \(x = -\dfrac{b}{2a}\) → 이 x값을 다시 대입해 y값 계산</p>
+    </div>
 
-    <div class="concept-box">
-      <strong>정답</strong>
-      <ol>
-        <li>기울기 = (7−1)/(4−2) = 3, \(y = 3x + b\)에 (2,1) 대입: \(b = -5\), <strong>\(y = 3x - 5\)</strong></li>
-        <li>\(y = (x-3)^2 + 2\), 꼭짓점: <strong>(3, 2)</strong></li>
-        <li>\(y = 4x-3\) → \(x = \dfrac{y+3}{4}\) → <strong>\(f^{-1}(x) = \dfrac{x+3}{4}\)</strong></li>
-        <li>\(f(2) = 4\), \(g(4) = 11\) → <strong>11</strong></li>
-        <li>\(y = -2(x-2)^2 + 3\) → 최댓값: <strong>3</strong> (x = 2일 때)</li>
-      </ol>
+    <h2 id="s6">6. 연습 문제</h2>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★☆☆ 기본</div>
+      <p><strong>Q1.</strong> 두 점 (2, 1)과 (4, 7)을 지나는 일차함수를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">기울기 = (7−1)/(4−2) = 3, \(y = 3x + b\)에 (2,1) 대입: \(b = -5\) → <strong>\(y = 3x - 5\)</strong></div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q2.</strong> \(y = x^2 - 6x + 11\)을 표준형으로 변환하고, 꼭짓점을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(y = (x-3)^2 + 2\), 꼭짓점: <strong>(3, 2)</strong><br><small>완전제곱식: \(x^2-6x = (x-3)^2 - 9\) → \(y = (x-3)^2 - 9 + 11\)</small></div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q3.</strong> \(f(x) = 4x - 3\)의 역함수 \(f^{-1}(x)\)를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(y = 4x-3\) → \(4x = y+3\) → \(x = \dfrac{y+3}{4}\) → x,y 교환 → <strong>\(f^{-1}(x) = \dfrac{x+3}{4}\)</strong></div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q4.</strong> \(f(x) = x + 2\), \(g(x) = 3x - 1\)일 때, \((g \circ f)(2)\)를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">안쪽 f 먼저: \(f(2) = 4\), 바깥 g 다음: \(g(4) = 3(4)-1 = 11\) → <strong>11</strong></div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★★ 심화</div>
+      <p><strong>Q5.</strong> \(y = -2x^2 + 8x - 5\)의 최댓값을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(y = -2(x^2-4x) - 5 = -2(x-2)^2 + 8 - 5 = -2(x-2)^2 + 3\)<br>\(a = -2 &lt; 0\)이므로 꼭짓점에서 최댓값 → <strong>최댓값: 3 (x=2)</strong></div>
+      </details>
     </div>
   </main>
 

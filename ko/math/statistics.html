@@ -340,24 +340,53 @@
       </ul>
     </div>
 
-    <h2 id="s8">8. 연습 문제</h2>
-    <ol>
-      <li>자료 [6, 8, 5, 9, 7]의 평균, 중앙값, 최빈값을 구하시오.</li>
-      <li>자료 [3, 5, 7, 5, 5]의 분산과 표준편차를 구하시오.</li>
-      <li>서로 다른 카드 5장 중 2장을 뽑을 때, 특정 카드 A가 뽑힐 확률을 구하시오.</li>
-      <li>\(P(A) = 0.5\), \(P(B) = 0.4\), \(P(A \cap B) = 0.2\)일 때, \(P(A \cup B)\)를 구하시오.</li>
-      <li>A와 B가 독립 사건이고 \(P(A) = 0.6\), \(P(B) = 0.5\)일 때, \(P(A \cap B)\)를 구하시오.</li>
-    </ol>
+    <div class="memory-tip">
+      <div class="memory-tip-label">🧠 암기 포인트</div>
+      <p><strong>평균·중앙값·최빈값</strong>: <code>평균</code>=전체 합÷개수, <code>중앙값</code>=정렬 후 가운데, <code>최빈값</code>=가장 자주 등장</p>
+      <p><strong>분산 vs 표준편차</strong>: 분산 = (편차)²의 평균 → 표준편차 = √분산 (단위가 원래 데이터와 같아짐)</p>
+      <p><strong>확률 덧셈법칙</strong>: <code>P(A∪B) = P(A) + P(B) − P(A∩B)</code> — 겹치는 부분을 빼야 두 번 세지 않음!</p>
+    </div>
 
-    <div class="concept-box">
-      <strong>정답</strong>
-      <ol>
-        <li>평균: \(\dfrac{6+8+5+9+7}{5} = 7\), &nbsp; 정렬: 5, 6, 7, 8, 9 → 중앙값: 7, &nbsp; 최빈값: 없음 (모두 1회)</li>
-        <li>평균: \(\bar{x} = 5\), 편차²: 4, 0, 4, 0, 0, 분산: \(\dfrac{4+0+4+0+0}{5} = \dfrac{8}{5} = 1.6\), 표준편차: \(\sqrt{1.6} \approx 1.26\)</li>
-        <li>A가 포함된 경우: 나머지 4장 중 1장 선택 = 4가지, 전체: \(\binom{5}{2} = 10\), \(P = \dfrac{4}{10} = \dfrac{2}{5}\)</li>
-        <li>\(P(A \cup B) = 0.5 + 0.4 - 0.2 = 0.7\)</li>
-        <li>\(P(A \cap B) = P(A) \times P(B) = 0.6 \times 0.5 = 0.3\)</li>
-      </ol>
+    <h2 id="s8">8. 연습 문제</h2>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★☆☆ 기본</div>
+      <p><strong>Q1.</strong> 자료 [6, 8, 5, 9, 7]의 평균, 중앙값, 최빈값을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">평균: \(\dfrac{35}{5} = 7\) &nbsp; 정렬: 5,6,7,8,9 → 중앙값: <strong>7</strong> &nbsp; 최빈값: <strong>없음</strong>(모두 1회)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q2.</strong> 자료 [3, 5, 7, 5, 5]의 분산과 표준편차를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">평균 \(\bar{x} = 5\), 편차²: 4, 0, 4, 0, 0<br>분산 = \(\dfrac{8}{5} = 1.6\) &nbsp; 표준편차 = \(\sqrt{1.6} \approx \mathbf{1.26}\)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q3.</strong> \(P(A) = 0.5\), \(P(B) = 0.4\), \(P(A \cap B) = 0.2\)일 때, \(P(A \cup B)\)를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(P(A \cup B) = 0.5 + 0.4 - 0.2 = \mathbf{0.7}\)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q4.</strong> A와 B가 독립 사건이고 \(P(A) = 0.6\), \(P(B) = 0.5\)일 때, \(P(A \cap B)\)를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">독립이면 \(P(A \cap B) = P(A) \times P(B) = 0.6 \times 0.5 = \mathbf{0.3}\)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★★ 심화</div>
+      <p><strong>Q5.</strong> 서로 다른 카드 5장 중 2장을 뽑을 때, 특정 카드 A가 뽑힐 확률을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">A 포함 경우의 수: 나머지 4장 중 1장 = 4가지<br>전체 경우의 수: \(\binom{5}{2} = 10\)<br>\(P = \dfrac{4}{10} = \mathbf{\dfrac{2}{5}}\)</div>
+      </details>
     </div>
   </main>
 

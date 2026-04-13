@@ -208,6 +208,20 @@
       <p>유명한 피타고라스 수 조합: (3, 4, 5), (5, 12, 13), (8, 15, 17)</p>
     </div>
 
+    <div class="misconception">
+      <div class="misconception-label">⚠️ 자주 하는 실수</div>
+      <p><strong>피타고라스 정리는 모든 삼각형에 적용된다?</strong> — <strong>아닙니다</strong>. \(a^2 + b^2 = c^2\)는 오직 <strong>직각삼각형</strong>에서만 성립합니다. 직각삼각형이 아닌 경우에는 \(a^2 + b^2 \neq c^2\)입니다. 직각 여부를 먼저 확인하세요.</p>
+    </div>
+
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 확인 퀴즈</div>
+      <p>직각삼각형에서 두 변의 길이가 각각 6cm, 8cm일 때 빗변을 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(c^2 = 6^2 + 8^2 = 36 + 64 = 100\) → \(c = 10\text{ cm}\) (6-8-10은 3-4-5의 2배 조합)</div>
+      </details>
+    </div>
+
     <h2 id="s3">3. 사각형</h2>
 
     <div class="table-wrap">
@@ -275,6 +289,15 @@
       </div>
     </div>
 
+    <div class="quiz-check">
+      <div class="quiz-check-label">✏️ 확인 퀴즈</div>
+      <p>지름이 10cm인 원의 넓이는? (π ≈ 3.14)</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">지름 10cm → <strong>반지름 = 5cm</strong><br>넓이 = π × 5² = 25π ≈ <strong>78.5 cm²</strong><br>⚠️ 지름을 반지름으로 착각하지 마세요!</div>
+      </details>
+    </div>
+
     <h3>부채꼴</h3>
     <div class="formula">
       \[ \text{호의 길이} = 2\pi r \times \frac{\theta}{360°}, \qquad \text{넓이} = \pi r^2 \times \frac{\theta}{360°} \]
@@ -331,24 +354,53 @@
       </div>
     </div>
 
-    <h2 id="s6">6. 연습 문제</h2>
-    <ol>
-      <li>밑변 6cm, 높이 4cm인 삼각형의 넓이를 구하시오.</li>
-      <li>직각삼각형에서 두 변의 길이가 각각 5cm와 12cm일 때, 빗변의 길이를 구하시오.</li>
-      <li>반지름 7cm인 원의 넓이를 구하시오. (π ≈ 3.14)</li>
-      <li>반지름 6cm, 높이 4cm인 원뿔의 부피를 구하시오.</li>
-      <li>가로 8cm, 세로 5cm, 높이 3cm인 직육면체의 겉넓이를 구하시오.</li>
-    </ol>
+    <div class="memory-tip">
+      <div class="memory-tip-label">🧠 암기 포인트</div>
+      <p><strong>원 공식 두 개</strong>: 넓이는 r², 둘레는 r¹ — "<code>넓이=πr²</code>, <code>둘레=2πr</code>" r의 지수가 차수!</p>
+      <p><strong>입체도형 부피비 법칙</strong>: 원기둥 : 원뿔 = <code>3 : 1</code> (같은 밑면, 같은 높이)</p>
+      <p><strong>유명한 피타고라스 수</strong>: <code>3-4-5</code>, <code>5-12-13</code> — 시험에서 자주 등장!</p>
+    </div>
 
-    <div class="concept-box">
-      <strong>정답</strong>
-      <ol>
-        <li>\(S = \dfrac{1}{2} \times 6 \times 4 = 12 \text{ cm}^2\)</li>
-        <li>\(c^2 = 5^2 + 12^2 = 25 + 144 = 169\), \(c = 13 \text{ cm}\)</li>
-        <li>\(S = 3.14 \times 7^2 = 3.14 \times 49 = 153.86 \text{ cm}^2\)</li>
-        <li>\(V = \dfrac{1}{3}\pi \times 6^2 \times 4 = \dfrac{1}{3} \times 36\pi \times 4 = 48\pi \approx 150.8 \text{ cm}^3\)</li>
-        <li>\(S = 2(8 \times 5 + 5 \times 3 + 8 \times 3) = 2(40 + 15 + 24) = 2 \times 79 = 158 \text{ cm}^2\)</li>
-      </ol>
+    <h2 id="s6">6. 연습 문제</h2>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★☆☆ 기본</div>
+      <p><strong>Q1.</strong> 밑변 6cm, 높이 4cm인 삼각형의 넓이를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(S = \dfrac{1}{2} \times 6 \times 4 = \mathbf{12 \text{ cm}^2}\)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q2.</strong> 직각삼각형에서 두 변의 길이가 각각 5cm와 12cm일 때, 빗변의 길이를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(c^2 = 5^2 + 12^2 = 25 + 144 = 169\) → \(c = \mathbf{13 \text{ cm}}\) (5-12-13 조합)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q3.</strong> 반지름 7cm인 원의 넓이를 구하시오. (π ≈ 3.14)</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(S = 3.14 \times 7^2 = 3.14 \times 49 = \mathbf{153.86 \text{ cm}^2}\)</div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★☆ 중급</div>
+      <p><strong>Q4.</strong> 반지름 6cm, 높이 4cm인 원뿔의 부피를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(V = \dfrac{1}{3}\pi \times 6^2 \times 4 = 48\pi \approx \mathbf{150.8 \text{ cm}^3}\)<br><small>원기둥이라면 144π인데, 원뿔은 그것의 1/3</small></div>
+      </details>
+    </div>
+    <div class="quiz-check">
+      <div class="quiz-check-label">★★★ 심화</div>
+      <p><strong>Q5.</strong> 가로 8cm, 세로 5cm, 높이 3cm인 직육면체의 겉넓이를 구하시오.</p>
+      <details>
+        <summary>▶ 정답 확인</summary>
+        <div class="answer-reveal">\(S = 2(8 \times 5 + 5 \times 3 + 8 \times 3) = 2(40 + 15 + 24) = 2 \times 79 = \mathbf{158 \text{ cm}^2}\)</div>
+      </details>
     </div>
   </main>
 

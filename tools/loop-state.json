@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
+  "angleIndex": 3,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 15,
-  "summary": "첫인상 설득력 개선 (루프20): CSS에 .section-hook + .entry-point 컴포넌트 추가. ko/math, ko/science, ko/korean, ko/english 인덱스에 슬로건+섹션훅+입문가이드 추가. en/math, en/science, en/english 동일처리(영어). ja/math, ja/science, ja/japanese, ja/english 동일처리(일본어). zh/math, zh/science, zh/chinese, zh/english 동일처리(중국어). ko/index.html subject-card 설명 개선. 총 15개 파일 + css 1개 수정."
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 11,
+  "summary": "학습 효과 장치 강화 (루프21): CSS .memory-tip 신규 컴포넌트 추가. ko/math/functions+geometry+statistics에 quiz-check(details 정답숨김)+misconception+memory-tip 추가. ko/science/chemistry에 misconception+memory-tip+quiz-check 추가. en/math/geometry에 동일처리(영어). ja/math/geometry+zh/math/geometry에 misconception+quiz-check+memory-tip 추가. 연습문제 정답 details로 전환(★난이도 태그)."
 }
