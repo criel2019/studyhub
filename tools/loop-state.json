@@ -1,7 +1,7 @@
 {
-  "angleIndex": 7,
+  "angleIndex": 0,
   "lastRun": "2026-04-14T00:00:00Z",
-  "lastAngle": "정보 구조",
-  "filesChanged": 10,
-  "summary": "CSS에 breadcrumb-current·page-overview·unit-diff(easy/mid/hard)·unit-card-meta·unit-time 5개 정보구조 컴포넌트 추가. ko/math/index·science/index에 난이도 배지+학습시간 추가. ko/math/calculus·equations에 breadcrumb-current+page-overview+h2 id 앵커 추가. en/ja/zh calculus에 동일 구조 전파."
+  "lastAngle": "모바일 UX",
+  "filesChanged": 16,
+  "summary": "CSS에 MathJax overflow·concept-journey 모바일 스크롤·article-meta 소형화·pre 모바일 최적화·컴포넌트 패딩 최적화 추가. ko/ja/zh science 10개 페이지에 table-wrap 래퍼 추가(atoms/biology/cells/chemistry/energy/index). table-wrap에 -webkit-overflow-scrolling:touch 추가."
 }

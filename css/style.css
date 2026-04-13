@@ -647,6 +647,7 @@ pre {
 .table-wrap {
   overflow-x: auto;
   margin: 1rem 0 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-wrap::-webkit-scrollbar,
@@ -2196,5 +2197,82 @@ footer a {
 
   footer a {
     color: #7eb3ff;
+  }
+}
+
+/* ===========================
+   모바일 UX 최적화 (Loop 18)
+   table-wrap · MathJax · concept-journey · article-meta
+   =========================== */
+
+/* MathJax 수식 overflow 방지 — 모든 화면 크기 */
+mjx-container,
+.MathJax,
+.MathJax_Display,
+.mjx-container {
+  overflow-x: auto;
+  overflow-y: visible;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 수식 블록 레벨($$) overflow */
+.MathJax_Display {
+  margin: 0.6rem 0;
+}
+
+/* pre/code 모바일 touch 스크롤 */
+pre {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 720px) {
+  /* 1. concept-journey 가로 스크롤 (overflow: hidden 오버라이드) */
+  .concept-journey {
+    flex-wrap: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-right: 1.2rem; /* 마지막 노드 여백 */
+  }
+  .concept-journey::-webkit-scrollbar { display: none; }
+
+  /* 2. article-meta 소형화 */
+  .article-meta { gap: 0.38rem; }
+  .article-meta span {
+    font-size: 0.76rem;
+    min-height: 26px;
+    padding: 0.22rem 0.55rem;
+  }
+
+  /* 3. pre 모바일 */
+  pre {
+    font-size: 0.8rem;
+    padding: 0.75rem 0.85rem;
+    border-radius: 10px;
+  }
+
+  /* 4. 컴포넌트 모바일 패딩 최적화 */
+  .unit-complete,
+  .next-unit-card,
+  .page-overview {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+  .exam-trap,
+  .intuition-box,
+  .compare-method,
+  .common-mistake {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+  .exam-trap { border-left-width: 3px; }
+  .intuition-box { border-left-width: 2px; }
+
+  /* 5. 수식 블록 모바일 */
+  mjx-container,
+  .MathJax_Display {
+    font-size: 0.92em;
   }
 }
