@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-15T01:10:00Z",
-  "lastAngle": "리텐션 훅",
+  "angleIndex": 7,
+  "lastRun": "2026-04-15T02:00:00Z",
+  "lastAngle": "정보 구조",
   "filesChanged": 31,
-  "summary": "리텐션 훅 강화 (루프48): (1) CSS .next-concept (브랜드 blue 그라디언트, nc-reason/nc-preview/nc-meta/nc-link). (2) CSS .cross-link (teal #0d9488, 교차 과목 칩). (3) CSS .unit-progress (진도 바, --up-pct 변수). (4) ko/ 30개 아티클 전체: unit-progress+next-concept(마지막 제외)+cross-link 삽입."
+  "summary": "정보 구조 강화 (루프49): (1) CSS .mobile-nav-bar — 모바일 하단 fixed nav (5탭: 홈+수학+국어+영어+과학, 과목별 active 색상, safe-area-inset, backdrop-blur). (2) ko/ 30개 아티클 전체 </body> 앞 삽입 (수학=파랑, 국어=초록, 영어=보라, 과학=청록 active 코드)."
 }

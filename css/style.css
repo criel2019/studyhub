@@ -5049,3 +5049,82 @@ article code,
   .unit-progress { gap: 0.6rem; }
   .up-track { min-width: 60px; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Loop 49 — 정보 구조
+   .mobile-nav-bar
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── .mobile-nav-bar ────────────────────────────────────────── */
+/* 모바일 전용 하단 fixed 과목 탐색 바 */
+.mobile-nav-bar {
+  display: none; /* desktop: hidden */
+}
+
+@media (max-width: 720px) {
+  .mobile-nav-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background: rgba(255,255,255,0.92);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 0.28rem 0 max(0.28rem, env(safe-area-inset-bottom));
+    box-shadow: 0 -2px 18px rgba(0,0,0,0.07);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .mnb-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.14rem;
+    padding: 0.28rem 0.15rem;
+    text-decoration: none;
+    color: rgba(26,37,64,0.38);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: color 0.13s;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  .mnb-icon {
+    font-size: 1.18rem;
+    line-height: 1;
+    transition: transform 0.13s;
+    display: block;
+  }
+  .mnb-label { display: block; }
+
+  .mnb-item:active .mnb-icon { transform: scale(0.86); }
+
+  /* 홈 active */
+  .mnb-item.mnb-home.active    { color: var(--brand, #2255d8); }
+  /* 과목별 active 색상 코드 */
+  .mnb-item.mnb-math.active    { color: #2255d8; }
+  .mnb-item.mnb-korean.active  { color: #1f8f58; }
+  .mnb-item.mnb-english.active { color: #7c3aed; }
+  .mnb-item.mnb-science.active { color: #0d9488; }
+
+  .mnb-item.active .mnb-icon {
+    filter: drop-shadow(0 1px 3px currentColor);
+    opacity: 0.85;
+  }
+
+  /* 하단 nav bar 높이만큼 body 패딩 확보 */
+  body.page-article { padding-bottom: 4.2rem; }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 720px) {
+  .mobile-nav-bar {
+    background: rgba(14,20,36,0.93);
+    border-top-color: rgba(255,255,255,0.07);
+    box-shadow: 0 -2px 24px rgba(0,0,0,0.35);
+  }
+  .mnb-item { color: rgba(200,215,255,0.32); }
+}
