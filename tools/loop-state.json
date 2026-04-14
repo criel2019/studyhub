@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
-  "lastRun": "2026-04-15T11:00:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 3,
-  "summary": "루프58 (모바일 UX): CSS — word-break:keep-all 전역 한국어, -webkit-tap-highlight-color:transparent+touch-action:manipulation iOS 최적화, overscroll-behavior:contain, 터치 타깃 강화(entry-point·page-overview). JS — initTableScope() thead/tbody scope 속성 자동 주입."
+  "angleIndex": 1,
+  "lastRun": "2026-04-15T11:20:00Z",
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 10,
+  "summary": "루프59 (콘텐츠 깊이): CSS .principle-line 신규 컴포넌트 + 8개 핵심 아티클(calculus/equations/trigonometry/functions/physics/chemistry/ko-grammar/en-grammar)에 35개 섹션별 핵심 원리 한 줄 삽입"
 }

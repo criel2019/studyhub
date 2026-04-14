@@ -6090,3 +6090,68 @@ pre,
     margin-block: -0.4rem;
   }
 }
+
+/* ===========================
+   콘텐츠 깊이 강화 (루프59)
+   principle-line — 섹션별 핵심 원리 한 줄
+   =========================== */
+
+/* 각 h2 섹션 바로 아래 — 공식이 아닌 원리를 언어로 */
+.principle-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin: -0.4rem 0 1.4rem;
+  padding: 0.56rem 0.9rem 0.56rem 0;
+  border-bottom: 1px solid rgba(34, 85, 216, 0.09);
+  position: relative;
+}
+.principle-line::before {
+  content: "";
+  flex-shrink: 0;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, var(--brand) 0%, rgba(34,85,216,0.18) 100%);
+  border-radius: 2px;
+}
+.pl-tag {
+  flex-shrink: 0;
+  font-size: 0.56rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+  opacity: 0.62;
+  padding-top: 0.22rem;
+  white-space: nowrap;
+  padding-left: 0.65rem;
+}
+.pl-text {
+  font-size: 0.93rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink);
+  opacity: 0.72;
+  line-height: 1.55;
+  margin: 0;
+  letter-spacing: -0.008em;
+}
+.pl-text strong {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--ink);
+  opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .principle-line { border-bottom-color: rgba(91,143,238,0.12); }
+  .pl-tag { color: var(--brand-strong, #93baff); }
+  .pl-text { color: var(--ink, #e2e8f4); opacity: 0.65; }
+  .pl-text strong { color: var(--ink, #e2e8f4); opacity: 0.9; }
+}
+@media (max-width: 720px) {
+  .principle-line { margin-bottom: 1.1rem; gap: 0.5rem; }
+  .pl-text { font-size: 0.87rem; }
+}
