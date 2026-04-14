@@ -3952,6 +3952,74 @@ article code,
 }
 
 /* ===========================
+   콘텐츠 깊이 강화 (루프43)
+   student-question — 학습자 선제 질문 대응
+   =========================== */
+
+.student-question {
+  background: rgba(15, 118, 110, 0.05);
+  border: 1.5px solid rgba(15, 118, 110, 0.22);
+  border-left: 4px solid #0f766e;
+  border-radius: var(--radius-sm, 14px);
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.sq-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+  background: rgba(15, 118, 110, 0.1);
+  border-radius: 4px;
+  padding: 0.15em 0.55em;
+  margin-bottom: 0.55rem;
+}
+
+.sq-question {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--ink, #14213d);
+  margin: 0 0 0.6rem;
+  line-height: 1.45;
+}
+
+.sq-question::before {
+  content: "Q. ";
+  color: #0f766e;
+}
+
+.sq-answer {
+  font-size: 0.93rem;
+  color: var(--ink-soft, #4f5d78);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .student-question {
+    background: rgba(20, 184, 166, 0.06);
+    border-color: rgba(20, 184, 166, 0.18);
+    border-left-color: #14b8a6;
+  }
+  .sq-label {
+    color: #14b8a6;
+    background: rgba(20, 184, 166, 0.12);
+  }
+  .sq-question { color: #e8f4f2; }
+  .sq-answer { color: rgba(200, 230, 225, 0.82); }
+}
+
+@media (max-width: 720px) {
+  .student-question {
+    padding: 0.9rem 0.9rem;
+  }
+  .sq-question { font-size: 0.95rem; }
+}
+
+/* ===========================
    모바일 UX 강화 (루프42)
    신규 컴포넌트 반응형 보완
    =========================== */

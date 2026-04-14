@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
-  "lastRun": "2026-04-14T21:30:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 1,
-  "summary": "모바일 UX 강화 (루프42): CSS 전용 — (1) 720px 이하: .analogy-box/.insight-path/.exam-trap/.practice-set/.recall-prompt/.next-teaser-body 좌우 패딩 최적화 추가, insight-steps 들여쓰기 축소(2.1rem→1.85rem), formula clamp() 반응형 폰트, cb-from/cb-to 폰트 축소, tpn-* min-height:44px 터치타겟 보장. (2) 480px 이하 초소형 전용 블록 신규 추가."
+  "angleIndex": 1,
+  "lastRun": "2026-04-14T22:00:00Z",
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 32,
+  "summary": "콘텐츠 깊이 강화 (루프43): (1) CSS .student-question 신규 컴포넌트 추가 (teal 계열, sq-label/sq-question/sq-answer, 다크모드+720px 반응형). (2) ko/ 30개 아티클 전체에 student-question 삽입 (각 파일 첫 번째 h2 직전, 파일별 고유 질문+답변). (3) misconception 누락 16개 파일 보완 완료 — 수학 4개(calculus/equations/statistics/trigonometry), 과학 8개(atoms/biology/cells/earth/ecology/energy/physics+chemistry→physics), 국어 5개(classical/grammar/modern/vocabulary/writing), 영어 1개(writing)."
 }
