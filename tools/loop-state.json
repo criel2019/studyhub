@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
-  "lastRun": "2026-04-15T12:10:00Z",
-  "lastAngle": "학습 효과 장치",
-  "filesChanged": 10,
-  "summary": "루프61 (학습 효과 장치): .quick-check CSS 컴포넌트 추가. 8개 누락 파일(math: addition/equations/geometry, science: atoms/cells/chemistry/energy/physics)에 practice-set (ps-item 3개씩) 삽입"
+  "angleIndex": 4,
+  "lastRun": "2026-04-15T12:35:00Z",
+  "lastAngle": "신뢰 신호",
+  "filesChanged": 33,
+  "summary": "루프62 (신뢰 신호): curriculum-badge hover tooltip CSS + JS title 자동주입(50개 코드 매핑). vb-reviewed 날짜 2025년 3월→2026.04 전체 30개 파일 업데이트. 모바일 vb-reviewed 표시, vb-report 버튼 스타일 강화"
 }
