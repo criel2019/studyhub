@@ -1,7 +1,7 @@
 {
-  "angleIndex": 0,
-  "lastRun": "2026-04-15T02:40:00Z",
-  "lastAngle": "모바일 UX",
-  "filesChanged": 2,
-  "summary": "모바일 UX 감사 (루프50): 전체 ko/ 아티클 table-wrap 미적용 테이블 전수조사 → 1건 발견(math/decimals.html:287) 수정. CSS 기존 모바일 처리(table overflow-x, MathJax overflow, prereq-path 세로스택, 각 신규 컴포넌트 @media 720px) 이미 포괄적으로 구현되어 있음 확인."
+  "angleIndex": 1,
+  "lastRun": "2026-04-15T04:00:00Z",
+  "lastAngle": "콘텐츠 깊이",
+  "filesChanged": 32,
+  "summary": "루프51 (콘텐츠 깊이): CSS .history-note(amber/역사박스) + .limit-note(slate/한계박스) 추가. 전체 ko/ 30개 아티클에 history-note·limit-note 삽입. why-box 누락 5개 파일(korean/classical, modern, vocabulary, writing; english/writing) 보충 완료."
 }

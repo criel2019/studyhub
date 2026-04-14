@@ -105,7 +105,12 @@
       <span>📋 초등 수학 · 2022 개정 교육과정</span>
     </div>
 
-    <nav class="page-overview" aria-label="이 페이지 목차">
+        <div class="history-note">
+      <span class="hn-label">탄생 배경</span>
+      <p class="hn-content">소수는 <strong>천문 계산의 정밀도 요구</strong>에서 탄생했습니다. 1585년 플랑드르 수학자 시몬 스테빈이 『소수론』에서 처음 체계화했으며, 이후 측량·무역·과학에서 분수보다 편리한 표현으로 자리 잡았습니다.</p>
+    </div>
+
+<nav class="page-overview" aria-label="이 페이지 목차">
       <div class="page-overview-label">이 페이지에서</div>
       <ol class="page-overview-list">
         <li><a href="#s1">소수의 뜻</a></li>
@@ -463,7 +468,16 @@
     </div>
   </div>
 
-  <div class="three-path-nav">
+      <div class="limit-note">
+      <span class="ln-label">이럴 때는 다르다</span>
+      <ul class="ln-items">
+        <li><strong>컴퓨터 부동소수점</strong>: 0.1은 2진수로 정확히 표현할 수 없어 계산 오차가 생깁니다. 금융 계산에는 십진 전용 라이브러리를 써야 합니다.</li>
+        <li><strong>반올림 기준</strong>: 5를 올리는 '사사오입'이 기본이나, 통계에서는 가장 가까운 짝수로 반올림하는 '은행 반올림'을 사용합니다.</li>
+        <li><strong>자릿수 정렬</strong>: 소수 덧셈에서 소수점을 맞추지 않으면 완전히 틀린 답이 나옵니다.</li>
+      </ul>
+    </div>
+
+<div class="three-path-nav">
       <a href="fractions.html" class="tpn-back">분수</a>
       <a href="equations.html" class="tpn-next">방정식</a>
       <a href="fractions.html" class="tpn-related">분수</a>
