@@ -6354,3 +6354,56 @@ pre,
 @media (max-width: 600px) {
   .fit-for { grid-template-columns: 1fr; }
 }
+
+/* ── 루프64: next-hook 리텐션 강화 ── */
+
+/* nh-question 강조: 이탤릭 제거 + 살짝 더 선명하게 */
+.nh-question {
+  font-style: normal;
+  color: rgba(30,30,30,0.72);
+  font-weight: 500;
+}
+.nh-question em {
+  font-style: italic;
+  color: var(--brand);
+  font-weight: 600;
+}
+/* next-hook 배경 강화 — 더 눈에 띄게 */
+.next-hook {
+  background: linear-gradient(
+    to right,
+    rgba(34,85,216,0.04) 0%,
+    rgba(34,85,216,0.015) 60%,
+    transparent 100%
+  );
+  border-radius: 0 var(--radius-sm, 14px) var(--radius-sm, 14px) 0;
+}
+/* nh-link 강화 — 더 버튼스럽게 */
+.nh-link {
+  margin-top: 0.1rem;
+  background: rgba(34,85,216,0.06);
+  padding: 0.32rem 0.72rem 0.32rem 0.58rem;
+  border-radius: 99px;
+  border: 1.5px solid rgba(34,85,216,0.22);
+  font-size: 0.88rem;
+}
+.nh-link:hover {
+  background: rgba(34,85,216,0.11);
+}
+@media (prefers-color-scheme: dark) {
+  .next-hook {
+    background: linear-gradient(to right, rgba(34,85,216,0.08) 0%, transparent 100%);
+  }
+  .nh-question { color: rgba(203,213,225,0.68); }
+  .nh-link {
+    background: rgba(34,85,216,0.1);
+    border-color: rgba(91,143,238,0.3);
+  }
+  .nh-link:hover { background: rgba(34,85,216,0.18); }
+}
+@media (max-width: 720px) {
+  .nh-link {
+    padding: 0.38rem 0.68rem 0.38rem 0.52rem;
+    font-size: 0.85rem;
+  }
+}

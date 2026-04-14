@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
-  "lastRun": "2026-04-15T13:00:00Z",
-  "lastAngle": "차별화",
-  "filesChanged": 9,
-  "summary": "루프63 (차별화): .alt-compare/.fit-for CSS 신규. ko/index.html '이런 분께 맞습니다/안 맞습니다' 섹션 추가. 수학/과학 section-hook 날카롭게 개선. calculus/physics/grammar.html에 .alt-compare 비교 박스 삽입"
+  "angleIndex": 6,
+  "lastRun": "2026-04-15T13:25:00Z",
+  "lastAngle": "리텐션 훅",
+  "filesChanged": 32,
+  "summary": "루프64 (리텐션 훅): next-hook CSS 강화(배경+pill버튼). nh-label 30개 파일 '이 질문, 지금 답할 수 있나요?'로 업그레이드. 8개 파일 nh-question 클리프행어 질문으로 교체 (calculus/physics/equations/atoms/korean-grammar/english-grammar/geometry/fractions)"
 }
