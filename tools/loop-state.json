@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
-  "lastRun": "2026-04-15T08:00:00Z",
-  "lastAngle": "차별화 가치",
-  "filesChanged": 14,
-  "summary": "루프55 (차별화 가치): CSS .exam-pattern(수능 출제패턴·빈도별점·유형pill·함정박스)+.real-world 구조 강화. math 6+korean 2+english 2+science 1 = 11개 파일에 exam-pattern 삽입."
+  "angleIndex": 6,
+  "lastRun": "2026-04-15T09:00:00Z",
+  "lastAngle": "리텐션 훅",
+  "filesChanged": 31,
+  "summary": "루프56 (리텐션 훅): CSS .next-hook(이탤릭 미해결질문+화살표 링크 Zeigarnik 클리프행어) 추가. ko/ 30개 아티클 three-path-nav 앞 전수 삽입. 각 개념 맞춤형 연결 질문."
 }
