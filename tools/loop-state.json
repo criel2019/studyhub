@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
-  "lastRun": "2026-04-15T04:00:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 32,
-  "summary": "루프51 (콘텐츠 깊이): CSS .history-note(amber/역사박스) + .limit-note(slate/한계박스) 추가. 전체 ko/ 30개 아티클에 history-note·limit-note 삽입. why-box 누락 5개 파일(korean/classical, modern, vocabulary, writing; english/writing) 보충 완료."
+  "angleIndex": 2,
+  "lastRun": "2026-04-15T05:00:00Z",
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 5,
+  "summary": "루프52 (첫인상 설득력): CSS .subject-stats-bar·.hero-concepts·.cm-prereq 추가. ko/*/index.html 4개 과목 인덱스에 통계 바·핵심 3개념 미리보기·선행개념 pill 삽입."
 }

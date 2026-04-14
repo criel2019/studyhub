@@ -79,7 +79,11 @@
     <h1>🔬 과학 학습 자료</h1>
     <p style="font-size:1.05rem;color:var(--muted);margin:0.4rem 0 0.9rem;">공식이 아니라 — <strong style="color:var(--ink);">현상으로 이해하면 시험장에서 공식이 떠오른다</strong></p>
 
-    <div class="section-hook">
+        <div class="subject-stats-bar">
+      <span class="ssb-item">📋 8개 주제</span><span class="ssb-item">⏱ 총 3시간</span><span class="ssb-item">📊 중등~고등</span>
+    </div>
+
+<div class="section-hook">
       과학은 암기가 아닙니다. 뉴턴의 제2법칙 <strong>F=ma</strong>도, 광합성 반응식도 — 왜 그렇게 되는지 현상에서 출발하면 자연스럽게 이해됩니다. 물리·화학·생물·지구과학 4개 분야를 <strong>현상 → 원리 → 공식 순서</strong>로 설명합니다.
     </div>
 
@@ -95,7 +99,28 @@
       </div>
     </div>
 
-    <div class="quick-jump" style="margin:0.6rem 0 1.2rem;">
+        <div class="hero-concepts">
+      <span class="hc-label">이 과목의 핵심 3개념</span>
+      <div class="hc-grid">
+        <a href="physics.html" class="hc-card">
+          <span class="hc-icon">⚡</span>
+          <span class="hc-name">역학·물리</span>
+          <span class="hc-desc">힘·운동·에너지 — 뉴턴 3법칙의 핵심</span>
+        </a>
+        <a href="chemistry.html" class="hc-card">
+          <span class="hc-icon">⚗️</span>
+          <span class="hc-name">화학 결합</span>
+          <span class="hc-desc">원소·주기율표·반응의 원리</span>
+        </a>
+        <a href="cells.html" class="hc-card">
+          <span class="hc-icon">🔬</span>
+          <span class="hc-name">세포·생명</span>
+          <span class="hc-desc">모든 생명의 기본 단위에서 시작</span>
+        </a>
+      </div>
+    </div>
+
+<div class="quick-jump" style="margin:0.6rem 0 1.2rem;">
       <strong>바로 가기:</strong>
       <a href="physics.html" class="anchor-chip">물리</a>
       <a href="chemistry.html" class="anchor-chip">화학</a>
@@ -123,7 +148,7 @@
         <h3>물리</h3>
         <p>힘, 운동 법칙, 에너지, 파동, 전기와 자기</p>
         <p class="tc-key">F=ma의 인과관계를 이해하면 역학 문제가 패턴으로 보인다</p>
-        <div class="unit-card-meta"><span class="unit-diff unit-diff-mid">중급</span><span class="unit-time">⏱ 약 25분</span></div>
+        <div class="unit-card-meta"><span class="unit-diff unit-diff-mid">중급</span><span class="unit-time">⏱ 약 25분</span><span class="cm-prereq">기초 수학</span></div>
       </a>
       <a href="chemistry.html" class="topic-card">
         <span class="topic-icon">⚗️</span>
@@ -151,28 +176,28 @@
         <h3>에너지</h3>
         <p>에너지의 종류, 전환, 보존 법칙, 신재생에너지</p>
         <p class="tc-key">에너지가 보존되는데 왜 고갈되는가 — 열역학 제2법칙이 답</p>
-        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span></div>
+        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span><span class="cm-prereq">물리</span></div>
       </a>
       <a href="atoms.html" class="topic-card">
         <span class="topic-icon">⚛️</span>
         <h3>원자와 분자</h3>
         <p>원자 구조, 원소 기호, 이온, 화학식 읽기</p>
         <p class="tc-key">원자가 이온이 되는 순간 성질이 완전히 달라지는 이유</p>
-        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span></div>
+        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span><span class="cm-prereq">화학 기초</span></div>
       </a>
       <a href="cells.html" class="topic-card">
         <span class="topic-icon">🔬</span>
         <h3>세포</h3>
         <p>세포 구조, 세포소기관, 세포 분열, 동·식물 비교</p>
         <p class="tc-key">세포가 작아야 하는 이유 — 표면적 대 부피 비율이 생존을 결정한다</p>
-        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span></div>
+        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span><span class="cm-prereq">생명과학 기초</span></div>
       </a>
       <a href="ecology.html" class="topic-card">
         <span class="topic-icon">🌿</span>
         <h3>생태계</h3>
         <p>먹이사슬, 에너지 흐름, 물질 순환, 생물다양성</p>
         <p class="tc-key">포식자를 없애면 생태계가 좋아질까? — 영양 폭포 효과가 답을 뒤집는다</p>
-        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span></div>
+        <div class="unit-card-meta"><span class="unit-diff unit-diff-easy">초급</span><span class="unit-time">⏱ 약 20분</span><span class="cm-prereq">세포·생태</span></div>
       </a>
     </div>
 

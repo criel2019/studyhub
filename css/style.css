@@ -5271,3 +5271,164 @@ article code,
   .limit-note { padding: 0.85rem 1rem; }
   .ln-items li { font-size: 0.84rem; }
 }
+
+/* ====================================================
+   Loop 52 — 첫인상 설득력
+   .subject-stats-bar · .hero-concepts · .cm-prereq
+   ==================================================== */
+
+/* --- Subject Stats Bar --- */
+.subject-stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 1.15rem;
+}
+.ssb-item {
+  font-size: 0.71rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: var(--ink, #1a2540);
+  background: var(--surface, #f4f6fb);
+  border: 1px solid var(--line, #e5e8f0);
+  padding: 0.21rem 0.65rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  opacity: 0.82;
+}
+.ssb-item:first-child {
+  background: rgba(34,85,216,0.07);
+  border-color: rgba(34,85,216,0.16);
+  color: var(--brand, #2255d8);
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* --- Hero Concepts --- */
+.hero-concepts {
+  margin: 0 0 1.5rem;
+  padding: 1.1rem 1.25rem 1.2rem;
+  background: var(--surface, #f4f6fb);
+  border: 1px solid var(--line, #e5e8f0);
+  border-radius: var(--radius-md, 20px);
+  position: relative;
+  overflow: hidden;
+}
+.hero-concepts::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--brand,#2255d8) 0%, rgba(34,85,216,0.25) 100%);
+}
+.hc-label {
+  font-size: 0.61rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand, #2255d8);
+  opacity: 0.75;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.hc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+}
+.hc-card {
+  background: var(--page, #fff);
+  border: 1px solid var(--line, #e5e8f0);
+  border-radius: var(--radius-sm, 14px);
+  padding: 0.85rem 0.95rem 0.9rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.hc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(34,85,216,0.09);
+  border-color: rgba(34,85,216,0.26);
+  text-decoration: none;
+}
+.hc-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  margin-bottom: 0.22rem;
+}
+.hc-name {
+  font-size: 0.81rem;
+  font-weight: 700;
+  color: var(--ink, #1a2540);
+  line-height: 1.3;
+}
+.hc-desc {
+  font-size: 0.71rem;
+  color: #64748b;
+  line-height: 1.48;
+}
+
+/* --- Card Prereq Pill --- */
+.cm-prereq {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--brand, #2255d8);
+  background: rgba(34,85,216,0.06);
+  border: 1px solid rgba(34,85,216,0.13);
+  padding: 0.11rem 0.42rem;
+  border-radius: 99px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.12rem;
+}
+.cm-prereq::before {
+  content: "←";
+  font-weight: 800;
+  font-size: 0.63rem;
+  opacity: 0.65;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .ssb-item { color: rgba(203,213,225,0.68); }
+  .ssb-item:first-child {
+    color: rgba(100,149,237,0.88);
+    background: rgba(34,85,216,0.1);
+    border-color: rgba(34,85,216,0.2);
+  }
+  .hero-concepts {
+    background: rgba(34,85,216,0.04);
+    border-color: rgba(34,85,216,0.1);
+  }
+  .hc-card {
+    background: rgba(255,255,255,0.025);
+    border-color: rgba(255,255,255,0.07);
+  }
+  .hc-card:hover {
+    border-color: rgba(34,85,216,0.3);
+    background: rgba(34,85,216,0.06);
+  }
+  .hc-name { color: rgba(226,232,240,0.88); }
+  .hc-desc { color: rgba(148,163,184,0.75); }
+  .cm-prereq {
+    color: rgba(100,149,237,0.82);
+    background: rgba(34,85,216,0.08);
+    border-color: rgba(34,85,216,0.16);
+  }
+}
+@media (max-width: 720px) {
+  .hc-grid { grid-template-columns: 1fr; gap: 0.42rem; }
+  .hc-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.65rem 0.85rem;
+  }
+  .hc-icon { margin-bottom: 0; flex-shrink: 0; margin-top: 0.05rem; }
+  .subject-stats-bar { gap: 0.35rem; }
+  .ssb-item { font-size: 0.67rem; padding: 0.18rem 0.55rem; }
+}
