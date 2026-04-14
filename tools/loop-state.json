@@ -1,7 +1,7 @@
 {
-  "angleIndex": 5,
-  "lastRun": "2026-04-15T00:30:00Z",
-  "lastAngle": "차별화 가치",
-  "filesChanged": 30,
-  "summary": "차별화 가치 강화 (루프47): (1) CSS .real-world (amber #d97706 accent, 실생활 연결 박스). (2) CSS .prereq-path (3-column flow, 선행/현재/다음 개념 경로). (3) CSS .exam-tip (indigo #4338ca, 시험 실전 팁 박스). (4) ko/ 30개 아티클에 real-world(before_nav), prereq-path(after_h1), exam-tip(before_nav) 삽입."
+  "angleIndex": 6,
+  "lastRun": "2026-04-15T01:10:00Z",
+  "lastAngle": "리텐션 훅",
+  "filesChanged": 31,
+  "summary": "리텐션 훅 강화 (루프48): (1) CSS .next-concept (브랜드 blue 그라디언트, nc-reason/nc-preview/nc-meta/nc-link). (2) CSS .cross-link (teal #0d9488, 교차 과목 칩). (3) CSS .unit-progress (진도 바, --up-pct 변수). (4) ko/ 30개 아티클 전체: unit-progress+next-concept(마지막 제외)+cross-link 삽입."
 }

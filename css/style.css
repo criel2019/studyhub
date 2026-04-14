@@ -4874,3 +4874,178 @@ article code,
   .exam-tip { padding: 0.9rem 1rem; }
   .et-content, .et-list li { font-size: 0.85rem; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Loop 48 — 리텐션 훅
+   .next-concept · .cross-link · .unit-progress
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── .next-concept ──────────────────────────────────────────── */
+.next-concept {
+  position: relative;
+  background: var(--surface, #f8faff);
+  border: 1px solid rgba(34,85,216,0.14);
+  border-radius: var(--radius-md, 20px);
+  padding: 1.4rem 1.5rem 1.4rem 1.9rem;
+  margin: 2rem 0;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.next-concept::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, #2255d8 0%, #4f7ff5 55%, #a5b9ff 100%);
+  border-radius: 3px 0 0 3px;
+}
+.next-concept:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(34,85,216,0.11);
+}
+.next-concept::after {
+  content: "";
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 140px; height: 140px;
+  background: radial-gradient(circle, rgba(34,85,216,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.nc-header {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.nc-label {
+  font-size: 0.61rem; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #2255d8;
+  background: rgba(34,85,216,0.09);
+  border: 1px solid rgba(34,85,216,0.15);
+  padding: 0.15rem 0.6rem; border-radius: 99px;
+}
+.nc-label::before { content: "→ "; }
+.nc-reason {
+  font-size: 1.04rem; font-weight: 700;
+  color: var(--ink, #1a2540); line-height: 1.4;
+  margin: 0 0 0.55rem;
+}
+.nc-preview {
+  font-size: 0.87rem; color: rgba(26,37,64,0.6);
+  line-height: 1.6; margin: 0 0 0.9rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(34,85,216,0.2);
+  font-style: italic;
+}
+.nc-preview::after { content: " …"; color: rgba(34,85,216,0.45); }
+.nc-footer {
+  display: flex; align-items: center;
+  justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+}
+.nc-meta {
+  display: flex; align-items: center; gap: 0.7rem;
+  font-size: 0.74rem; color: rgba(26,37,64,0.5);
+}
+.nc-diff { display: inline-flex; align-items: center; gap: 0.05rem; }
+.nc-diff .star-on  { color: #f59e0b; }
+.nc-diff .star-off { color: rgba(26,37,64,0.18); }
+.nc-time::before { content: "⏱ "; }
+.nc-link {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.84rem; font-weight: 700; color: #fff;
+  background: linear-gradient(135deg, #2255d8 0%, #4f7ff5 100%);
+  padding: 0.44rem 1.1rem; border-radius: 99px;
+  text-decoration: none;
+  transition: opacity 0.14s, transform 0.14s;
+  white-space: nowrap;
+}
+.nc-link:hover { opacity: 0.88; transform: translateX(3px); }
+.nc-link::after { content: " →"; }
+
+@media (prefers-color-scheme: dark) {
+  .next-concept { background: rgba(34,85,216,0.06); border-color: rgba(34,85,216,0.2); }
+  .nc-reason { color: #e8eeff; }
+  .nc-preview { color: rgba(232,238,255,0.55); border-left-color: rgba(79,127,245,0.3); }
+  .nc-meta { color: rgba(232,238,255,0.45); }
+  .nc-diff .star-off { color: rgba(232,238,255,0.18); }
+}
+@media (max-width: 720px) {
+  .nc-reason { font-size: 0.96rem; }
+  .nc-footer { flex-direction: column; align-items: flex-start; }
+}
+
+/* ─── .cross-link ────────────────────────────────────────────── */
+.cross-link {
+  margin: 1.5rem 0;
+  padding: 0.85rem 1.15rem;
+  background: rgba(13,148,136,0.04);
+  border: 1.5px solid rgba(13,148,136,0.18);
+  border-radius: var(--radius-sm, 14px);
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+.cl-label {
+  font-size: 0.63rem; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #0d9488; white-space: nowrap; flex-shrink: 0;
+}
+.cl-label::before { content: "↗ "; }
+.cl-chips { display: flex; flex-wrap: wrap; gap: 0.38rem; }
+.cl-chip {
+  display: inline-flex; align-items: center; gap: 0.28rem;
+  font-size: 0.77rem; font-weight: 600; color: #0f766e;
+  background: rgba(13,148,136,0.08);
+  border: 1px solid rgba(13,148,136,0.2);
+  padding: 0.2rem 0.65rem; border-radius: 99px;
+  text-decoration: none;
+  transition: background 0.14s, color 0.14s, transform 0.12s;
+}
+.cl-chip:hover { background: rgba(13,148,136,0.14); color: #065f5a; transform: translateY(-1px); }
+
+@media (prefers-color-scheme: dark) {
+  .cross-link { background: rgba(13,148,136,0.06); border-color: rgba(13,148,136,0.22); }
+  .cl-label { color: #2dd4bf; }
+  .cl-chip { color: #2dd4bf; background: rgba(13,148,136,0.12); border-color: rgba(45,212,191,0.2); }
+  .cl-chip:hover { color: #99f6e4; background: rgba(13,148,136,0.2); }
+}
+
+/* ─── .unit-progress ─────────────────────────────────────────── */
+.unit-progress {
+  margin: 1.5rem 0 2rem;
+  padding: 0.85rem 1.15rem;
+  background: var(--surface, #f8faff);
+  border: 1px solid var(--line, rgba(0,0,0,0.1));
+  border-radius: var(--radius-sm, 14px);
+  display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;
+}
+.up-label {
+  font-size: 0.77rem; font-weight: 700;
+  color: var(--ink, #1a2540); white-space: nowrap; flex-shrink: 0;
+}
+.up-track {
+  flex: 1; min-width: 80px; height: 6px;
+  background: rgba(34,85,216,0.1); border-radius: 99px;
+  overflow: hidden; position: relative;
+}
+.up-fill {
+  position: absolute; inset: 0 auto 0 0;
+  width: var(--up-pct, 33%);
+  background: linear-gradient(90deg, #2255d8 0%, #4f7ff5 100%);
+  border-radius: 99px;
+  transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.up-count {
+  font-size: 0.72rem; font-weight: 700;
+  color: #2255d8; white-space: nowrap; flex-shrink: 0;
+}
+.up-count::after { content: " 완료"; font-weight: 400; color: var(--ink, #1a2540); opacity: 0.52; }
+
+@media (prefers-color-scheme: dark) {
+  .unit-progress { background: rgba(34,85,216,0.05); border-color: rgba(34,85,216,0.15); }
+  .up-label { color: #e8eeff; }
+  .up-track { background: rgba(34,85,216,0.15); }
+  .up-count { color: #7ba0ff; }
+  .up-count::after { color: #e8eeff; }
+}
+@media (max-width: 720px) {
+  .unit-progress { gap: 0.6rem; }
+  .up-track { min-width: 60px; }
+}
