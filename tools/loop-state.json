@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
-  "lastRun": "2026-04-14T22:00:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 32,
-  "summary": "콘텐츠 깊이 강화 (루프43): (1) CSS .student-question 신규 컴포넌트 추가 (teal 계열, sq-label/sq-question/sq-answer, 다크모드+720px 반응형). (2) ko/ 30개 아티클 전체에 student-question 삽입 (각 파일 첫 번째 h2 직전, 파일별 고유 질문+답변). (3) misconception 누락 16개 파일 보완 완료 — 수학 4개(calculus/equations/statistics/trigonometry), 과학 8개(atoms/biology/cells/earth/ecology/energy/physics+chemistry→physics), 국어 5개(classical/grammar/modern/vocabulary/writing), 영어 1개(writing)."
+  "angleIndex": 2,
+  "lastRun": "2026-04-14T22:30:00Z",
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 11,
+  "summary": "첫인상 설득력 강화 (루프44): (1) CSS .start-path 신규 컴포넌트 (3선택 진입 경로, 초등/중등/고등, 다크모드+600px 반응형) + .card-question + .tc-key 추가. (2) ko/index.html — start-path 삽입, subject-card 4개에 card-question 호기심 질문 추가, 시간대별 hero 카피 JS(오전/오후/밤/새벽). (3) ko/math/english/korean/science index — topic-card 전체에 tc-key 핵심 한 줄 추가. (4) en/ja/zh/index.html — start-path + 시간대별 hero JS 다국어 전파."
 }

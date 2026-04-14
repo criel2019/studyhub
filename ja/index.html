@@ -97,6 +97,30 @@
 
 
 
+        <div class="start-path">
+      <div class="start-path-label">どこで詰まっていますか？</div>
+      <div class="start-path-grid">
+        <a href="./math/addition.html" class="sp-card sp-card--elem">
+          <span class="sp-level">小学校</span>
+          <span class="sp-title">四則演算 · 分数 · 小数</span>
+          <span class="sp-hint">繰り上がり、通分、小数点の位置</span>
+          <span class="sp-arrow">はじめる →</span>
+        </a>
+        <a href="./math/equations.html" class="sp-card sp-card--mid">
+          <span class="sp-level">中学校</span>
+          <span class="sp-title">方程式 · 関数 · 図形</span>
+          <span class="sp-hint">文字式、グラフの読み方、三平方の定理</span>
+          <span class="sp-arrow">はじめる →</span>
+        </a>
+        <a href="./math/calculus.html" class="sp-card sp-card--high">
+          <span class="sp-level">高校 · 入試</span>
+          <span class="sp-title">微積分 · 統計 · 英語読解</span>
+          <span class="sp-hint">極限・微分・積分、共通テスト対策</span>
+          <span class="sp-arrow">はじめる →</span>
+        </a>
+      </div>
+    </div>
+
     <h2>📘 教科別学習ノート</h2>
     <p>公式の前にまず「なぜ」を教えます。学習指導要領に基づいた教科別ノート — 例題と練習問題つき。</p>
 
@@ -167,5 +191,22 @@
     <p><a href="../ko/">한국어</a> · <a href="../en/">English</a> · <a href="../ja/">日本語</a> · <a href="../zh/">中文</a></p>
     <p style="margin-top:0.5rem;font-size:0.8rem;color:rgba(200,215,240,0.62);">本資料は文部科学省の学習指導要領に基づく無料教育資料です。</p>
   </footer>
+  <script>
+  (function(){
+    var h = new Date().getHours();
+    var copies = {
+      morning:   '今朝、<br>一つの概念を完璧に',
+      afternoon: 'この5分で、<br>一単元を終わらせる',
+      evening:   'テスト前夜でも、<br>一人で理解できる',
+      night:     'まだ勉強中なら、<br>ここにいるべきだ'
+    };
+    var key = h >= 6 && h < 12 ? 'morning'
+            : h >= 12 && h < 18 ? 'afternoon'
+            : h >= 18 && h < 24 ? 'evening'
+            : 'night';
+    var el = document.querySelector('.hero h1');
+    if (el) el.innerHTML = copies[key];
+  })();
+  </script>
 </body>
 </html>

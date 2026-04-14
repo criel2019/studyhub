@@ -107,6 +107,30 @@
       <a href="./math/calculus.html" class="anchor-chip">미적분</a>
     </div>
 
+    <div class="start-path">
+      <div class="start-path-label">어디서 막혔어요?</div>
+      <div class="start-path-grid">
+        <a href="./math/addition.html" class="sp-card sp-card--elem">
+          <span class="sp-level">초등 기초</span>
+          <span class="sp-title">사칙연산 · 분수 · 소수</span>
+          <span class="sp-hint">받아올림, 통분, 소수점 위치가 헷갈릴 때</span>
+          <span class="sp-arrow">시작하기 →</span>
+        </a>
+        <a href="./math/equations.html" class="sp-card sp-card--mid">
+          <span class="sp-level">중등 심화</span>
+          <span class="sp-title">방정식 · 함수 · 기하</span>
+          <span class="sp-hint">미지수, 그래프 해석, 피타고라스 정리</span>
+          <span class="sp-arrow">시작하기 →</span>
+        </a>
+        <a href="./math/calculus.html" class="sp-card sp-card--high">
+          <span class="sp-level">고등 · 수능</span>
+          <span class="sp-title">미적분 · 영어독해 · 국어</span>
+          <span class="sp-hint">극한·미분·적분, 수능 유형별 전략</span>
+          <span class="sp-arrow">시작하기 →</span>
+        </a>
+      </div>
+    </div>
+
     <h2>📘 과목별 학습 자료</h2>
     <p>교과서보다 먼저, 원리부터 이해하는 과목별 학습 노트입니다. 공식 암기 전에 왜 그 공식이 성립하는지를 설명합니다.</p>
 
@@ -115,21 +139,25 @@
         <span class="card-icon">🔢</span>
         <h2>수학 <small style="font-size:0.7em;font-weight:500;opacity:0.7">12주제</small></h2>
         <p>공식보다 원리 — 덧셈부터 미적분까지, 왜 그렇게 되는지 먼저 설명합니다</p>
+        <p class="card-question">피타고라스 정리가 왜 항상 a²+b²=c²인지 설명할 수 있나요?</p>
       </a>
       <a href="./korean/" class="subject-card">
         <span class="card-icon">📖</span>
         <h2>국어 <small style="font-size:0.7em;font-weight:500;opacity:0.7">6주제</small></h2>
         <p>수능 국어 핵심 — 문법 원리·문학 감상·독해 전략을 한 곳에서</p>
+        <p class="card-question">"어엿브다"가 현대어로 단순히 "예쁘다"가 아닌 이유를 아나요?</p>
       </a>
       <a href="./english/" class="subject-card">
         <span class="card-icon">🌐</span>
         <h2>영어 <small style="font-size:0.7em;font-weight:500;opacity:0.7">4주제</small></h2>
         <p>구조로 읽는 영어 — 관계사·가정법·분사를 원리로 이해하면 독해가 달라집니다</p>
+        <p class="card-question">가정법 과거에서 왜 동사가 과거형인데 현재 상황을 말하나요?</p>
       </a>
       <a href="./science/" class="subject-card">
         <span class="card-icon">🔬</span>
         <h2>과학 <small style="font-size:0.7em;font-weight:500;opacity:0.7">8주제</small></h2>
         <p>현상에서 공식으로 — 물리·화학·생물·지구과학을 암기 없이 이해합니다</p>
+        <p class="card-question">얼음이 물보다 가벼운 이유가 분자 구조와 어떤 관계인가요?</p>
       </a>
     </div>
 
@@ -170,5 +198,22 @@
     <p><a href="../ko/">한국어</a> · <a href="../en/">English</a> · <a href="../ja/">日本語</a> · <a href="../zh/">中文</a></p>
     <p style="margin-top:0.5rem;font-size:0.8rem;color:rgba(200,215,240,0.62);">본 자료는 한국 교육과정을 기반으로 합니다.</p>
   </footer>
+  <script>
+  (function(){
+    var h = new Date().getHours();
+    var copies = {
+      morning:   '오늘 아침,<br>한 개념만 완벽하게',
+      afternoon: '지금 이 5분,<br>핵심 개념 하나 완성',
+      evening:   '시험 전날 밤,<br>혼자서도 이해된다',
+      night:     '지금도 공부 중이라면,<br>여기 있어야 한다'
+    };
+    var key = h >= 6 && h < 12 ? 'morning'
+            : h >= 12 && h < 18 ? 'afternoon'
+            : h >= 18 && h < 24 ? 'evening'
+            : 'night';
+    var el = document.querySelector('.hero h1');
+    if (el) el.innerHTML = copies[key];
+  })();
+  </script>
 </body>
 </html>

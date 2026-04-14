@@ -101,6 +101,30 @@
 📘 Subject Areas</h2>
     <p>Study guides that explain the <em>why</em> before the <em>how</em> — aligned with US Common Core Standards. Each subject has worked examples and practice problems.</p>
 
+    <div class="start-path">
+      <div class="start-path-label">Where are you stuck?</div>
+      <div class="start-path-grid">
+        <a href="./math/addition.html" class="sp-card sp-card--elem">
+          <span class="sp-level">Elementary</span>
+          <span class="sp-title">Arithmetic · Fractions</span>
+          <span class="sp-hint">Carrying, common denominators, decimals</span>
+          <span class="sp-arrow">Start here →</span>
+        </a>
+        <a href="./math/equations.html" class="sp-card sp-card--mid">
+          <span class="sp-level">Middle School</span>
+          <span class="sp-title">Equations · Functions · Geometry</span>
+          <span class="sp-hint">Solving for x, graphing, Pythagorean theorem</span>
+          <span class="sp-arrow">Start here →</span>
+        </a>
+        <a href="./math/calculus.html" class="sp-card sp-card--high">
+          <span class="sp-level">High School</span>
+          <span class="sp-title">Calculus · Statistics · SAT Prep</span>
+          <span class="sp-hint">Limits, derivatives, integrals, data analysis</span>
+          <span class="sp-arrow">Start here →</span>
+        </a>
+      </div>
+    </div>
+
     <div class="subject-grid">
       <a href="./math/" class="subject-card" data-subject="math" data-subject="math">
         <span class="card-icon">🔢</span>
@@ -183,5 +207,22 @@
     <p><a href="../ko/">한국어</a> · <a href="../en/">English</a> · <a href="../ja/">日本語</a> · <a href="../zh/">中文</a></p>
     <p style="margin-top:0.5rem;font-size:0.8rem;color:rgba(200,215,240,0.62);">Content based on US Common Core Standards. Free for all students.</p>
   </footer>
+  <script>
+  (function(){
+    var h = new Date().getHours();
+    var copies = {
+      morning:   'This Morning,<br>Master One Concept',
+      afternoon: 'Right Now — 5 Minutes,<br>One Topic Done',
+      evening:   'Night Before the Test?<br>You Can Still Do This',
+      night:     'Still Studying?<br>You're in the Right Place'
+    };
+    var key = h >= 6 && h < 12 ? 'morning'
+            : h >= 12 && h < 18 ? 'afternoon'
+            : h >= 18 && h < 24 ? 'evening'
+            : 'night';
+    var el = document.querySelector('.hero h1');
+    if (el) el.innerHTML = copies[key];
+  })();
+  </script>
 </body>
 </html>

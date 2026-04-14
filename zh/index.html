@@ -82,6 +82,30 @@
       </div>
     </section>
 
+        <div class="start-path">
+      <div class="start-path-label">你在哪里遇到困难？</div>
+      <div class="start-path-grid">
+        <a href="math/addition.html" class="sp-card sp-card--elem">
+          <span class="sp-level">小学</span>
+          <span class="sp-title">四则运算 · 分数 · 小数</span>
+          <span class="sp-hint">进位、通分、小数点位置</span>
+          <span class="sp-arrow">开始学习 →</span>
+        </a>
+        <a href="math/equations.html" class="sp-card sp-card--mid">
+          <span class="sp-level">初中</span>
+          <span class="sp-title">方程 · 函数 · 几何</span>
+          <span class="sp-hint">解方程、图像分析、勾股定理</span>
+          <span class="sp-arrow">开始学习 →</span>
+        </a>
+        <a href="math/calculus.html" class="sp-card sp-card--high">
+          <span class="sp-level">高中 · 高考</span>
+          <span class="sp-title">微积分 · 统计 · 英语阅读</span>
+          <span class="sp-hint">极限·导数·积分，高考题型专项</span>
+          <span class="sp-arrow">开始学习 →</span>
+        </a>
+      </div>
+    </div>
+
     <h2>📖 选择科目</h2>
     <p>不只背公式，先讲原理——依据人教版课程标准整理，配有例题与练习。</p>
     <div class="subject-grid">
@@ -145,5 +169,22 @@
     <p><a href="../ko/">한국어</a> · <a href="../en/">English</a> · <a href="../ja/">日本語</a> · <a href="../zh/">中文</a></p>
     <p style="margin-top:0.5rem;font-size:0.8rem;color:rgba(200,215,240,0.62);">本资料依据人教版课程标准编写，供免费教育使用。</p>
   </footer>
+  <script>
+  (function(){
+    var h = new Date().getHours();
+    var copies = {
+      morning:   '今天早上，<br>把一个概念彻底搞懂',
+      afternoon: '现在这5分钟，<br>一个知识点，搞定',
+      evening:   '考试前夜，<br>一个人也能看懂',
+      night:     '还在学习？<br>你来对地方了'
+    };
+    var key = h >= 6 && h < 12 ? 'morning'
+            : h >= 12 && h < 18 ? 'afternoon'
+            : h >= 18 && h < 24 ? 'evening'
+            : 'night';
+    var el = document.querySelector('.hero h1');
+    if (el) el.innerHTML = copies[key];
+  })();
+  </script>
 </body>
 </html>
