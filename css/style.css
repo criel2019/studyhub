@@ -4605,3 +4605,272 @@ article code,
   .mc-tag--wrong { background: rgba(239,68,68,0.12); color: #fca5a5; border-color: rgba(252,165,165,0.18); }
   .mc-tag--right { background: rgba(22,163,74,0.12); color: #86efac; border-color: rgba(134,239,172,0.18); }
 }
+
+/* ===========================
+   차별화 가치 강화 (루프47)
+   real-world  — 실생활 연결 박스
+   prereq-path — 선행학습 경로
+   exam-tip    — 시험 실전 팁
+   =========================== */
+
+/* ── .real-world — 실생활 연결 (amber #d97706) ── */
+.real-world {
+  background: rgba(217, 119, 6, 0.04);
+  border: 1.5px solid rgba(217, 119, 6, 0.2);
+  border-left: 4px solid #d97706;
+  border-radius: var(--radius-sm, 14px);
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.rw-label {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #b45309;
+  background: rgba(217, 119, 6, 0.1);
+  border-radius: 4px;
+  padding: 0.13em 0.55em;
+  margin-bottom: 0.65rem;
+}
+
+.rw-label::before {
+  content: "🌍 ";
+  font-style: normal;
+}
+
+.rw-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.rw-items li {
+  font-size: 0.9rem;
+  color: var(--ink, #14213d);
+  line-height: 1.55;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.rw-items li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #d97706;
+  font-size: 0.8em;
+  top: 0.18em;
+}
+
+.rw-items strong {
+  color: #b45309;
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  .real-world {
+    background: rgba(251, 191, 36, 0.04);
+    border-color: rgba(251, 191, 36, 0.15);
+    border-left-color: #fbbf24;
+  }
+  .rw-label { color: #fcd34d; background: rgba(251,191,36,0.1); }
+  .rw-items li { color: rgba(255,240,200,0.85); }
+  .rw-items li::before { color: #fbbf24; }
+  .rw-items strong { color: #fcd34d; }
+}
+
+@media (max-width: 720px) {
+  .real-world { padding: 0.9rem 1rem; }
+  .rw-items li { font-size: 0.85rem; }
+}
+
+/* ── .prereq-path — 선행학습 경로 (slate-blue flow) ── */
+.prereq-path {
+  background: rgba(71, 85, 105, 0.04);
+  border: 1.5px solid rgba(71, 85, 105, 0.16);
+  border-radius: var(--radius-sm, 14px);
+  padding: 1rem 1.4rem;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.pp-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.35rem;
+}
+
+.pp-before,
+.pp-current,
+.pp-after {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+.pp-before {
+  border-right: 1px solid rgba(71, 85, 105, 0.14);
+}
+
+.pp-current {
+  background: rgba(34, 85, 216, 0.06);
+  border-radius: 8px;
+  border-right: 1px solid rgba(71, 85, 105, 0.14);
+}
+
+.pp-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink, #14213d);
+  line-height: 1.4;
+}
+
+.pp-before .pp-text { color: var(--ink-soft, #4f5d78); font-weight: 500; }
+.pp-after  .pp-text { color: var(--brand, #2255d8); }
+.pp-current .pp-text { color: var(--ink, #14213d); }
+
+.pp-current .pp-label { color: var(--brand, #2255d8); }
+
+.pp-sub {
+  font-size: 0.72rem;
+  color: var(--ink-soft, #4f5d78);
+  margin-top: 0.18rem;
+  opacity: 0.75;
+}
+
+/* 화살표 구분선 */
+.pp-before::after,
+.pp-current::after {
+  content: "›";
+  position: absolute;
+  right: -0.55rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: rgba(71, 85, 105, 0.35);
+  z-index: 1;
+  line-height: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prereq-path {
+    background: rgba(148, 163, 184, 0.04);
+    border-color: rgba(148, 163, 184, 0.12);
+  }
+  .pp-label { color: rgba(148, 163, 184, 0.6); }
+  .pp-before { border-right-color: rgba(148,163,184,0.1); }
+  .pp-current { background: rgba(96, 165, 250, 0.07); border-right-color: rgba(148,163,184,0.1); }
+  .pp-before .pp-text { color: rgba(180,200,230,0.55); }
+  .pp-current .pp-text { color: rgba(232,240,255,0.9); }
+  .pp-after .pp-text { color: #93c5fd; }
+  .pp-current .pp-label { color: #93c5fd; }
+  .pp-sub { color: rgba(148,163,184,0.5); }
+  .pp-before::after, .pp-current::after { color: rgba(148,163,184,0.25); }
+}
+
+@media (max-width: 600px) {
+  .prereq-path {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.85rem 1rem;
+  }
+  .pp-before { border-right: none; border-bottom: 1px solid rgba(71,85,105,0.12); padding-bottom: 0.5rem; }
+  .pp-current { border-right: none; border-bottom: 1px solid rgba(71,85,105,0.12); padding-bottom: 0.5rem; }
+  .pp-before::after, .pp-current::after { display: none; }
+}
+
+/* ── .exam-tip — 시험 실전 팁 (indigo #4338ca) ── */
+.exam-tip {
+  background: rgba(67, 56, 202, 0.04);
+  border: 1.5px solid rgba(67, 56, 202, 0.18);
+  border-left: 4px solid #4338ca;
+  border-radius: var(--radius-sm, 14px);
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.et-label {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #4338ca;
+  background: rgba(67, 56, 202, 0.09);
+  border-radius: 4px;
+  padding: 0.13em 0.55em;
+  margin-bottom: 0.65rem;
+}
+
+.et-label::before {
+  content: "✏️ ";
+  font-style: normal;
+}
+
+.et-content {
+  font-size: 0.93rem;
+  color: var(--ink, #14213d);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.et-content strong {
+  color: #4338ca;
+  font-weight: 700;
+}
+
+/* 팁 항목 리스트 형태일 때 */
+.et-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.42rem;
+}
+
+.et-list li {
+  font-size: 0.9rem;
+  color: var(--ink, #14213d);
+  line-height: 1.6;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.et-list li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #4338ca;
+  font-size: 0.6em;
+  top: 0.3em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .exam-tip {
+    background: rgba(129, 120, 245, 0.05);
+    border-color: rgba(129, 120, 245, 0.15);
+    border-left-color: #818cf8;
+  }
+  .et-label { color: #a5b4fc; background: rgba(129,120,245,0.1); }
+  .et-content { color: rgba(225, 225, 255, 0.88); }
+  .et-content strong { color: #a5b4fc; }
+  .et-list li { color: rgba(225, 225, 255, 0.82); }
+  .et-list li::before { color: #818cf8; }
+}
+
+@media (max-width: 720px) {
+  .exam-tip { padding: 0.9rem 1rem; }
+  .et-content, .et-list li { font-size: 0.85rem; }
+}
