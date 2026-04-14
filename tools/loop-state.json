@@ -1,7 +1,7 @@
 {
-  "angleIndex": 1,
-  "lastRun": "2026-04-15T11:20:00Z",
-  "lastAngle": "콘텐츠 깊이",
-  "filesChanged": 10,
-  "summary": "루프59 (콘텐츠 깊이): CSS .principle-line 신규 컴포넌트 + 8개 핵심 아티클(calculus/equations/trigonometry/functions/physics/chemistry/ko-grammar/en-grammar)에 35개 섹션별 핵심 원리 한 줄 삽입"
+  "angleIndex": 2,
+  "lastRun": "2026-04-15T11:40:00Z",
+  "lastAngle": "첫인상 설득력",
+  "filesChanged": 5,
+  "summary": "루프60 (첫인상 설득력): 4개 과목 인덱스 subject-stats-bar에 수능 관련성 태그 추가. ko/index.html '공부 팁' 섹션을 'StudyHub 차별화 가치' 섹션으로 교체 (WHY중심·수능오답분석·무료 3가지 차별점)"
 }
