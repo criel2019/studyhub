@@ -6027,3 +6027,66 @@ article code,
   .next-hook { padding: 1.1rem 0.9rem 1rem 1.15rem; }
   .nh-question { font-size: 0.9rem; }
 }
+
+/* ===========================
+   모바일 UX 강화 (루프58)
+   한국어 줄바꿈 · 터치 최적화 · 터치 타깃
+   =========================== */
+
+/* ── 1. 한국어 단어 중간 줄바꿈 방지 ──────────────────────────────
+   keep-all: CJK 계열은 어절 단위로만 줄바꿈 (기대→\n방정식 방지)
+   overflow-wrap: anywhere: 컨테이너 초과 시 폴백 줄바꿈 허용       */
+p, li, dt, dd, h1, h2, h3, h4, h5, h6,
+th, td, caption, figcaption, blockquote {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* ── 2. iOS 탭 하이라이트 · 300ms 딜레이 제거 ─────────────────── */
+a, button, [role="button"], summary, label {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* ── 3. 내부 스크롤 영역의 부모 스크롤 전파 방지 ────────────────── */
+.table-wrap,
+pre,
+.concept-journey {
+  overscroll-behavior: contain;
+}
+
+/* ── 4. 모바일 터치 타깃 · 레이아웃 강화 ─────────────────────── */
+@media (max-width: 720px) {
+  /* entry-point 경로 링크 — 44px 터치 타깃 */
+  .entry-point-path a {
+    padding: 0.48rem 0.65rem;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* page-overview 목차 링크 — 여유 있는 터치 영역 */
+  .page-overview-list li {
+    padding-block: 0.25rem;
+  }
+  .page-overview-list a {
+    display: inline-block;
+    padding-block: 0.15rem;
+  }
+
+  /* ep-row-label — 소형 폰(320px)에서 줄바꿈 허용 */
+  .ep-row-label {
+    white-space: normal;
+  }
+
+  /* entry-point-path 전체 — 소형 폰 폰트 조정 */
+  .entry-point-path {
+    font-size: 0.875rem;
+  }
+
+  /* next-hook 링크 — 터치 타깃 확보 */
+  .nh-link {
+    padding-block: 0.4rem;
+    margin-block: -0.4rem;
+  }
+}

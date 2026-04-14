@@ -564,6 +564,19 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  // ── 루프58: 표 접근성 — scope 속성 자동 주입 ──
+  function initTableScope() {
+    document.querySelectorAll("table").forEach(table => {
+      table.querySelectorAll("thead th").forEach(th => {
+        if (!th.hasAttribute("scope")) th.setAttribute("scope", "col");
+      });
+      table.querySelectorAll("tbody tr").forEach(tr => {
+        const firstTh = tr.querySelector("th");
+        if (firstTh && !firstTh.hasAttribute("scope")) firstTh.setAttribute("scope", "row");
+      });
+    });
+  }
+
   // ── 루프34: 표 카드 변환 — thead th → td[data-label] 자동 주입 ──
   function initTableCards() {
     document.querySelectorAll(".table-wrap table:not(.times-table):not(.no-card)").forEach(table => {
@@ -598,6 +611,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     addNavScrolled();
+    initTableScope();
     initTableCards();
     initTableScrollMask();
     addProgressBar();

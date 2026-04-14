@@ -1,7 +1,7 @@
 {
-  "angleIndex": 7,
-  "lastRun": "2026-04-15T10:00:00Z",
-  "lastAngle": "정보 구조",
-  "filesChanged": 14,
-  "summary": "루프57 (정보 구조): 국어5+영어4=9개 아티클에 page-overview(목차) 추가+h2 id 부여. 4개 과목 인덱스 entry-point에 복습/시험직전 경로 추가. CSS ep-row-label 추가."
+  "angleIndex": 0,
+  "lastRun": "2026-04-15T11:00:00Z",
+  "lastAngle": "모바일 UX",
+  "filesChanged": 3,
+  "summary": "루프58 (모바일 UX): CSS — word-break:keep-all 전역 한국어, -webkit-tap-highlight-color:transparent+touch-action:manipulation iOS 최적화, overscroll-behavior:contain, 터치 타깃 강화(entry-point·page-overview). JS — initTableScope() thead/tbody scope 속성 자동 주입."
 }
