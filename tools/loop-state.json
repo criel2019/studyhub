@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
-  "lastRun": "2026-04-15T05:00:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 5,
-  "summary": "루프52 (첫인상 설득력): CSS .subject-stats-bar·.hero-concepts·.cm-prereq 추가. ko/*/index.html 4개 과목 인덱스에 통계 바·핵심 3개념 미리보기·선행개념 pill 삽입."
+  "angleIndex": 3,
+  "lastRun": "2026-04-15T06:00:00Z",
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 33,
+  "summary": "루프53 (학습 효과 장치): CSS .key-practice(연습 진입 각성 박스)+.step-solution(단계별 토글 풀이) 추가. 전체 ko/ 30개 아티클에 .key-practice 삽입. english/vocabulary.html 연습문제 1→5개+exam-checklist+memory-tip 보강. korean/writing.html quiz-check 구조화+연습문제 1→4개+exam-checklist 보강."
 }

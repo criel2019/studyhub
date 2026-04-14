@@ -5432,3 +5432,195 @@ article code,
   .subject-stats-bar { gap: 0.35rem; }
   .ssb-item { font-size: 0.67rem; padding: 0.18rem 0.55rem; }
 }
+
+/* ====================================================
+   Loop 53 — 학습 효과 장치
+   .key-practice · .step-solution
+   ==================================================== */
+
+/* --- Key Practice (연습 진입 각성 박스) --- */
+.key-practice {
+  position: relative;
+  margin: 1.8rem 0 0.6rem;
+  padding: 0.88rem 3rem 0.88rem 1.5rem;
+  background: linear-gradient(135deg,
+    rgba(34,85,216,0.07) 0%,
+    rgba(34,85,216,0.02) 100%);
+  border-left: 4px solid var(--brand, #2255d8);
+  border-radius: 0 var(--radius-sm,14px) var(--radius-sm,14px) 0;
+  overflow: hidden;
+}
+.key-practice::after {
+  content: "✎";
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: var(--brand, #2255d8);
+  opacity: 0.07;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.kp-label {
+  display: inline-block;
+  font-size: 0.59rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand, #2255d8);
+  background: rgba(34,85,216,0.09);
+  border: 1px solid rgba(34,85,216,0.18);
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  margin-bottom: 0.3rem;
+}
+.kp-desc {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink, #1a2540);
+  line-height: 1.55;
+  margin: 0;
+}
+.kp-desc strong { color: var(--brand, #2255d8); }
+
+/* --- Step Solution (단계별 접힘 풀이) --- */
+.step-solution {
+  margin: 1.4rem 0;
+  border: 1px solid var(--line, #e5e8f0);
+  border-radius: var(--radius-md, 20px);
+  overflow: hidden;
+}
+.ss-header {
+  padding: 0.82rem 1.2rem;
+  background: var(--surface, #f4f6fb);
+  border-bottom: 1px solid var(--line, #e5e8f0);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink, #1a2540);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ss-header::before {
+  content: "∫";
+  font-size: 1.05rem;
+  color: var(--brand, #2255d8);
+  font-weight: 900;
+  line-height: 1;
+}
+.ss-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step-counter;
+}
+.ss-step {
+  counter-increment: step-counter;
+  border-bottom: 1px solid var(--line, #e5e8f0);
+}
+.ss-step:last-child { border-bottom: none; }
+.ss-step details { width: 100%; }
+.ss-step summary {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.68rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink, #1a2540);
+  list-style: none;
+  transition: background 0.13s ease;
+  user-select: none;
+}
+.ss-step summary::-webkit-details-marker { display: none; }
+.ss-step summary::before {
+  content: counter(step-counter);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: rgba(34,85,216,0.09);
+  color: var(--brand, #2255d8);
+  font-size: 0.71rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(34,85,216,0.2);
+  transition: background 0.13s, border-color 0.13s;
+}
+.ss-step summary::after {
+  content: "▸";
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  transition: transform 0.13s ease, color 0.13s;
+}
+.ss-step details[open] summary::after {
+  transform: rotate(90deg);
+  color: var(--brand, #2255d8);
+}
+.ss-step details[open] summary::before {
+  background: rgba(34,85,216,0.16);
+  border-color: rgba(34,85,216,0.38);
+}
+.ss-step summary:hover { background: rgba(34,85,216,0.03); }
+.ss-step details[open] summary {
+  border-bottom: 1px solid var(--line, #e5e8f0);
+}
+.ss-step-content {
+  padding: 0.85rem 1.2rem 0.88rem 3.4rem;
+  font-size: 0.875rem;
+  line-height: 1.64;
+  color: var(--ink, #1a2540);
+  background: rgba(34,85,216,0.015);
+}
+.ss-step-content .formula { margin: 0.45rem 0; }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .key-practice {
+    background: linear-gradient(135deg,
+      rgba(34,85,216,0.1) 0%,
+      rgba(34,85,216,0.04) 100%);
+    border-left-color: rgba(34,85,216,0.65);
+  }
+  .kp-label {
+    color: rgba(100,149,237,0.88);
+    background: rgba(34,85,216,0.12);
+    border-color: rgba(34,85,216,0.24);
+  }
+  .kp-desc { color: rgba(226,232,240,0.86); }
+  .step-solution { border-color: rgba(255,255,255,0.08); }
+  .ss-header {
+    background: rgba(255,255,255,0.03);
+    border-color: rgba(255,255,255,0.08);
+    color: rgba(226,232,240,0.88);
+  }
+  .ss-step { border-color: rgba(255,255,255,0.06); }
+  .ss-step summary { color: rgba(226,232,240,0.86); }
+  .ss-step summary::before {
+    background: rgba(34,85,216,0.14);
+    border-color: rgba(34,85,216,0.28);
+    color: rgba(100,149,237,0.82);
+  }
+  .ss-step details[open] summary::before {
+    background: rgba(34,85,216,0.22);
+    border-color: rgba(34,85,216,0.45);
+  }
+  .ss-step summary:hover { background: rgba(255,255,255,0.03); }
+  .ss-step details[open] summary { border-color: rgba(255,255,255,0.06); }
+  .ss-step-content {
+    background: rgba(34,85,216,0.04);
+    color: rgba(203,213,225,0.84);
+  }
+}
+@media (max-width: 720px) {
+  .key-practice { padding: 0.78rem 2.5rem 0.78rem 1.2rem; }
+  .kp-desc { font-size: 0.84rem; }
+  .ss-step-content { padding-left: 2.8rem; }
+  .ss-step summary { padding: 0.6rem 1rem; }
+}
