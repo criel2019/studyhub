@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
-  "lastRun": "2026-04-15T11:40:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 5,
-  "summary": "루프60 (첫인상 설득력): 4개 과목 인덱스 subject-stats-bar에 수능 관련성 태그 추가. ko/index.html '공부 팁' 섹션을 'StudyHub 차별화 가치' 섹션으로 교체 (WHY중심·수능오답분석·무료 3가지 차별점)"
+  "angleIndex": 3,
+  "lastRun": "2026-04-15T12:10:00Z",
+  "lastAngle": "학습 효과 장치",
+  "filesChanged": 10,
+  "summary": "루프61 (학습 효과 장치): .quick-check CSS 컴포넌트 추가. 8개 누락 파일(math: addition/equations/geometry, science: atoms/cells/chemistry/energy/physics)에 practice-set (ps-item 3개씩) 삽입"
 }
