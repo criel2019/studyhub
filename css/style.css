@@ -762,6 +762,14 @@ tr:nth-child(even) td {
   color: var(--muted);
   font-weight: 400;
 }
+.entry-point-path + .entry-point-path { margin-top: 0.42rem; }
+.ep-row-label {
+  font-size: 0.69rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
 
 @media (prefers-color-scheme: dark) {
   .section-hook {

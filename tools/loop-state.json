@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-15T09:00:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 31,
-  "summary": "루프56 (리텐션 훅): CSS .next-hook(이탤릭 미해결질문+화살표 링크 Zeigarnik 클리프행어) 추가. ko/ 30개 아티클 three-path-nav 앞 전수 삽입. 각 개념 맞춤형 연결 질문."
+  "angleIndex": 7,
+  "lastRun": "2026-04-15T10:00:00Z",
+  "lastAngle": "정보 구조",
+  "filesChanged": 14,
+  "summary": "루프57 (정보 구조): 국어5+영어4=9개 아티클에 page-overview(목차) 추가+h2 id 부여. 4개 과목 인덱스 entry-point에 복습/시험직전 경로 추가. CSS ep-row-label 추가."
 }
