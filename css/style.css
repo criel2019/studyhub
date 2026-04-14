@@ -3046,7 +3046,14 @@ pre {
   .tldr,
   .step-solution,
   .concept-bridge,
-  .skill-unlock {
+  .skill-unlock,
+  .analogy-box,
+  .insight-path,
+  .exam-trap,
+  .intuition-box,
+  .practice-set,
+  .recall-prompt,
+  .next-teaser-body {
     padding-left: 0.9rem;
     padding-right: 0.9rem;
   }
@@ -3060,6 +3067,41 @@ pre {
   /* 5. h2 모바일 상단 마진 축소 */
   h2 {
     margin-top: 1.8rem;
+  }
+
+  /* 6. insight-steps 들여쓰기 축소 */
+  .insight-steps li {
+    padding-left: 1.85rem;
+  }
+  .insight-steps li::before {
+    left: 0.38rem;
+  }
+
+  /* 7. formula 폰트 반응형 */
+  .formula {
+    font-size: clamp(0.82rem, 2.8vw, 1rem);
+    padding: 0.75rem 0.85rem;
+  }
+
+  /* 8. concept-bridge 내부 요소 */
+  .cb-from, .cb-to {
+    font-size: 0.82rem;
+  }
+  .cb-reason {
+    font-size: 0.83rem;
+  }
+
+  /* 9. three-path-nav 터치 타겟 보장 */
+  .tpn-back, .tpn-next, .tpn-related {
+    min-height: 44px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+
+  /* 10. analogy-box 제목 줄바꿈 허용 */
+  .analogy-title {
+    font-size: 0.92rem;
+    line-height: 1.4;
   }
 }
 
@@ -3906,5 +3948,76 @@ article code,
   .practice-set {
     background: rgba(34, 85, 216, 0.07);
     border-color: rgba(34, 85, 216, 0.22);
+  }
+}
+
+/* ===========================
+   모바일 UX 강화 (루프42)
+   신규 컴포넌트 반응형 보완
+   =========================== */
+
+/* 480px 이하 — 초소형 스마트폰 전용 */
+@media (max-width: 480px) {
+  /* concept-bridge 다크 박스 내부 폰트 축소 */
+  .concept-bridge {
+    padding: 1rem 0.9rem;
+  }
+  .cb-label {
+    font-size: 0.58rem;
+  }
+  .cb-link {
+    font-size: 0.79rem;
+    padding: 0.38rem 0.85rem;
+  }
+
+  /* analogy-box */
+  .analogy-box {
+    padding: 0.85rem 0.9rem;
+  }
+  .analogy-label {
+    font-size: 0.62rem;
+  }
+  .analogy-body {
+    font-size: 0.85rem;
+  }
+
+  /* insight-path */
+  .insight-path {
+    padding: 0.85rem 0.9rem;
+  }
+  .insight-steps li {
+    padding-left: 1.75rem;
+    font-size: 0.84rem;
+  }
+  .insight-steps li::before {
+    width: 17px;
+    height: 17px;
+    font-size: 0.58rem;
+  }
+
+  /* exam-trap */
+  .exam-trap ul li {
+    font-size: 0.84rem;
+    padding-left: 1.4rem;
+  }
+
+  /* practice-set */
+  .practice-set {
+    padding: 0.9rem 0.9rem;
+  }
+
+  /* page-overview — 좁은 화면 padding */
+  .page-overview {
+    padding: 0.7rem 0.9rem;
+  }
+
+  /* three-path-nav 글자 축소 */
+  .tpn-back, .tpn-related {
+    font-size: 0.74rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+  .tpn-next {
+    font-size: 0.84rem;
   }
 }

@@ -1,7 +1,7 @@
 {
-  "angleIndex": 7,
-  "lastRun": "2026-04-14T21:00:00Z",
-  "lastAngle": "정보 구조",
-  "filesChanged": 39,
-  "summary": "정보 구조 강화 (루프41): (1) CRITICAL — ko/ 인덱스 5개 Loop30 인코딩 오염 복구 (ko/index.html + 4개 과목 index.html, 6becf14 기반 복원 + today-concept 재통합). (2) ko/ 전체 35개 파일 브레드크럼 과목 클래스 추가 (bc-math/bc-korean/bc-english/bc-science) — section-color CSS 훅 강화."
+  "angleIndex": 0,
+  "lastRun": "2026-04-14T21:30:00Z",
+  "lastAngle": "모바일 UX",
+  "filesChanged": 1,
+  "summary": "모바일 UX 강화 (루프42): CSS 전용 — (1) 720px 이하: .analogy-box/.insight-path/.exam-trap/.practice-set/.recall-prompt/.next-teaser-body 좌우 패딩 최적화 추가, insight-steps 들여쓰기 축소(2.1rem→1.85rem), formula clamp() 반응형 폰트, cb-from/cb-to 폰트 축소, tpn-* min-height:44px 터치타겟 보장. (2) 480px 이하 초소형 전용 블록 신규 추가."
 }
