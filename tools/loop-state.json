@@ -1,7 +1,7 @@
 {
-  "angleIndex": 3,
-  "lastRun": "2026-04-14T23:30:00Z",
-  "lastAngle": "학습효과 장치",
+  "angleIndex": 4,
+  "lastRun": "2026-04-14T23:55:00Z",
+  "lastAngle": "신뢰 신호",
   "filesChanged": 30,
-  "summary": "학습효과 장치 강화 (루프45): (1) CSS .mnemonic 신규 (보라 #7c3aed 계열, mn-label·mn-type·mn-content, 다크모드·480px반응형). (2) CSS .self-check 신규 (민트 #0ea5e9→#10b981, 커스텀 체크박스, :checked 줄긋기+초록). (3) ko/ 30개 아티클 전체에 mnemonic·self-check 삽입 (파일별 고유 암기법+3개 자가진단 항목). (4) skill-unlock 17개 누락 파일 추가 (총 25/30). (5) practice-set 13개 누락 파일 추가 (총 22/30)."
+  "summary": "신뢰 신호 강화 (루프46): (1) CSS .curriculum-tag 신규 (2022 개정 교육과정 배지, ct-year·ct-grade·ct-subject, slate 계열, 다크모드). (2) CSS .article-meta 서브 클래스 추가 (am-item·am-label·am-curriculum 등). (3) CSS mc-wrong/mc-right/mc-tag 팩트체크 스타일 추가. (4) ko/ 30개 아티클 h1 앞에 curriculum-tag 삽입 (파일별 학년범위·과목명)."
 }

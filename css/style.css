@@ -4421,3 +4421,187 @@ article code,
   .self-check { padding: 0.9rem 1rem; }
   .sc-items label { font-size: 0.85rem; }
 }
+
+/* ===========================
+   신뢰 신호 강화 (루프46)
+   curriculum-tag — 교육과정 배지
+   article-meta   — 아티클 메타 footer
+   mc-wrong/mc-right — 오개념 팩트체크 강화
+   =========================== */
+
+/* ── .curriculum-tag — 교육과정 공식 배지 ── */
+.curriculum-tag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+}
+
+.ct-prefix {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-right: 0.1rem;
+}
+
+.ct-year,
+.ct-grade,
+.ct-subject {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  padding: 0.18em 0.58em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.ct-year {
+  background: rgba(71, 85, 105, 0.09);
+  color: #334155;
+  border: 1px solid rgba(71, 85, 105, 0.18);
+}
+
+.ct-grade {
+  background: rgba(71, 85, 105, 0.06);
+  color: #475569;
+  border: 1px solid rgba(71, 85, 105, 0.14);
+}
+
+.ct-subject {
+  background: rgba(34, 85, 216, 0.07);
+  color: #1e40af;
+  border: 1px solid rgba(34, 85, 216, 0.14);
+}
+
+.ct-year::before  { content: "📋 "; font-size: 0.7em; }
+.ct-grade::before { content: "🎓 "; font-size: 0.7em; }
+
+@media (prefers-color-scheme: dark) {
+  .ct-prefix { color: rgba(148, 163, 184, 0.7); }
+  .ct-year {
+    background: rgba(148, 163, 184, 0.08);
+    color: #cbd5e1;
+    border-color: rgba(148, 163, 184, 0.15);
+  }
+  .ct-grade {
+    background: rgba(148, 163, 184, 0.06);
+    color: #94a3b8;
+    border-color: rgba(148, 163, 184, 0.12);
+  }
+  .ct-subject {
+    background: rgba(96, 165, 250, 0.08);
+    color: #93c5fd;
+    border-color: rgba(96, 165, 250, 0.16);
+  }
+}
+
+/* ── .article-meta — 아티클 하단 메타 정보 ── */
+.article-meta {
+  margin: 2rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line, rgba(20,33,61,0.1));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  align-items: center;
+}
+
+.am-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--ink-soft, #4f5d78);
+  opacity: 0.72;
+  white-space: nowrap;
+}
+
+.am-item::before {
+  font-size: 0.72em;
+  opacity: 0.65;
+}
+
+.am-curriculum::before { content: "📋"; }
+.am-grade::before      { content: "🎓"; }
+.am-updated::before    { content: "🗓"; }
+.am-level::before      { content: "📊"; }
+
+.am-label {
+  font-weight: 600;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-right: 0.1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .article-meta { border-top-color: rgba(255,255,255,0.07); }
+  .am-item { color: rgba(180, 200, 230, 0.55); }
+  .am-label { color: rgba(148, 163, 184, 0.55); }
+}
+
+@media (max-width: 600px) {
+  .article-meta { gap: 0.35rem 0.8rem; }
+  .am-item { font-size: 0.66rem; }
+}
+
+/* ── .misconception 팩트체크 강화 — mc-wrong / mc-right ── */
+.mc-wrong {
+  display: inline;
+  background: rgba(239, 68, 68, 0.08);
+  color: #b91c1c;
+  text-decoration: line-through;
+  text-decoration-color: rgba(185, 28, 28, 0.55);
+  text-decoration-thickness: 1.5px;
+  border-radius: 3px;
+  padding: 0.05em 0.25em;
+}
+
+.mc-right {
+  display: inline;
+  background: rgba(22, 163, 74, 0.08);
+  color: #15803d;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 0.05em 0.25em;
+}
+
+/* 팩트체크 레이블 태그 */
+.mc-tag {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 0.1em 0.45em;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
+.mc-tag--wrong {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+  border: 1px solid rgba(185, 28, 28, 0.2);
+}
+
+.mc-tag--right {
+  background: rgba(22, 163, 74, 0.1);
+  color: #15803d;
+  border: 1px solid rgba(21, 128, 61, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .mc-wrong { background: rgba(239,68,68,0.1); color: #fca5a5; }
+  .mc-right { background: rgba(22,163,74,0.1); color: #86efac; }
+  .mc-tag--wrong { background: rgba(239,68,68,0.12); color: #fca5a5; border-color: rgba(252,165,165,0.18); }
+  .mc-tag--right { background: rgba(22,163,74,0.12); color: #86efac; border-color: rgba(134,239,172,0.18); }
+}
