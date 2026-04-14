@@ -6262,3 +6262,95 @@ pre,
   }
   .vb-report { border-color: rgba(180,190,210,0.1); }
 }
+
+/* ── 루프63: 차별화 — .alt-compare 비교 컴포넌트 ── */
+.alt-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 14px);
+  overflow: hidden;
+  margin: 0.8rem 0 1.4rem;
+  font-size: 0.9rem;
+}
+.ac-col {
+  padding: 0.75rem 0.9rem;
+}
+.ac-col--other {
+  background: rgba(100,100,100,0.04);
+  border-right: 1px solid var(--line);
+}
+.ac-col--here {
+  background: rgba(34,85,216,0.04);
+}
+.ac-label {
+  display: block;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  opacity: 0.5;
+}
+.ac-col--other .ac-label { color: var(--ink); }
+.ac-col--here .ac-label { color: var(--brand); opacity: 0.8; }
+.ac-col p {
+  margin: 0;
+  line-height: 1.52;
+  font-size: 0.88rem;
+  color: var(--ink);
+  opacity: 0.82;
+}
+.ac-col--here p { opacity: 0.95; }
+.ac-col--here p strong { color: var(--brand); }
+@media (prefers-color-scheme: dark) {
+  .ac-col--other { background: rgba(255,255,255,0.03); }
+  .ac-col--here { background: rgba(34,85,216,0.08); }
+}
+@media (max-width: 600px) {
+  .alt-compare { grid-template-columns: 1fr; }
+  .ac-col--other { border-right: none; border-bottom: 1px solid var(--line); }
+}
+
+/* ── 루프63: .fit-for 타겟 사용자 2열 카드 ── */
+.fit-for {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin: 0.8rem 0 1.4rem;
+}
+.fit-col {
+  border-radius: var(--radius-sm, 14px);
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+}
+.fit-col--yes {
+  background: rgba(31,143,88,0.05);
+  border-color: rgba(31,143,88,0.18);
+}
+.fit-col--no {
+  background: rgba(100,100,100,0.04);
+  border-color: rgba(100,100,100,0.14);
+}
+.fit-col-label {
+  display: block;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.fit-col--yes .fit-col-label { color: var(--success, #1f8f58); }
+.fit-col--no .fit-col-label { color: var(--ink); opacity: 0.45; }
+.fit-col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.865rem;
+  line-height: 1.6;
+  color: var(--ink);
+  opacity: 0.82;
+}
+@media (max-width: 600px) {
+  .fit-for { grid-template-columns: 1fr; }
+}

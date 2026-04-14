@@ -1,7 +1,7 @@
 {
-  "angleIndex": 4,
-  "lastRun": "2026-04-15T12:35:00Z",
-  "lastAngle": "신뢰 신호",
-  "filesChanged": 33,
-  "summary": "루프62 (신뢰 신호): curriculum-badge hover tooltip CSS + JS title 자동주입(50개 코드 매핑). vb-reviewed 날짜 2025년 3월→2026.04 전체 30개 파일 업데이트. 모바일 vb-reviewed 표시, vb-report 버튼 스타일 강화"
+  "angleIndex": 5,
+  "lastRun": "2026-04-15T13:00:00Z",
+  "lastAngle": "차별화",
+  "filesChanged": 9,
+  "summary": "루프63 (차별화): .alt-compare/.fit-for CSS 신규. ko/index.html '이런 분께 맞습니다/안 맞습니다' 섹션 추가. 수학/과학 section-hook 날카롭게 개선. calculus/physics/grammar.html에 .alt-compare 비교 박스 삽입"
 }
