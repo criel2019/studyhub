@@ -310,7 +310,14 @@
         </div>
       </div>
     </div>
-    <div class="next-teaser">
+  
+  <div class="skill-unlock">
+    <div class="su-title">덧셈-뺄셈 연결</div>
+    <p class="su-desc">뺄셈을 "역덧셈"으로 재해석하면 검산이 자동화된다</p>
+    <a href="../math/addition.html" class="su-link">덧셈 복습하기 →</a>
+  </div>
+
+  <div class="next-teaser">
       <span class="next-teaser-label">다음 단원</span>
       <div class="next-teaser-body">
         <div class="next-teaser-title">곱셈</div>
@@ -318,7 +325,43 @@
         <a href="multiplication.html" class="next-teaser-btn">다음 단원으로</a>
       </div>
     </div>
-    <div class="three-path-nav">
+  
+  <div class="mnemonic">
+    <div class="mn-header">
+      <span class="mn-label">암기법</span>
+      <span class="mn-type mn-type--story">스토리</span>
+    </div>
+    <p class="mn-content"><strong>뺄셈 = 거꾸로 덧셈</strong>: "8-3=?" 대신 "3에 얼마를 더하면 8이 되지?"로 바꿔 생각하세요. 빌려서 계산할 때도 "10을 빌려왔으니 윗 자리에서 1을 빼야 한다"고 기억합니다.</p>
+  </div>
+
+
+  <div class="self-check">
+    <span class="sc-label">자가진단</span>
+    <ul class="sc-items">
+      <li><input type="checkbox" id="sc1"><label for="sc1">뺄셈을 "역덧셈"으로 바꿔 검산할 수 있다</label></li>
+      <li><input type="checkbox" id="sc2"><label for="sc2">받아내림이 필요한 두 자리 수 뺄셈을 계산할 수 있다</label></li>
+      <li><input type="checkbox" id="sc3"><label for="sc3">받아내림 후 윗 자리에서 1을 줄이는 이유를 설명할 수 있다</label></li>
+    </ul>
+  </div>
+
+
+  <div class="practice-set">
+    <div class="ps-label">연습 문제</div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">1</span>63 - 28을 계산하고, 뺄셈을 덧셈으로 검산하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>63 - 28 = 35. 검산: 28 + 35 = 63 ✓</p></details>
+    </div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">2</span>102 - 47을 받아내림을 써서 계산하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>일의 자리: 12-7=5, 십의 자리: 9-4=5, 백의 자리: 0→1. 정답: 55</p></details>
+    </div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">3</span>"어떤 수에서 35를 빼면 49가 된다"에서 어떤 수를 구하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>x - 35 = 49 → x = 84</p></details>
+    </div>
+  </div>
+
+  <div class="three-path-nav">
       <a href="addition.html" class="tpn-back">덧셈</a>
       <a href="multiplication.html" class="tpn-next">곱셈</a>
       <a href="division.html" class="tpn-related">나눗셈</a>

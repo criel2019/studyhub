@@ -556,7 +556,43 @@
         <a href="trigonometry.html" class="next-teaser-btn">다음 단원으로</a>
       </div>
     </div>
-    <div class="three-path-nav">
+  
+  <div class="mnemonic">
+    <div class="mn-header">
+      <span class="mn-label">암기법</span>
+      <span class="mn-type mn-type--image">이미지연상</span>
+    </div>
+    <p class="mn-content"><strong>미분 = 접선의 기울기, 적분 = 넓이</strong>: 속도계 바늘(미분)과 주행거리 계기판(적분)은 서로 역관계입니다. 뉴턴-라이프니츠 정리는 이 둘이 정확히 역연산임을 수학적으로 증명한 것.</p>
+  </div>
+
+
+  <div class="self-check">
+    <span class="sc-label">자가진단</span>
+    <ul class="sc-items">
+      <li><input type="checkbox" id="sc1"><label for="sc1">미분이 "순간 변화율"임을 기울기 개념으로 설명할 수 있다</label></li>
+      <li><input type="checkbox" id="sc2"><label for="sc2">적분이 "누적 넓이"임을 리만 합 개념으로 설명할 수 있다</label></li>
+      <li><input type="checkbox" id="sc3"><label for="sc3">미분과 적분이 역연산인 이유를 속도-거리 관계로 설명할 수 있다</label></li>
+    </ul>
+  </div>
+
+
+  <div class="practice-set">
+    <div class="ps-label">연습 문제</div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">1</span>f(x) = x²의 x=2에서 미분계수를 극한 정의로 구하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>lim(h→0) [(2+h)²-4]/h = lim(h→0) [4h+h²]/h = 4</p></details>
+    </div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">2</span>y = 3x² - 2x + 1을 미분하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>y' = 6x - 2</p></details>
+    </div>
+    <div class="ps-item">
+      <p class="ps-q"><span class="ps-num">3</span>∫₀² 2x dx를 계산하세요.</p>
+      <details class="ps-ans"><summary>정답 보기</summary><p>[x²]₀² = 4 - 0 = 4</p></details>
+    </div>
+  </div>
+
+  <div class="three-path-nav">
       <a href="statistics.html" class="tpn-back">통계</a>
       <a href="trigonometry.html" class="tpn-next">삼각함수</a>
       <a href="functions.html" class="tpn-related">함수</a>

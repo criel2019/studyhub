@@ -1,7 +1,7 @@
 {
-  "angleIndex": 2,
-  "lastRun": "2026-04-14T22:30:00Z",
-  "lastAngle": "첫인상 설득력",
-  "filesChanged": 11,
-  "summary": "첫인상 설득력 강화 (루프44): (1) CSS .start-path 신규 컴포넌트 (3선택 진입 경로, 초등/중등/고등, 다크모드+600px 반응형) + .card-question + .tc-key 추가. (2) ko/index.html — start-path 삽입, subject-card 4개에 card-question 호기심 질문 추가, 시간대별 hero 카피 JS(오전/오후/밤/새벽). (3) ko/math/english/korean/science index — topic-card 전체에 tc-key 핵심 한 줄 추가. (4) en/ja/zh/index.html — start-path + 시간대별 hero JS 다국어 전파."
+  "angleIndex": 3,
+  "lastRun": "2026-04-14T23:30:00Z",
+  "lastAngle": "학습효과 장치",
+  "filesChanged": 30,
+  "summary": "학습효과 장치 강화 (루프45): (1) CSS .mnemonic 신규 (보라 #7c3aed 계열, mn-label·mn-type·mn-content, 다크모드·480px반응형). (2) CSS .self-check 신규 (민트 #0ea5e9→#10b981, 커스텀 체크박스, :checked 줄긋기+초록). (3) ko/ 30개 아티클 전체에 mnemonic·self-check 삽입 (파일별 고유 암기법+3개 자가진단 항목). (4) skill-unlock 17개 누락 파일 추가 (총 25/30). (5) practice-set 13개 누락 파일 추가 (총 22/30)."
 }
