@@ -526,6 +526,44 @@
     }
   }
 
+  // ── 루프65: TOC 활성 섹션 하이라이트 (IntersectionObserver) ──
+  function initTocHighlight() {
+    const headings = Array.from(document.querySelectorAll("main h2[id]"));
+    if (!headings.length) return;
+
+    // page-overview 링크 맵
+    const overviewLinks = new Map();
+    document.querySelectorAll(".page-overview-list a[href^='#']").forEach(a => {
+      overviewLinks.set(a.getAttribute("href").slice(1), a);
+    });
+    // sidebar toc 링크 맵
+    const tocLinks = new Map();
+    document.querySelectorAll(".toc-link[href^='#']").forEach(a => {
+      tocLinks.set(a.getAttribute("href").slice(1), a);
+    });
+
+    if (!overviewLinks.size && !tocLinks.size) return;
+
+    function setActive(id) {
+      overviewLinks.forEach((el, key) => el.classList.toggle("active", key === id));
+      tocLinks.forEach((el, key) => el.classList.toggle("active", key === id));
+    }
+
+    let activeId = headings[0]?.id;
+    setActive(activeId);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          activeId = entry.target.id;
+          setActive(activeId);
+        }
+      });
+    }, { rootMargin: "-10% 0px -75% 0px", threshold: 0 });
+
+    headings.forEach(h => observer.observe(h));
+  }
+
   function enhance404() {
     const main = document.querySelector("main");
     if (!main || main.querySelector(".empty-state-note")) return;
@@ -671,6 +709,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     addNavScrolled();
     initCurriculumBadgeTips();
+    initTocHighlight();
     initTableScope();
     initTableCards();
     initTableScrollMask();

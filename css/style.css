@@ -6407,3 +6407,35 @@ pre,
     font-size: 0.85rem;
   }
 }
+
+/* ── 루프65: 정보 구조 — TOC 활성 하이라이트 ── */
+
+/* page-overview 현재 섹션 active */
+.page-overview-list a.active {
+  color: var(--brand);
+  font-weight: 700;
+}
+.page-overview-list li:has(a.active)::before {
+  opacity: 1;
+  color: var(--brand);
+}
+
+/* sidebar toc-link 현재 섹션 active */
+.toc-link.active {
+  color: var(--brand);
+  font-weight: 700;
+  border-left: 2px solid var(--brand);
+  padding-left: 0.45rem;
+  margin-left: -0.45rem;
+}
+.toc-link {
+  padding-left: 0;
+  margin-left: 0;
+  transition: color 0.15s, padding-left 0.15s, border-left 0.15s;
+  border-left: 2px solid transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-overview-list a.active { color: var(--brand-strong, #93baff); }
+  .toc-link.active { color: var(--brand-strong, #93baff); border-left-color: var(--brand-strong, #93baff); }
+}

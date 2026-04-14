@@ -1,7 +1,7 @@
 {
-  "angleIndex": 6,
-  "lastRun": "2026-04-15T13:25:00Z",
-  "lastAngle": "리텐션 훅",
-  "filesChanged": 32,
-  "summary": "루프64 (리텐션 훅): next-hook CSS 강화(배경+pill버튼). nh-label 30개 파일 '이 질문, 지금 답할 수 있나요?'로 업그레이드. 8개 파일 nh-question 클리프행어 질문으로 교체 (calculus/physics/equations/atoms/korean-grammar/english-grammar/geometry/fractions)"
+  "angleIndex": 7,
+  "lastRun": "2026-04-15T13:50:00Z",
+  "lastAngle": "정보 구조",
+  "filesChanged": 4,
+  "summary": "루프65 (정보 구조): IntersectionObserver TOC 활성 하이라이트 (page-overview + sidebar toc-link). CSS active 스타일 추가. ko/index.html quick-jump 칩 6→12개 확장"
 }
